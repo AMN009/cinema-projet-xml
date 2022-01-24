@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <cinema>
 
     <utilisateurs>
@@ -33,6 +34,13 @@
 
     <seances>
         <seance id="SE658">
+            <date>06/11/2021</date>
+            <heure>18h45m</heure>
+            <film>F21</film>
+            <salle>S08</salle>
+            <prix>60</prix>
+        </seance>
+        <seance id="S658">
             <date>06/11/2021</date>
             <heure>18h45m</heure>
             <film>F21</film>
