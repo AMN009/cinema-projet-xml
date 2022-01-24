@@ -24,7 +24,11 @@
     </salles>
 
     <sièges>
-        <siège id="SI889" salle="S08" rang="7" numéro="44" />
+        <siège id="SI889">
+            <salle>S08</salle>
+            <rang>7</rang>
+            <numéro>44</numéro>
+        </siège>
     </sièges>
 
     <séances>
