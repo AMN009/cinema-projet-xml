@@ -7,14 +7,16 @@
         private string $realisateur;
         private int $annee;
         private string $duree;
+        private string $poster;
 
-        public function __construct($id, $titre, $genre, $realisateur, $annee, $duree) {
+        public function __construct($id, $titre, $genre, $realisateur, $annee, $duree, $poster) {
             $this->id = $id;
             $this->titre = $titre;
             $this->genre = $genre;
             $this->realisateur = $realisateur;
             $this->annee = $annee;
             $this->duree = $duree;
+            $this->poster = $poster;
         }
 
 
@@ -42,6 +44,10 @@
             return $this->duree;
         }
 
+        public function getPoster() {
+            return $this->poster;
+        }
+
 
         public function setId($id) {
             $this->id = $id;
@@ -65,6 +71,10 @@
 
         public function setDuree($duree) {
             $this->duree = $duree;
+        }
+
+        public function setPoster($poster) {
+            $this->poster = $poster;
         }
     }
 
