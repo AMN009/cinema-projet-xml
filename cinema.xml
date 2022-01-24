@@ -4,7 +4,7 @@
         <utilisateur id="U1">
             <nom>Vincent Moule</nom>
             <email>vincent.moule@gmail.com</email>
-            <tél>+212-684-989-567</tél>
+            <tel>+212-684-989-567</tel>
             <carte-credit>1234-5689-8532-6955</carte-credit>
         </utilisateur>
     </utilisateurs>
@@ -13,41 +13,41 @@
         <film id="F21">
             <titre>Whiplash</titre>
             <genre>Drame</genre>
-            <réalisateur>Damien Chazelle</réalisateur>
-            <année>2014</année>
-            <durée>1h46m</durée>
+            <realisateur>Damien Chazelle</realisateur>
+            <annee>2014</annee>
+            <duree>1h46m</duree>
         </film>
     </films>
 
     <salles>
-        <salle id="S08" capacité="70" />
+        <salle id="S08" capacite="70" />
     </salles>
 
-    <sièges>
-        <siège id="SI889">
+    <sieges>
+        <siege id="SI889">
             <salle>S08</salle>
             <rang>7</rang>
-            <numéro>44</numéro>
-        </siège>
-    </sièges>
+            <numero>44</numero>
+        </siege>
+    </sieges>
 
-    <séances>
-        <séance id="SE658">
+    <seances>
+        <seance id="SE658">
             <date>06/11/2021</date>
             <heure>18h45m</heure>
             <film>F21</film>
             <salle>S08</salle>
             <prix>60</prix>
-        </séance>
-    </séances>
+        </seance>
+    </seances>
 
-    <réservations>
-        <réservation code="R-215-487">
+    <reservations>
+        <reservation code="R-215-487">
             <date>01/11/2021</date>
             <heure>23h02m</heure>
-            <siège>SI889</siège>
-            <séance>SE658</séance>
-        </réservation>
-    </réservations>
+            <siege>SI889</siege>
+            <seance>SE658</seance>
+        </reservation>
+    </reservations>
 
 </cinema>
