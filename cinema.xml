@@ -45,7 +45,7 @@
         <reservation code="R-215-487">
             <date>01/11/2021</date>
             <heure>23h02m</heure>
-            <utlisateur>U1</utlisateur>
+            <utilisateur>U1</utilisateur>
             <siege>SI889</siege>
             <seance>SE658</seance>
         </reservation>
