@@ -3,16 +3,16 @@
     class Reservation {
         private string $code;
         private string $date;
-        private Siege $siege;
+        private int $siege;
         private string $heure;
-        private Seance $seance;
-        private Utilisateur $utilisateur;
+        private int $seance;
+        private int $utilisateur;
 
-        function __construct($code, $siege,$date,$heure,$seance, $utilisateur)
+        function __construct($code,$date, $siege,$heure,$seance, $utilisateur)
         {
             $this->code = $code;
-            $this->siège = $siège;
             $this->date = $date;
+            $this->siege = $siege;
             $this->heure = $heure;
             $this->seance = $seance;
             $this->utilisateur = $utilisateur;
@@ -69,6 +69,11 @@
             public function setUtilisateur($utilisateur){
                 $this->utilisateur = $utilisateur;
             }
+
+
+            public function __toString() {
+                return "reservation code is: {$this->code}\n";
+                }
     }
 
 ?>

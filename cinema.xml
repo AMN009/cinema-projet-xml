@@ -21,7 +21,7 @@
     </films>
 
     <salles>
-        <salle id="S08" capacite="70" />
+        <salle id="S08" capacite="70"/>
     </salles>
 
     <sieges>
@@ -35,7 +35,7 @@
             <rang>7</rang>
             <numero>44</numero>
         </siege>
-    </sieges>
+    <siege id="qw"><salle>1</salle><rang>1</rang><numero>1</numero></siege></sieges>
 
     <seances>
         <seance id="SE658">
@@ -52,7 +52,7 @@
             <salle>S08</salle>
             <prix>60</prix>
         </seance>
-    </seances>
+    <seance id="ww"><salle>ww</salle><date>ee</date><film>rr</film><heure>aa</heure><prix>14.3</prix></seance></seances>
 
     <reservations>
         <reservation code="R-215-487">
@@ -69,6 +69,15 @@
             <siege>SI889</siege>
             <seance>SE658</seance>
         </reservation>
-    </reservations>
+    <reservation>
+        Royaume-Uni
+        <date>Royaume-Uni</date>
+        <heure>Royaume-Uni</heure>
+        <utilisateur>Royaume-Uni</utilisateur>
+        <siege>Royaume-Uni</siege>
+        <seance>Royaume-Uni</seance>
+    </reservation>
+
+<reservation code="t"><date>62</date><heure>82</heure><utilisateur>1</utilisateur><siege>1</siege><seance>1</seance></reservation></reservations>
 
 </cinema>

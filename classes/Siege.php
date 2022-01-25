@@ -2,7 +2,7 @@
 
     class Siege {
         private string $id;
-        private Salle $salle;
+        private int $salle;
         private int $rang;
         private int $numero;
 

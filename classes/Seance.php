@@ -2,9 +2,9 @@
 
     class Seance {
         private string $id;
-        private Salle $salle;
+        private string $salle;
         private string $date;
-        private Film $film;
+        private string $film;
         private string $heure;
         private float $prix;
 

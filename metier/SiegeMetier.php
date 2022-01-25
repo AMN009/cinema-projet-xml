@@ -1,6 +1,34 @@
 <?php 
-     //not done
-     Function insertSiege($siege){}
+    
+     include 'C:/xampp/htdocs/cinema-projet-xml/classes/Siege.php';
+     // done
+     Function insertSiege($sie){
+      $document = new DomDocument(); 
+      $document->load('../cinema.xml');
+      $sieges = $document->getElementsByTagName('sieges'); 
+      $siege = $document->createElement("siege"); 
+      $siege->setAttribute("id", $sie->getId()); 
+
+      $salle = $document->createElement("salle"); 
+      $salledata = $document->createTextNode($sie->getSalle()); 
+      $salle->appendChild($salledata);
+
+      $rang = $document->createElement("rang"); 
+      $rangdata = $document->createTextNode($sie->getRang()); 
+      $rang->appendChild($rangdata);
+      
+      $numero = $document->createElement("numero"); 
+      $numerodata = $document->createTextNode($sie->getNumero()); 
+      $numero->appendChild($numerodata);
+
+      $siege->appendChild($salle);
+      $siege->appendChild($rang);
+      $siege->appendChild($numero);
+      $sieges->item(0)->appendChild($siege);
+
+      $document->save('../cinema.xml');
+
+     }
 
 
 
@@ -18,8 +46,9 @@
        }
       $document->save('../cinema.xml');
       }
-
-      deleteSiege('S89');
+      
+      $sie = new Siege('qw',1,1,1);
+      insertSiege($sie);
        
 
        //noy done
