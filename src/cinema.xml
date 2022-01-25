@@ -11,17 +11,18 @@
     </utilisateurs>
 
     <films>
-        <film id="F21">
+        <film id="F21" anne="2014">
             <titre>Whiplash</titre>
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
-            <annee>2014</annee>
             <duree>1h46m</duree>
+            <poster source="poster"/>
         </film>
+        
     </films>
 
     <salles>
-        <salle id="S08" capacite="70" />
+        <salle id="S08" capacite="70"/>
     </salles>
 
     <sieges>

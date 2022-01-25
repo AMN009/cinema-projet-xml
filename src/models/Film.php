@@ -19,6 +19,10 @@
             $this->poster = $poster;
         }
 
+        public static function emptyFilm() {
+            return new Film('', '', '', '', 0, '', '');
+        }
+
 
         public function getId() {
             return $this->id;

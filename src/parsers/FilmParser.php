@@ -3,25 +3,100 @@
     require 'ParserSetup.php';
     require (__DIR__.'/../models/Film.php');
 
-    class FilmParser {
+    $filmsParent = $root->getElementsByTagName('films')->item(0);
 
-        private $filmsParent;
+        function ajouterFilm($film) {
+            if ($film != null) {
+                global $doc, $filmsParent;
 
-        public function __construct() {
-            $this->filmsParent = $root->getElementsByTagName('films')->item(0);
+                foreach ($filmsParent->childNodes as $child) {
+                    if ($child->nodeType == 1 && ($film->getId() == $child->getAttribute('id')))
+                        return false;
+                }
+
+                $filmsParent->appendChild(filmNode($film));
+                
+                $doc->save(__DIR__.'/../cinema.xml');
+            }
+            else {
+                var_dump("Film à ajouter est null !");
+            }
         }
 
-        public function ajouterFilm($film) {
+        function modifierFilm($film) {
+            if ($film != null) {
+                global $doc, $filmsParent;
 
+                $existant = false;
+
+                foreach ($filmsParent->childNodes as $child) {
+                    if ($child->nodeType == 1 && ($film->getId() == $child->getAttribute('id'))) {
+                        $existant = true;
+                        $filmsParent->replaceChild(filmNode($film), $child);
+                        $doc->save(__DIR__.'/../cinema.xml');
+                        return $child;
+                    }
+                }
+
+                if (!$existant)
+                    var_dump("Film à modifier n'existe pas dans la liste des films !");
+            }
+            else {
+                var_dump("Film à modifier est null !");
+            }
         }
 
-        public function modifierFilm($film) {
+        function supprimerFilm($film) {
+            if ($film != null) {
+                global $doc, $filmsParent;
 
+                $existant = false;
+
+                foreach ($filmsParent->childNodes as $child) {
+                    if ($child->nodeType == 1 && ($film->getId() == $child->getAttribute('id'))) {
+                        $existant = true;
+                        $filmsParent->removeChild($child);
+                        $doc->save(__DIR__.'/../cinema.xml');
+                        return $child;
+                    }
+                }
+
+                if (!$existant)
+                    var_dump("Film à supprimer n'existe pas dans la liste des films !");
+            }
+            else {
+                var_dump("Film à supprimer est null !");
+            }
         }
 
-        public function supprimerFilm($film) {
+        function filmNode($film) {
+            global $doc;
+            $filmNode = $doc->createElement('film');
 
+                $filmNode->setAttributeNode(new DOMAttr('id', $film->getId()));
+                $filmNode->setAttributeNode(new DOMAttr('annee', $film->getAnnee()));
+
+                $titreNode = $doc->createElement('titre');
+                $titreNode->appendChild($doc->createTextNode($film->getTitre()));
+                $filmNode->appendChild($titreNode);
+
+                $genreNode = $doc->createElement('genre');
+                $genreNode->appendChild($doc->createTextNode($film->getGenre()));
+                $filmNode->appendChild($genreNode);
+
+                $realisateurNode = $doc->createElement('realisateur');
+                $realisateurNode->appendChild($doc->createTextNode($film->getRealisateur()));
+                $filmNode->appendChild($realisateurNode);
+
+                $dureeNode = $doc->createElement('duree');
+                $dureeNode->appendChild($doc->createTextNode($film->getDuree()));
+                $filmNode->appendChild($dureeNode);
+
+                $posterNode = $doc->createElement('poster');
+                $posterNode->setAttributeNode(new DOMAttr('source', $film->getPoster()));
+                $filmNode->appendChild($posterNode);
+
+                return $filmNode;
         }
-    }
 
 ?>

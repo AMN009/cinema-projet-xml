@@ -3,25 +3,80 @@
     require 'ParserSetup.php';
     require (__DIR__.'/../models/Salle.php');
 
-    class SalleParser {
+    $sallesParent = $root->getElementsByTagName('salles')->item(0);
 
-        private $sallesParent;
+        function ajouterSalle($salle) {
+            if ($salle != null) {
+                global $doc, $sallesParent;
 
-        public function __construct() {
-            $this->sallesParent = $root->getElementsByTagName('salles')->item(0);
+                foreach ($sallesParent->childNodes as $child) {
+                    if ($child->nodeType == 1 && ($salle->getId() == $child->getAttribute('id')))
+                        return false;
+                }
+
+                $sallesParent->appendChild(salleNode($salle));
+                
+                $doc->save(__DIR__.'/../cinema.xml');
+            }
+            else {
+                var_dump("Salle à ajouter est null !");
+            }
         }
 
-        public function ajouterSalle($salle) {
+        function modifierSalle($salle) {
+            if ($salle != null) {
+                global $doc, $sallesParent;
 
+                $existant = false;
+
+                foreach ($sallesParent->childNodes as $child) {
+                    if ($child->nodeType == 1 && ($salle->getId() == $child->getAttribute('id'))) {
+                        $existant = true;
+                        $sallesParent->replaceChild(salleNode($salle), $child);
+                        $doc->save(__DIR__.'/../cinema.xml');
+                        return $child;
+                    }
+                }
+
+                if (!$existant)
+                    var_dump("Salle à modifier n'existe pas dans la liste des salles !");
+            }
+            else {
+                var_dump("Salle à modifier est null !");
+            }
         }
 
-        public function modifierSalle($salle) {
+        function supprimerSalle($salle) {
+            if ($salle != null) {
+                global $doc, $sallesParent;
 
+                $existant = false;
+
+                foreach ($sallesParent->childNodes as $child) {
+                    if ($child->nodeType == 1 && ($salle->getId() == $child->getAttribute('id'))) {
+                        $existant = true;
+                        $sallesParent->removeChild($child);
+                        $doc->save(__DIR__.'/../cinema.xml');
+                        return $child;
+                    }
+                }
+
+                if (!$existant)
+                    var_dump("Salle à supprimer n'existe pas dans la liste des salles !");
+            }
+            else {
+                var_dump("Salle à supprimer est null !");
+            }
         }
 
-        public function supprimerSalle($salle) {
+        function salleNode($salle) {
+            global $doc;
+            $salleNode = $doc->createElement('salle');
 
+                $salleNode->setAttributeNode(new DOMAttr('id', $salle->getId()));
+                $salleNode->setAttributeNode(new DOMAttr('capacite', $salle->getCapacite()));
+
+                return $salleNode;
         }
-    }
 
 ?>
