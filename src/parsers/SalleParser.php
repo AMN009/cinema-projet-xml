@@ -1,15 +1,14 @@
 <?php
 
-    require 'DOMParser.php';
+    require 'ParserSetup.php';
     require (__DIR__.'/../models/Salle.php');
 
-    class SalleParser extends DOMParser {
+    class SalleParser {
 
         private $sallesParent;
 
         public function __construct() {
-            parent::__construct();
-            $this->sallesParent = $this->root->getElementsByTagName('salles')->item(0);
+            $this->sallesParent = $root->getElementsByTagName('salles')->item(0);
         }
 
         public function ajouterSalle($salle) {

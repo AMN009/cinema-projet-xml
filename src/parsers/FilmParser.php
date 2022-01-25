@@ -1,15 +1,14 @@
 <?php
 
-    require 'DOMParser.php';
+    require 'ParserSetup.php';
     require (__DIR__.'/../models/Film.php');
 
-    class FilmParser extends DOMParser {
+    class FilmParser {
 
         private $filmsParent;
 
         public function __construct() {
-            parent::__construct();
-            $this->filmsParent = $this->root->getElementsByTagName('films')->item(0);
+            $this->filmsParent = $root->getElementsByTagName('films')->item(0);
         }
 
         public function ajouterFilm($film) {
