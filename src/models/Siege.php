@@ -1,5 +1,7 @@
 <?php
 
+    require (__DIR__.'/../models/Salle.php');
+
     class Siege {
         private string $id;
         private Salle $salle;

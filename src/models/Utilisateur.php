@@ -14,6 +14,10 @@
             $this->tel = $tel;
         }
 
+        public static function emptyUtilisateur() {
+            return new Utilisateur('', '', '', '');
+        }
+
 
         public function getId() {
             return $this->id;

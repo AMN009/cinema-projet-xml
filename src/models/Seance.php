@@ -1,5 +1,8 @@
 <?php
 
+    require (__DIR__.'/../models/Salle.php');
+    require (__DIR__.'/../models/Film.php');
+
     class Seance {
         private string $id;
         private Salle $salle;
