@@ -7,7 +7,7 @@
 
         function ajouterFilm($film) {
             if ($film != null) {
-                global $doc, $filmsParent;
+                global $xml_doc_location, $doc, $filmsParent;
 
                 foreach ($filmsParent->childNodes as $child) {
                     if ($child->nodeType == 1 && ($film->getId() == $child->getAttribute('id')))
@@ -16,7 +16,7 @@
 
                 $filmsParent->appendChild(filmNode($film));
                 
-                $doc->save(__DIR__.'/../cinema.xml');
+                $doc->save($xml_doc_location);
             }
             else {
                 var_dump("Film à ajouter est null !");
@@ -25,7 +25,7 @@
 
         function modifierFilm($film) {
             if ($film != null) {
-                global $doc, $filmsParent;
+                global $xml_doc_location, $doc, $filmsParent;
 
                 $existant = false;
 
@@ -33,7 +33,7 @@
                     if ($child->nodeType == 1 && ($film->getId() == $child->getAttribute('id'))) {
                         $existant = true;
                         $filmsParent->replaceChild(filmNode($film), $child);
-                        $doc->save(__DIR__.'/../cinema.xml');
+                        $doc->save($xml_doc_location);
                         return $child;
                     }
                 }
@@ -48,7 +48,7 @@
 
         function supprimerFilm($film) {
             if ($film != null) {
-                global $doc, $filmsParent;
+                global $xml_doc_location, $doc, $filmsParent;
 
                 $existant = false;
 
@@ -56,7 +56,7 @@
                     if ($child->nodeType == 1 && ($film->getId() == $child->getAttribute('id'))) {
                         $existant = true;
                         $filmsParent->removeChild($child);
-                        $doc->save(__DIR__.'/../cinema.xml');
+                        $doc->save($xml_doc_location);
                         return $child;
                     }
                 }

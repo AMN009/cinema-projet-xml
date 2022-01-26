@@ -7,7 +7,7 @@
 
         function ajouterSalle($salle) {
             if ($salle != null) {
-                global $doc, $sallesParent;
+                global $xml_doc_location, $doc, $sallesParent;
 
                 foreach ($sallesParent->childNodes as $child) {
                     if ($child->nodeType == 1 && ($salle->getId() == $child->getAttribute('id')))
@@ -16,7 +16,9 @@
 
                 $sallesParent->appendChild(salleNode($salle));
                 
-                $doc->save(__DIR__.'/../cinema.xml');
+                $doc->save($xml_doc_location);
+
+                return true;
             }
             else {
                 var_dump("Salle à ajouter est null !");
@@ -25,7 +27,7 @@
 
         function modifierSalle($salle) {
             if ($salle != null) {
-                global $doc, $sallesParent;
+                global $xml_doc_location, $doc, $sallesParent;
 
                 $existant = false;
 
@@ -33,7 +35,7 @@
                     if ($child->nodeType == 1 && ($salle->getId() == $child->getAttribute('id'))) {
                         $existant = true;
                         $sallesParent->replaceChild(salleNode($salle), $child);
-                        $doc->save(__DIR__.'/../cinema.xml');
+                        $doc->save($xml_doc_location);
                         return $child;
                     }
                 }
@@ -48,7 +50,7 @@
 
         function supprimerSalle($salle) {
             if ($salle != null) {
-                global $doc, $sallesParent;
+                global $xml_doc_location, $doc, $sallesParent;
 
                 $existant = false;
 
@@ -56,7 +58,7 @@
                     if ($child->nodeType == 1 && ($salle->getId() == $child->getAttribute('id'))) {
                         $existant = true;
                         $sallesParent->removeChild($child);
-                        $doc->save(__DIR__.'/../cinema.xml');
+                        $doc->save($xml_doc_location);
                         return $child;
                     }
                 }
