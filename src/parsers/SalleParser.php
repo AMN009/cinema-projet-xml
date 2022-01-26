@@ -7,7 +7,7 @@
 
         function ajouterSalle($salle) {
             if ($salle != null) {
-                global $xml_doc_location, $doc, $sallesParent;
+                global $doc, $sallesParent;
 
                 foreach ($sallesParent->childNodes as $child) {
                     if ($child->nodeType == 1 && ($salle->getId() == $child->getAttribute('id')))
@@ -16,7 +16,7 @@
 
                 $sallesParent->appendChild(salleNode($salle));
                 
-                $doc->save($xml_doc_location);
+                $doc->save(__DIR__."/../xml/cinema.xml");
 
                 return true;
             }
@@ -27,7 +27,7 @@
 
         function modifierSalle($salle) {
             if ($salle != null) {
-                global $xml_doc_location, $doc, $sallesParent;
+                global $doc, $sallesParent;
 
                 $existant = false;
 
@@ -35,7 +35,7 @@
                     if ($child->nodeType == 1 && ($salle->getId() == $child->getAttribute('id'))) {
                         $existant = true;
                         $sallesParent->replaceChild(salleNode($salle), $child);
-                        $doc->save($xml_doc_location);
+                        $doc->save(__DIR__."/../xml/cinema.xml");
                         return $child;
                     }
                 }
@@ -50,7 +50,7 @@
 
         function supprimerSalle($salle) {
             if ($salle != null) {
-                global $xml_doc_location, $doc, $sallesParent;
+                global $doc, $sallesParent;
 
                 $existant = false;
 
@@ -58,7 +58,7 @@
                     if ($child->nodeType == 1 && ($salle->getId() == $child->getAttribute('id'))) {
                         $existant = true;
                         $sallesParent->removeChild($child);
-                        $doc->save($xml_doc_location);
+                        $doc->save(__DIR__."/../xml/cinema.xml");
                         return $child;
                     }
                 }

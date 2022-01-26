@@ -29,14 +29,14 @@
     </utilisateurs>
 
     <films>
-        <film id="F21" anne="2014">
+        <film id="F21" annee="2014">
             <titre>Whiplash</titre>
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
             <poster source="poster"/>
         </film>
-        <film id="F21" anne="2014">
+        <film id="F22" anne="2014">
             <titre>Whiplash</titre>
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
@@ -44,7 +44,7 @@
             <description/>
             <poster source="poster"/>
         </film>
-        <film id="F22" anne="2014">
+        <film id="F23" anne="2014">
             <titre>Whiplash 2</titre>
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
