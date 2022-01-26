@@ -13,8 +13,10 @@
                 <link rel="icon" type="image/png" sizes="16x16" href="src/views/style/images/favicon.png" />
 
                 <!-- Custom Stylesheet -->
+                <link href="src/views/style/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
                 <link href="src/views/style/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
                 <link href="src/views/style/css/style.css" rel="stylesheet" />
+                <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet" />
             </head>
             <body>
 
@@ -43,9 +45,9 @@
         ***********************************-->
                     <div class="nav-header">
                         <a href="index.html" class="brand-logo">
-                            <img class="logo-abbr" src="./images/logo.png" alt="" />
-                            <img class="logo-compact" src="./images/logo-text.png" alt="" />
-                            <img class="brand-title" src="./images/logo-text.png" alt="" />
+                            <img class="logo-abbr" src="src/views/style/images/logo.png" alt="" />
+                            <img class="logo-compact" src="src/views/style/images/logo-text.png" alt="" />
+                            <img class="brand-title" src="src/views/style/images/logo-text.png" alt="" />
                         </a>
 
                         <div class="nav-control">
@@ -110,7 +112,7 @@
                                                 <li class="active dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/1.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -122,7 +124,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/2.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/2.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon offline"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -134,7 +136,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/3.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/3.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -146,7 +148,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/4.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/4.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon offline"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -159,7 +161,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/5.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/5.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon offline"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -171,7 +173,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/1.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -183,7 +185,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/2.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/2.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon offline"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -196,7 +198,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/3.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/3.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -208,7 +210,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/4.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/4.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon offline"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -221,7 +223,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/5.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/5.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon offline"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -233,7 +235,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/1.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -245,7 +247,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/2.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/2.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon offline"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -257,7 +259,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/3.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/3.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -270,7 +272,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/4.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/4.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon offline"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -282,7 +284,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/5.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/5.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon offline"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -343,7 +345,7 @@
                                         <div class="card-body msg_card_body dz-scroll" id="DZ_W_Contacts_Body3">
                                             <div class="d-flex justify-content-start mb-4">
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                                 <div class="msg_cotainer">
                                                     Hi, how are you samim?
@@ -356,12 +358,12 @@
                                                     <span class="msg_time_send">8:55 AM, Today</span>
                                                 </div>
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="d-flex justify-content-start mb-4">
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                                 <div class="msg_cotainer">
                                                     I am good too, thank you for your chat template
@@ -374,12 +376,12 @@
                                                     <span class="msg_time_send">9:05 AM, Today</span>
                                                 </div>
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="d-flex justify-content-start mb-4">
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                                 <div class="msg_cotainer">
                                                     I am looking for your next templates
@@ -392,12 +394,12 @@
                                                     <span class="msg_time_send">9:10 AM, Today</span>
                                                 </div>
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="d-flex justify-content-start mb-4">
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                                 <div class="msg_cotainer">
                                                     Bye, see you
@@ -406,7 +408,7 @@
                                             </div>
                                             <div class="d-flex justify-content-start mb-4">
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                                 <div class="msg_cotainer">
                                                     Hi, how are you samim?
@@ -419,12 +421,12 @@
                                                     <span class="msg_time_send">8:55 AM, Today</span>
                                                 </div>
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="d-flex justify-content-start mb-4">
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                                 <div class="msg_cotainer">
                                                     I am good too, thank you for your chat template
@@ -437,12 +439,12 @@
                                                     <span class="msg_time_send">9:05 AM, Today</span>
                                                 </div>
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="d-flex justify-content-start mb-4">
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                                 <div class="msg_cotainer">
                                                     I am looking for your next templates
@@ -455,12 +457,12 @@
                                                     <span class="msg_time_send">9:10 AM, Today</span>
                                                 </div>
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="d-flex justify-content-start mb-4">
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                                 <div class="msg_cotainer">
                                                     Bye, see you
@@ -720,7 +722,7 @@
                                                         <li>
                                                             <div class="timeline-panel">
                                                                 <div class="media mr-2">
-                                                                    <img alt="image" width="50" src="images/avatar/1.jpg" />
+                                                                    <img alt="image" width="50" src="src/views/style/images/avatar/1.jpg" />
                                                                 </div>
                                                                 <div class="media-body">
                                                                     <h6 class="mb-1">Dr sultads Send you Photo</h6>
@@ -753,7 +755,7 @@
                                                         <li>
                                                             <div class="timeline-panel">
                                                                 <div class="media mr-2">
-                                                                    <img alt="image" width="50" src="images/avatar/1.jpg" />
+                                                                    <img alt="image" width="50" src="src/views/style/images/avatar/1.jpg" />
                                                                 </div>
                                                                 <div class="media-body">
                                                                     <h6 class="mb-1">Dr sultads Send you Photo</h6>
@@ -799,7 +801,7 @@
                                                         <strong>Samuel</strong>
                                                     </span>
                                                 </div>
-                                                <img src="images/profile/pic1.jpg" width="20" alt="" />
+                                                <img src="src/views/style/images/profile/pic1.jpg" width="20" alt="" />
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-right">
                                                 <a href="./app-profile.html" class="dropdown-item ai-icon">
@@ -1115,20 +1117,20 @@
                                 </li>
                             </ul>
 
-                            <div class="add-menu-sidebar">
-                                <img src="images/icon1.png" alt="" />
+                            <!-- <div class="add-menu-sidebar">
+                                <img src="src/views/style/images/icon1.png" alt="" />
                                 <p>Organize your menus through button bellow</p>
                                 <a href="javascript:void(0);" class="btn btn-primary btn-block light">+ Add Menus</a>
-                            </div>
+                            </div> -->
                             <div class="copyright">
                                 <p>
-                                    <strong>Davur - Restaurant Admin Dashboard</strong>
-                                    © 2020 All Rights Reserved
+                                    <strong>CINEWEB - ADMIN Dashboard</strong>
+                                    © 2022 All Rights Reserved
                                 </p>
                                 <p>
                                     Made with
                                     <i class="fa fa-heart"></i>
-                                    by DexignZone
+                                    by Fahd &amp; Aymen
                                 </p>
                             </div>
                         </div>
@@ -1142,1141 +1144,118 @@
         ***********************************-->
                     <div class="content-body">
                         <div class="container-fluid">
-                            <div class="row page-titles mx-0">
-                                <div class="col-sm-6 p-md-0">
-                                    <div class="welcome-text">
-                                        <h4>Hi, welcome back!</h4>
-                                        <p class="mb-0">Your business dashboard template</p>
+                            <div class="form-head d-flex mb-3 align-items-start">
+                                <div class="mr-auto d-none d-lg-block">
+                                    <h2 class="text-black font-w600 mb-0">Films</h2>
+                                    <p class="mb-0">La liste de tous les films</p>
+                                </div>
+                                <div class="dropdown custom-dropdown">
+                                    <button type="button" class="btn btn-primary light d-flex align-items-center svg-btn" data-toggle="dropdown" aria-expanded="false">
+                                        <svg width="16" class="scale5" height="16" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.16647 27.9558C9.25682 27.9856 9.34946 28.0001 9.44106 28.0001C9.71269 28.0001 9.97541 27.8732 10.1437 27.6467L21.5954 12.2248C21.7926 11.9594 21.8232 11.6055 21.6746 11.31C21.526 11.0146 21.2236 10.8282 20.893 10.8282H13.1053V0.874999C13.1053 0.495358 12.8606 0.15903 12.4993 0.042327C12.1381 -0.0743215 11.7428 0.0551786 11.5207 0.363124L0.397278 15.7849C0.205106 16.0514 0.178364 16.403 0.327989 16.6954C0.477614 16.9878 0.77845 17.1718 1.10696 17.1718H8.56622V27.125C8.56622 27.5024 8.80816 27.8373 9.16647 27.9558ZM2.81693 15.4218L11.3553 3.58389V11.7032C11.3553 12.1865 11.7471 12.5782 12.2303 12.5782H19.1533L10.3162 24.479V16.2968C10.3162 15.8136 9.92444 15.4218 9.44122 15.4218H2.81693Z" fill="#2F4CDD" />
+                                        </svg>
+                                        <span class="fs-16 ml-3">All Status</span>
+                                        <i class="fa fa-angle-down scale5 ml-3"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#">2020</a>
+                                        <a class="dropdown-item" href="#">2019</a>
+                                        <a class="dropdown-item" href="#">2018</a>
+                                        <a class="dropdown-item" href="#">2017</a>
+                                        <a class="dropdown-item" href="#">2016</a>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item">
-                                            <a href="javascript:void(0)">Table</a>
-                                        </li>
-                                        <li class="breadcrumb-item active">
-                                            <a href="javascript:void(0)">Bootstrap</a>
-                                        </li>
-                                    </ol>
+                                <div class="dropdown custom-dropdown ml-3">
+                                    <button type="button" class="btn btn-primary light d-flex align-items-center svg-btn" data-toggle="dropdown" aria-expanded="false">
+                                        <svg width="16" height="16" class="scale5" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22.4281 2.856H21.8681V1.428C21.8681 0.56 21.2801 0 20.4401 0C19.6001 0 19.0121 0.56 19.0121 1.428V2.856H9.71606V1.428C9.71606 0.56 9.15606 0 8.28806 0C7.42006 0 6.86006 0.56 6.86006 1.428V2.856H5.57206C2.85606 2.856 0.560059 5.152 0.560059 7.868V23.016C0.560059 25.732 2.85606 28.028 5.57206 28.028H22.4281C25.1441 28.028 27.4401 25.732 27.4401 23.016V7.868C27.4401 5.152 25.1441 2.856 22.4281 2.856ZM5.57206 5.712H22.4281C23.5761 5.712 24.5841 6.72 24.5841 7.868V9.856H3.41606V7.868C3.41606 6.72 4.42406 5.712 5.57206 5.712ZM22.4281 25.144H5.57206C4.42406 25.144 3.41606 24.136 3.41606 22.988V12.712H24.5561V22.988C24.5841 24.136 23.5761 25.144 22.4281 25.144Z" fill="#2F4CDD" />
+                                        </svg>
+                                        <span class="fs-16 ml-3">Today</span>
+                                        <i class="fa fa-angle-down scale5 ml-3"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#">Monday</a>
+                                        <a class="dropdown-item" href="#">Tuesday</a>
+                                        <a class="dropdown-item" href="#">Wednesday</a>
+                                        <a class="dropdown-item" href="#">Thursday</a>
+                                        <a class="dropdown-item" href="#">Friday</a>
+                                        <a class="dropdown-item" href="#">Saturday</a>
+                                        <a class="dropdown-item" href="#">Sunday</a>
+                                    </div>
                                 </div>
                             </div>
                             <!-- row -->
 
                             <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Recent Payments Queue</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-responsive-md">
-                                                    <thead>
-                                                        <tr>
-                                                            <th style="width:80px;">
-                                                                <strong>#</strong>
-                                                            </th>
-                                                            <th>
-                                                                <strong>PATIENT</strong>
-                                                            </th>
-                                                            <th>
-                                                                <strong>DR NAME</strong>
-                                                            </th>
-                                                            <th>
-                                                                <strong>DATE</strong>
-                                                            </th>
-                                                            <th>
-                                                                <strong>STATUS</strong>
-                                                            </th>
-                                                            <th>
-                                                                <strong>PRICE</strong>
-                                                            </th>
-                                                            <th></th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <strong>01</strong>
-                                                            </td>
-                                                            <td>Mr. Bobby</td>
-                                                            <td>Dr. Jackson</td>
-                                                            <td>01 August 2020</td>
-                                                            <td>
-                                                                <span class="badge light badge-success">Successful</span>
-                                                            </td>
-                                                            <td>$21.56</td>
-                                                            <td>
-                                                                <div class="dropdown">
-                                                                    <button type="button" class="btn btn-success light sharp" data-toggle="dropdown">
-                                                                        <svg width="20px" height="20px" viewBox="0 0 24 24" version="1.1">
-                                                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                                <rect x="0" y="0" width="24" height="24" />
-                                                                                <circle fill="#000000" cx="5" cy="12" r="2" />
-                                                                                <circle fill="#000000" cx="12" cy="12" r="2" />
-                                                                                <circle fill="#000000" cx="19" cy="12" r="2" />
-                                                                            </g>
-                                                                        </svg>
-                                                                    </button>
-                                                                    <div class="dropdown-menu">
-                                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                                        <a class="dropdown-item" href="#">Delete</a>
-                                                                    </div>
+                                <div class="col-12">
+                                    <div class="table-responsive">
+                                        <table id="example5" class="display mb-4 dataTablesCard" style="min-width: 845px;">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID Film</th>
+                                                    <th>Titre</th>
+                                                    <th>Réalisateur</th>
+                                                    <th>Genre</th>
+                                                    <th>Année</th>
+                                                    <th>Durée</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <xsl:for-each select="cinema/films/film">
+                                                    <xsl:sort select="@id" />
+                                                    <tr>
+                                                        <td>
+                                                            #
+                                                            <xsl:value-of select="@id" />
+                                                        </td>
+                                                        <td>
+                                                            <xsl:value-of select="titre" />
+                                                        </td>
+                                                        <td>
+                                                            <xsl:value-of select="realisateur" />
+                                                        </td>
+                                                        <td>
+                                                            <span class="btn btn-sm light btn-warning fs-16">
+                                                                <xsl:value-of select="genre" />
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <xsl:value-of select="@annee" />
+                                                        </td>
+                                                        <td>
+                                                            <xsl:value-of select="duree" />
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown ml-auto text-right">
+                                                                <div class="btn-link" data-toggle="dropdown">
+                                                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <rect x="0" y="0" width="24" height="24"></rect>
+                                                                            <circle fill="#000000" cx="5" cy="12" r="2"></circle>
+                                                                            <circle fill="#000000" cx="12" cy="12" r="2"></circle>
+                                                                            <circle fill="#000000" cx="19" cy="12" r="2"></circle>
+                                                                        </g>
+                                                                    </svg>
                                                                 </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <strong>02</strong>
-                                                            </td>
-                                                            <td>Mr. Bobby</td>
-                                                            <td>Dr. Jackson</td>
-                                                            <td>01 August 2020</td>
-                                                            <td>
-                                                                <span class="badge light badge-danger">Canceled</span>
-                                                            </td>
-                                                            <td>$21.56</td>
-                                                            <td>
-                                                                <div class="dropdown">
-                                                                    <button type="button" class="btn btn-danger light sharp" data-toggle="dropdown">
-                                                                        <svg width="20px" height="20px" viewBox="0 0 24 24" version="1.1">
-                                                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                                <rect x="0" y="0" width="24" height="24" />
-                                                                                <circle fill="#000000" cx="5" cy="12" r="2" />
-                                                                                <circle fill="#000000" cx="12" cy="12" r="2" />
-                                                                                <circle fill="#000000" cx="19" cy="12" r="2" />
-                                                                            </g>
-                                                                        </svg>
-                                                                    </button>
-                                                                    <div class="dropdown-menu">
-                                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                                        <a class="dropdown-item" href="#">Delete</a>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <strong>03</strong>
-                                                            </td>
-                                                            <td>Mr. Bobby</td>
-                                                            <td>Dr. Jackson</td>
-                                                            <td>01 August 2020</td>
-                                                            <td>
-                                                                <span class="badge light badge-warning">Pending</span>
-                                                            </td>
-                                                            <td>$21.56</td>
-                                                            <td>
-                                                                <div class="dropdown">
-                                                                    <button type="button" class="btn btn-warning light sharp" data-toggle="dropdown">
-                                                                        <svg width="20px" height="20px" viewBox="0 0 24 24" version="1.1">
-                                                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                                <rect x="0" y="0" width="24" height="24" />
-                                                                                <circle fill="#000000" cx="5" cy="12" r="2" />
-                                                                                <circle fill="#000000" cx="12" cy="12" r="2" />
-                                                                                <circle fill="#000000" cx="19" cy="12" r="2" />
-                                                                            </g>
-                                                                        </svg>
-                                                                    </button>
-                                                                    <div class="dropdown-menu">
-                                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                                        <a class="dropdown-item" href="#">Delete</a>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Exam Toppers</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-responsive-md">
-                                                    <thead>
-                                                        <tr>
-                                                            <th style="width:50px;">
-                                                                <div class="custom-control custom-checkbox checkbox-success check-lg mr-3">
-                                                                    <input type="checkbox" class="custom-control-input" id="checkAll" required="" />
-                                                                    <label class="custom-control-label" for="checkAll"></label>
-                                                                </div>
-                                                            </th>
-                                                            <th>
-                                                                <strong>ROLL NO.</strong>
-                                                            </th>
-                                                            <th>
-                                                                <strong>NAME</strong>
-                                                            </th>
-                                                            <th>
-                                                                <strong>Email</strong>
-                                                            </th>
-                                                            <th>
-                                                                <strong>Date</strong>
-                                                            </th>
-                                                            <th>
-                                                                <strong>Status</strong>
-                                                            </th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <div class="custom-control custom-checkbox checkbox-success check-lg mr-3">
-                                                                    <input type="checkbox" class="custom-control-input" id="customCheckBox2" required="" />
-                                                                    <label class="custom-control-label" for="customCheckBox2"></label>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <strong>542</strong>
-                                                            </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <img src="images/avatar/1.jpg" class="rounded-lg mr-2" width="24" alt="" />
-                                                                    <span class="w-space-no">Dr. Jackson</span>
-                                                                </div>
-                                                            </td>
-                                                            <td>example@example.com	</td>
-                                                            <td>01 August 2020</td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <i class="fa fa-circle text-success mr-1"></i>
-                                                                    Successful
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <a href="#" class="btn btn-primary shadow btn-xs sharp mr-1">
-                                                                        <i class="fa fa-pencil"></i>
+                                                                <div class="dropdown-menu dropdown-menu-right">
+                                                                    <a class="dropdown-item" href="#">
+                                                                        <i class="las la-check-square scale5 text-primary mr-2"></i>
+                                                                        Accept Order
                                                                     </a>
-                                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp">
-                                                                        <i class="fa fa-trash"></i>
+                                                                    <a class="dropdown-item" href="#">
+                                                                        <i class="las la-times-circle scale5 text-danger mr-2"></i>
+                                                                        Reject Order
                                                                     </a>
                                                                 </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div class="custom-control custom-checkbox checkbox-success check-lg mr-3">
-                                                                    <input type="checkbox" class="custom-control-input" id="customCheckBox3" required="" />
-                                                                    <label class="custom-control-label" for="customCheckBox3"></label>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <strong>542</strong>
-                                                            </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <img src="images/avatar/2.jpg" class="rounded-lg mr-2" width="24" alt="" />
-                                                                    <span class="w-space-no">Dr. Jackson</span>
-                                                                </div>
-                                                            </td>
-                                                            <td>example@example.com	</td>
-                                                            <td>01 August 2020</td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <i class="fa fa-circle text-danger mr-1"></i>
-                                                                    Canceled
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <a href="#" class="btn btn-primary shadow btn-xs sharp mr-1">
-                                                                        <i class="fa fa-pencil"></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp">
-                                                                        <i class="fa fa-trash"></i>
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div class="custom-control custom-checkbox checkbox-success check-lg mr-3">
-                                                                    <input type="checkbox" class="custom-control-input" id="customCheckBox4" required="" />
-                                                                    <label class="custom-control-label" for="customCheckBox4"></label>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <strong>542</strong>
-                                                            </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <img src="images/avatar/3.jpg" class="rounded-lg mr-2" width="24" alt="" />
-                                                                    <span class="w-space-no">Dr. Jackson</span>
-                                                                </div>
-                                                            </td>
-                                                            <td>example@example.com	</td>
-                                                            <td>01 August 2020</td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <i class="fa fa-circle text-warning mr-1"></i>
-                                                                    Pending
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <a href="#" class="btn btn-primary shadow btn-xs sharp mr-1">
-                                                                        <i class="fa fa-pencil"></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp">
-                                                                        <i class="fa fa-trash"></i>
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Basic</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-responsive-sm">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Name</th>
-                                                            <th>Status</th>
-                                                            <th>Date</th>
-                                                            <th>Price</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>1</th>
-                                                            <td>Kolor Tea Shirt For Man</td>
-                                                            <td>
-                                                                <span class="badge badge-primary light">Sale</span>
-                                                            </td>
-                                                            <td>January 22</td>
-                                                            <td class="color-primary">$21.56</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>2</th>
-                                                            <td>Kolor Tea Shirt For Women</td>
-                                                            <td>
-                                                                <span class="badge badge-success">Tax</span>
-                                                            </td>
-                                                            <td>January 30</td>
-                                                            <td class="color-success">$55.32</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>3</th>
-                                                            <td>Blue Backpack For Baby</td>
-                                                            <td>
-                                                                <span class="badge badge-danger">Extended</span>
-                                                            </td>
-                                                            <td>January 25</td>
-                                                            <td class="color-danger">$14.85</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Table Striped</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-striped table-responsive-sm">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Name</th>
-                                                            <th>Status</th>
-                                                            <th>Date</th>
-                                                            <th>Price</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>1</th>
-                                                            <td>Kolor Tea Shirt For Man</td>
-                                                            <td>
-                                                                <span class="badge badge-primary">Sale</span>
-                                                            </td>
-                                                            <td>January 22</td>
-                                                            <td class="color-primary">$21.56</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>2</th>
-                                                            <td>Kolor Tea Shirt For Women</td>
-                                                            <td>
-                                                                <span class="badge badge-success light">Tax</span>
-                                                            </td>
-                                                            <td>January 30</td>
-                                                            <td class="color-success">$55.32</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>3</th>
-                                                            <td>Blue Backpack For Baby</td>
-                                                            <td>
-                                                                <span class="badge badge-danger">Extended</span>
-                                                            </td>
-                                                            <td>January 25</td>
-                                                            <td class="color-danger">$14.85</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Table Bordered</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-bordered table-responsive-sm">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Name</th>
-                                                            <th>Status</th>
-                                                            <th>Date</th>
-                                                            <th>Price</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>1</th>
-                                                            <td>Kolor Tea Shirt For Man</td>
-                                                            <td>
-                                                                <span class="badge badge-primary">Sale</span>
-                                                            </td>
-                                                            <td>January 22</td>
-                                                            <td class="color-primary">$21.56</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>2</th>
-                                                            <td>Kolor Tea Shirt For Women</td>
-                                                            <td>
-                                                                <span class="badge badge-success">Tax</span>
-                                                            </td>
-                                                            <td>January 30</td>
-                                                            <td class="color-success">$55.32</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>3</th>
-                                                            <td>Blue Backpack For Baby</td>
-                                                            <td>
-                                                                <span class="badge badge-danger">Extended</span>
-                                                            </td>
-                                                            <td>January 25</td>
-                                                            <td class="color-danger">$14.85</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Table Hover</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-hover table-responsive-sm">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Name</th>
-                                                            <th>Status</th>
-                                                            <th>Date</th>
-                                                            <th>Price</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>1</th>
-                                                            <td>Kolor Tea Shirt For Man</td>
-                                                            <td>
-                                                                <span class="badge badge-primary light">Sale</span>
-                                                            </td>
-                                                            <td>January 22</td>
-                                                            <td class="color-primary">$21.56</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>2</th>
-                                                            <td>Kolor Tea Shirt For Women</td>
-                                                            <td>
-                                                                <span class="badge badge-success">Tax</span>
-                                                            </td>
-                                                            <td>January 30</td>
-                                                            <td class="color-success">$55.32</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>3</th>
-                                                            <td>Blue Backpack For Baby</td>
-                                                            <td>
-                                                                <span class="badge badge-danger light">Extended</span>
-                                                            </td>
-                                                            <td>January 25</td>
-                                                            <td class="color-danger">$14.85</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /# card -->
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Hover Table</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table header-border table-hover verticle-middle">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">#</th>
-                                                            <th scope="col">Product</th>
-                                                            <th scope="col">Popularity</th>
-                                                            <th scope="col">Sales</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>1</th>
-                                                            <td>Air Conditioner</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(127, 99, 244, .1)">
-                                                                    <div class="progress-bar" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <span class="badge badge-primary light">70%</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>2</th>
-                                                            <td>Textiles</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(76, 175, 80, .1)">
-                                                                    <div class="progress-bar bg-success" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <span class="badge badge-success">70%</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>3</th>
-                                                            <td>Milk Powder</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(70, 74, 83, .1)">
-                                                                    <div class="progress-bar bg-dark" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <span class="badge badge-dark light">70%</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>4</th>
-                                                            <td>Vehicles</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(255, 87, 34, .1)">
-                                                                    <div class="progress-bar bg-danger" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <span class="badge badge-danger">70%</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>5</th>
-                                                            <td>Boats</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(255, 193, 7, .1)">
-                                                                    <div class="progress-bar bg-warning" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <span class="badge badge-warning">70%</span>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Bordered Table</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-bordered verticle-middle table-responsive-sm">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">Task</th>
-                                                            <th scope="col">Progress</th>
-                                                            <th scope="col">Deadline</th>
-                                                            <th scope="col">Label</th>
-                                                            <th scope="col">Action</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Air Conditioner</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(127, 99, 244, .1)">
-                                                                    <div class="progress-bar bg-primary" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>Apr 20,2018</td>
-                                                            <td>
-                                                                <span class="badge badge-primary light">70%</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>
-                                                                    <a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                        <i class="fa fa-pencil color-muted"></i>
-                                                                    </a>
-                                                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close">
-                                                                        <i class="fa fa-close color-danger"></i>
-                                                                    </a>
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Textiles</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(76, 175, 80, .1)">
-                                                                    <div class="progress-bar bg-success" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>May 27,2018</td>
-                                                            <td>
-                                                                <span class="badge badge-success">70%</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>
-                                                                    <a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                        <i class="fa fa-pencil color-muted"></i>
-                                                                    </a>
-                                                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close">
-                                                                        <i class="fa fa-close color-danger"></i>
-                                                                    </a>
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Milk Powder</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(70, 74, 83, .1)">
-                                                                    <div class="progress-bar bg-dark" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>May 18,2018</td>
-                                                            <td>
-                                                                <span class="badge badge-dark light">70%</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>
-                                                                    <a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                        <i class="fa fa-pencil color-muted"></i>
-                                                                    </a>
-                                                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close">
-                                                                        <i class="fa fa-close color-danger"></i>
-                                                                    </a>
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Vehicles</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(255, 87, 34, .1)">
-                                                                    <div class="progress-bar bg-danger" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>Mar 27,2018</td>
-                                                            <td>
-                                                                <span class="badge badge-danger">70%</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>
-                                                                    <a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                        <i class="fa fa-pencil color-muted"></i>
-                                                                    </a>
-                                                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close">
-                                                                        <i class="fa fa-close color-danger"></i>
-                                                                    </a>
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Boats</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(255, 193, 7, .1)">
-                                                                    <div class="progress-bar bg-warning" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>Jun 28,2018</td>
-                                                            <td>
-                                                                <span class="badge badge-warning">70%</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>
-                                                                    <a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                        <i class="fa fa-pencil color-muted"></i>
-                                                                    </a>
-                                                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close">
-                                                                        <i class="fa fa-close color-danger"></i>
-                                                                    </a>
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Table Stripped</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-bordered table-striped verticle-middle table-responsive-sm">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">Task</th>
-                                                            <th scope="col">Progress</th>
-                                                            <th scope="col">Deadline</th>
-                                                            <th scope="col">Label</th>
-                                                            <th scope="col">Action</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Air Conditioner</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(127, 99, 244, .1)">
-                                                                    <div class="progress-bar bg-primary" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>Apr 20,2018</td>
-                                                            <td>
-                                                                <span class="badge badge-primary">70%</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>
-                                                                    <a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                        <i class="fa fa-pencil color-muted"></i>
-                                                                    </a>
-                                                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close">
-                                                                        <i class="fa fa-close color-danger"></i>
-                                                                    </a>
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Textiles</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(76, 175, 80, .1)">
-                                                                    <div class="progress-bar bg-success" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>May 27,2018</td>
-                                                            <td>
-                                                                <span class="badge badge-success">70%</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>
-                                                                    <a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                        <i class="fa fa-pencil color-muted"></i>
-                                                                    </a>
-                                                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close">
-                                                                        <i class="fa fa-close color-danger"></i>
-                                                                    </a>
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Milk Powder</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(70, 74, 83, .1)">
-                                                                    <div class="progress-bar bg-dark" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>May 18,2018</td>
-                                                            <td>
-                                                                <span class="badge badge-dark">70%</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>
-                                                                    <a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                        <i class="fa fa-pencil color-muted"></i>
-                                                                    </a>
-                                                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close">
-                                                                        <i class="fa fa-close color-danger"></i>
-                                                                    </a>
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Boats</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(255, 193, 7, .1)">
-                                                                    <div class="progress-bar bg-warning" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>Jun 28,2018</td>
-                                                            <td>
-                                                                <span class="badge badge-warning">70%</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>
-                                                                    <a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                        <i class="fa fa-pencil color-muted"></i>
-                                                                    </a>
-                                                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close">
-                                                                        <i class="fa fa-close color-danger"></i>
-                                                                    </a>
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Responsive Table</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table header-border table-responsive-sm">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Invoice</th>
-                                                            <th>User</th>
-                                                            <th>Date</th>
-                                                            <th>Amount</th>
-                                                            <th>Status</th>
-                                                            <th>Country</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="javascript:void(0)">Order #26589</a>
-                                                            </td>
-                                                            <td>Herman Beck</td>
-                                                            <td>
-                                                                <span class="text-muted">Oct 16, 2017</span>
-                                                            </td>
-                                                            <td>$45.00</td>
-                                                            <td>
-                                                                <span class="badge badge-success">Paid</span>
-                                                            </td>
-                                                            <td>EN</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="javascript:void(0)">Order #58746</a>
-                                                            </td>
-                                                            <td>Mary Adams</td>
-                                                            <td>
-                                                                <span class="text-muted">Oct 12, 2017</span>
-                                                            </td>
-                                                            <td>$245.30</td>
-                                                            <td>
-                                                                <span class="badge badge-info light">Shipped</span>
-                                                            </td>
-                                                            <td>CN</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="javascript:void(0)">Order #98458</a>
-                                                            </td>
-                                                            <td>Caleb Richards</td>
-                                                            <td>
-                                                                <span class="text-muted">May 18, 2017</span>
-                                                            </td>
-                                                            <td>$38.00</td>
-                                                            <td>
-                                                                <span class="badge badge-danger">Shipped</span>
-                                                            </td>
-                                                            <td>AU</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="javascript:void(0)">Order #32658</a>
-                                                            </td>
-                                                            <td>June Lane</td>
-                                                            <td>
-                                                                <span class="text-muted">Apr 28, 2017</span>
-                                                            </td>
-                                                            <td>$77.99</td>
-                                                            <td>
-                                                                <span class="badge badge-success">Paid</span>
-                                                            </td>
-                                                            <td>FR</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Heading With Background</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table">
-                                                    <thead class="thead-info">
-                                                        <tr>
-                                                            <th scope="col">#</th>
-                                                            <th scope="col">First</th>
-                                                            <th scope="col">Last</th>
-                                                            <th scope="col">Handle</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>1</th>
-                                                            <td>Mark</td>
-                                                            <td>Otto</td>
-                                                            <td>@mdo</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>2</th>
-                                                            <td>Jacob</td>
-                                                            <td>Thornton</td>
-                                                            <td>@fat</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>3</th>
-                                                            <td>Larry</td>
-                                                            <td>the Bird</td>
-                                                            <td>@twitter</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Primary Table</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table primary-table-bordered">
-                                                    <thead class="thead-primary">
-                                                        <tr>
-                                                            <th scope="col">#</th>
-                                                            <th scope="col">First</th>
-                                                            <th scope="col">Last</th>
-                                                            <th scope="col">Handle</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>1</th>
-                                                            <td>Mark</td>
-                                                            <td>Otto</td>
-                                                            <td>@mdo</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>2</th>
-                                                            <td>Jacob</td>
-                                                            <td>Thornton</td>
-                                                            <td>@fat</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>3</th>
-                                                            <td>Larry</td>
-                                                            <td>the Bird</td>
-                                                            <td>@twitter</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Primary Table Hover</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table primary-table-bg-hover">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">#</th>
-                                                            <th scope="col">First</th>
-                                                            <th scope="col">Last</th>
-                                                            <th scope="col">Handle</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>1</th>
-                                                            <td>Mark</td>
-                                                            <td>Otto</td>
-                                                            <td>@mdo</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>2</th>
-                                                            <td>Jacob</td>
-                                                            <td>Thornton</td>
-                                                            <td>@fat</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>3</th>
-                                                            <td>Larry</td>
-                                                            <td>the Bird</td>
-                                                            <td>@twitter</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>4</th>
-                                                            <td>Larry</td>
-                                                            <td>the Bird</td>
-                                                            <td>@twitter</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>5</th>
-                                                            <td>Larry</td>
-                                                            <td>the Bird</td>
-                                                            <td>@twitter</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>5</th>
-                                                            <td>Larry</td>
-                                                            <td>the Bird</td>
-                                                            <td>@twitter</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Contextual Table</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table header-border" style="min-width: 500px;">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Column heading</th>
-                                                            <th>Column heading</th>
-                                                            <th>Column heading</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr class="table-active">
-                                                            <td>1</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                        </tr>
-                                                        <tr class="table-primary">
-                                                            <td>1</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                        </tr>
-                                                        <tr class="table-success">
-                                                            <td>2</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                        </tr>
-                                                        <tr class="table-info">
-                                                            <td>3</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                        </tr>
-                                                        <tr class="table-warning">
-                                                            <td>4</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                        </tr>
-                                                        <tr class="table-danger">
-                                                            <td>5</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </xsl:for-each>
+
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -2294,8 +1273,8 @@
                         <div class="copyright">
                             <p>
                                 Copyright © Designed &amp; Developed by
-                                <a href="http://dexignzone.com/" target="_blank">DexignZone</a>
-                                2020
+                                <a href="#">Fahd Bouachrine &amp; Aymen Rhalloussi</a>
+                                2022
                             </p>
                         </div>
                     </div>
@@ -2323,13 +1302,42 @@
                 <!-- Required vendors -->
                 <script src="src/views/style/vendor/global/global.min.js"></script>
                 <script src="src/views/style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+                <script src="src/views/style/js/custom.min.js"></script>
+                <script src="src/views/style/js/deznav-init.js"></script>
+
+                <!-- Datatable -->
+                <script src="src/views/style/vendor/datatables/js/jquery.dataTables.min.js"></script>
+
+                <script>
+                (function($) {
+                
+                    var table = $('#example5').DataTable({
+                        searching: false,
+                        paging:true,
+                        select: false,
+                        //info: false,         
+                        lengthChange:false 
+                        
+                    });
+                    $('#example tbody').on('click', 'tr', function () {
+                        var data = table.row( this ).data();
+                        
+                    });
+                
+                })(jQuery);
+                </script>
+
+
+                <!-- <script src="src/views/style/vendor/global/global.min.js"></script>
+                <script src="src/views/style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
                 <script src="src/views/style/vendor/chart.js/Chart.bundle.min.js"></script>
                 <script src="src/views/style/js/custom.min.js"></script>
                 <script src="src/views/style/js/deznav-init.js"></script>
-                <!-- Apex Chart -->
-                <script src="src/views/style/vendor/apexchart/apexchart.js"></script>
+                 Apex Chart
+                <script src="src/views/style/vendor/apexchart/apexchart.js"></script> -->
 
             </body>
         </html>
     </xsl:template>
+
 </xsl:stylesheet>

@@ -8,7 +8,7 @@
                 <meta charset="UTF-8" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>CINEWEB - Liste des salles</title>
+                <title>CINEWEB - Liste des Salles</title>
                 <!-- Favicon icon -->
                 <link rel="icon" type="image/png" sizes="16x16" href="src/views/style/images/favicon.png" />
 
@@ -43,9 +43,9 @@
         ***********************************-->
                     <div class="nav-header">
                         <a href="index.html" class="brand-logo">
-                            <img class="logo-abbr" src="./images/logo.png" alt="" />
-                            <img class="logo-compact" src="./images/logo-text.png" alt="" />
-                            <img class="brand-title" src="./images/logo-text.png" alt="" />
+                            <img class="logo-abbr" src="src/views/style/images/logo.png" alt="" />
+                            <img class="logo-compact" src="src/views/style/images/logo-text.png" alt="" />
+                            <img class="brand-title" src="src/views/style/images/logo-text.png" alt="" />
                         </a>
 
                         <div class="nav-control">
@@ -110,7 +110,7 @@
                                                 <li class="active dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/1.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -122,7 +122,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/2.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/2.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon offline"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -134,7 +134,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/3.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/3.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -146,7 +146,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/4.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/4.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon offline"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -159,7 +159,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/5.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/5.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon offline"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -171,7 +171,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/1.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -183,7 +183,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/2.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/2.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon offline"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -196,7 +196,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/3.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/3.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -208,7 +208,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/4.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/4.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon offline"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -221,7 +221,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/5.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/5.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon offline"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -233,7 +233,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/1.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -245,7 +245,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/2.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/2.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon offline"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -257,7 +257,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/3.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/3.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -270,7 +270,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/4.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/4.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon offline"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -282,7 +282,7 @@
                                                 <li class="dz-chat-user">
                                                     <div class="d-flex bd-highlight">
                                                         <div class="img_cont">
-                                                            <img src="images/avatar/5.jpg" class="rounded-circle user_img" alt="" />
+                                                            <img src="src/views/style/images/avatar/5.jpg" class="rounded-circle user_img" alt="" />
                                                             <span class="online_icon offline"></span>
                                                         </div>
                                                         <div class="user_info">
@@ -343,7 +343,7 @@
                                         <div class="card-body msg_card_body dz-scroll" id="DZ_W_Contacts_Body3">
                                             <div class="d-flex justify-content-start mb-4">
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                                 <div class="msg_cotainer">
                                                     Hi, how are you samim?
@@ -356,12 +356,12 @@
                                                     <span class="msg_time_send">8:55 AM, Today</span>
                                                 </div>
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="d-flex justify-content-start mb-4">
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                                 <div class="msg_cotainer">
                                                     I am good too, thank you for your chat template
@@ -374,12 +374,12 @@
                                                     <span class="msg_time_send">9:05 AM, Today</span>
                                                 </div>
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="d-flex justify-content-start mb-4">
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                                 <div class="msg_cotainer">
                                                     I am looking for your next templates
@@ -392,12 +392,12 @@
                                                     <span class="msg_time_send">9:10 AM, Today</span>
                                                 </div>
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="d-flex justify-content-start mb-4">
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                                 <div class="msg_cotainer">
                                                     Bye, see you
@@ -406,7 +406,7 @@
                                             </div>
                                             <div class="d-flex justify-content-start mb-4">
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                                 <div class="msg_cotainer">
                                                     Hi, how are you samim?
@@ -419,12 +419,12 @@
                                                     <span class="msg_time_send">8:55 AM, Today</span>
                                                 </div>
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="d-flex justify-content-start mb-4">
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                                 <div class="msg_cotainer">
                                                     I am good too, thank you for your chat template
@@ -437,12 +437,12 @@
                                                     <span class="msg_time_send">9:05 AM, Today</span>
                                                 </div>
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="d-flex justify-content-start mb-4">
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                                 <div class="msg_cotainer">
                                                     I am looking for your next templates
@@ -455,12 +455,12 @@
                                                     <span class="msg_time_send">9:10 AM, Today</span>
                                                 </div>
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="d-flex justify-content-start mb-4">
                                                 <div class="img_cont_msg">
-                                                    <img src="images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
+                                                    <img src="src/views/style/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="" />
                                                 </div>
                                                 <div class="msg_cotainer">
                                                     Bye, see you
@@ -720,7 +720,7 @@
                                                         <li>
                                                             <div class="timeline-panel">
                                                                 <div class="media mr-2">
-                                                                    <img alt="image" width="50" src="images/avatar/1.jpg" />
+                                                                    <img alt="image" width="50" src="src/views/style/images/avatar/1.jpg" />
                                                                 </div>
                                                                 <div class="media-body">
                                                                     <h6 class="mb-1">Dr sultads Send you Photo</h6>
@@ -753,7 +753,7 @@
                                                         <li>
                                                             <div class="timeline-panel">
                                                                 <div class="media mr-2">
-                                                                    <img alt="image" width="50" src="images/avatar/1.jpg" />
+                                                                    <img alt="image" width="50" src="src/views/style/images/avatar/1.jpg" />
                                                                 </div>
                                                                 <div class="media-body">
                                                                     <h6 class="mb-1">Dr sultads Send you Photo</h6>
@@ -799,7 +799,7 @@
                                                         <strong>Samuel</strong>
                                                     </span>
                                                 </div>
-                                                <img src="images/profile/pic1.jpg" width="20" alt="" />
+                                                <img src="src/views/style/images/profile/pic1.jpg" width="20" alt="" />
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-right">
                                                 <a href="./app-profile.html" class="dropdown-item ai-icon">
@@ -1116,7 +1116,7 @@
                             </ul>
 
                             <div class="add-menu-sidebar">
-                                <img src="images/icon1.png" alt="" />
+                                <img src="src/views/style/images/icon1.png" alt="" />
                                 <p>Organize your menus through button bellow</p>
                                 <a href="javascript:void(0);" class="btn btn-primary btn-block light">+ Add Menus</a>
                             </div>
@@ -1337,7 +1337,7 @@
                                                             </td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
-                                                                    <img src="images/avatar/1.jpg" class="rounded-lg mr-2" width="24" alt="" />
+                                                                    <img src="src/views/style/images/avatar/1.jpg" class="rounded-lg mr-2" width="24" alt="" />
                                                                     <span class="w-space-no">Dr. Jackson</span>
                                                                 </div>
                                                             </td>
@@ -1372,7 +1372,7 @@
                                                             </td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
-                                                                    <img src="images/avatar/2.jpg" class="rounded-lg mr-2" width="24" alt="" />
+                                                                    <img src="src/views/style/images/avatar/2.jpg" class="rounded-lg mr-2" width="24" alt="" />
                                                                     <span class="w-space-no">Dr. Jackson</span>
                                                                 </div>
                                                             </td>
@@ -1407,7 +1407,7 @@
                                                             </td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
-                                                                    <img src="images/avatar/3.jpg" class="rounded-lg mr-2" width="24" alt="" />
+                                                                    <img src="src/views/style/images/avatar/3.jpg" class="rounded-lg mr-2" width="24" alt="" />
                                                                     <span class="w-space-no">Dr. Jackson</span>
                                                                 </div>
                                                             </td>
