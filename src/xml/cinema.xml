@@ -11,19 +11,20 @@
         <utilisateur id="U2">
             <nom>Vincent Moule 2</nom>
             <email>vincent.moule@gmail.com 2</email>
-            <tel>+212-684-989-567 2</tel>
+            <tel>+212-684-989-567</tel>
             <carte-credit>1234-5689-8532-6955 2</carte-credit>
         </utilisateur>
         <utilisateur id="U3">
             <nom>Vincent Moule 3</nom>
             <email>vincent.moule@gmail.com 3</email>
-            <tel>+212-684-989-567 3</tel>
+            <tel>+212-684-989-567</tel>
             <carte-credit>1234-5689-8532-6955 3</carte-credit>
         </utilisateur>
         <utilisateur id="U21">
             <nom>Aymen</nom>
             <email>aymen@gmail.com</email>
             <tel>+212-236-458-896</tel>
+            <carte-credit>1234-5689-8532-6955 3</carte-credit>
         </utilisateur>
     </utilisateurs>
 
