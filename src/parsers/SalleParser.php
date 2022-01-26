@@ -81,4 +81,9 @@
                 return $salleNode;
         }
 
+        if(isset($_GET['ajout'])){
+            $salle = new Salle($_GET['id'],$_GET['capacite']);
+            ajouterSalle($salle);
+        }
+
 ?>

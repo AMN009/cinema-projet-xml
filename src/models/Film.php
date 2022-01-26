@@ -8,8 +8,9 @@
         private int $annee;
         private string $duree;
         private string $poster;
+        private string $description;
 
-        public function __construct($id, $titre, $genre, $realisateur, $annee, $duree, $poster) {
+        public function __construct($id, $titre, $genre, $realisateur, $annee, $duree, $poster,$description) {
             $this->id = $id;
             $this->titre = $titre;
             $this->genre = $genre;
@@ -17,6 +18,7 @@
             $this->annee = $annee;
             $this->duree = $duree;
             $this->poster = $poster;
+            $this->description = $description;
         }
 
         public static function emptyFilm() {
@@ -51,6 +53,9 @@
         public function getPoster() {
             return $this->poster;
         }
+        public function getDescription() {
+            return $this->description;
+        }
 
 
         public function setId($id) {
@@ -79,6 +84,9 @@
 
         public function setPoster($poster) {
             $this->poster = $poster;
+        }
+        public function setDescription($description) {
+            $this->description = $description;
         }
     }
 

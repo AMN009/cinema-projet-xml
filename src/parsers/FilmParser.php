@@ -96,7 +96,17 @@
                 $posterNode->setAttributeNode(new DOMAttr('source', $film->getPoster()));
                 $filmNode->appendChild($posterNode);
 
+                $descriptionNode = $doc->createElement('description');
+                $descriptionNode->appendChild($doc->createTextNode($film->getDescription()));
+                $filmNode->appendChild($descriptionNode);
+
                 return $filmNode;
+        }
+
+
+        if(isset($_GET['ajout'])){
+            $film = new Film(1,$_GET['titre'],$_GET['genre'],$_GET['realisateur'],$_GET['annee'],$_GET['duree'],$_GET['poste'],$_GET['description']);
+            ajouterFilm($film);
         }
 
 ?>
