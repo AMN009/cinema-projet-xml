@@ -1,9 +1,5 @@
 <?php
 
-    require (__DIR__.'/../models/Utilisateur.php');
-    require (__DIR__.'/../models/Siege.php');
-    require (__DIR__.'/../models/Seance.php');
-
     class Reservation {
         private string $code;
         private string $date;
