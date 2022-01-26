@@ -10,11 +10,11 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>CINEWEB - Liste des films</title>
                 <!-- Favicon icon -->
-                <link rel="icon" type="image/png" sizes="16x16" href="../../../../style/images/favicon.png" />
+                <link rel="icon" type="image/png" sizes="16x16" href="src/views/style/images/favicon.png" />
 
                 <!-- Custom Stylesheet -->
-                <link href="../../../../style/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
-                <link href="../../../../style/css/style.css" rel="stylesheet" />
+                <link href="src/views/style/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
+                <link href="src/views/style/css/style.css" rel="stylesheet" />
             </head>
             <body>
 
@@ -2321,13 +2321,13 @@
         Scripts
     ***********************************-->
                 <!-- Required vendors -->
-                <script src="../../../../style/vendor/global/global.min.js"></script>
-                <script src="../../../../style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-                <script src="../../../../style/vendor/chart.js/Chart.bundle.min.js"></script>
-                <script src="../../../../style/js/custom.min.js"></script>
-                <script src="../../../../style/js/deznav-init.js"></script>
+                <script src="src/views/style/vendor/global/global.min.js"></script>
+                <script src="src/views/style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+                <script src="src/views/style/vendor/chart.js/Chart.bundle.min.js"></script>
+                <script src="src/views/style/js/custom.min.js"></script>
+                <script src="src/views/style/js/deznav-init.js"></script>
                 <!-- Apex Chart -->
-                <script src="../../../../style/vendor/apexchart/apexchart.js"></script>
+                <script src="src/views/style/vendor/apexchart/apexchart.js"></script>
 
             </body>
         </html>
