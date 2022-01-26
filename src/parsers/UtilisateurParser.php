@@ -16,7 +16,9 @@
 
                 $utilisateursParent->appendChild(utilisateurNode($utilisateur));
                 
-                $doc->save(__DIR__.'/../cinema.xml');
+                $doc->save(__DIR__."/../xml/cinema.xml");
+
+                return true;
             }
             else {
                 var_dump("Utilisateur à ajouter est null !");
@@ -33,7 +35,7 @@
                     if ($child->nodeType == 1 && ($utilisateur->getId() == $child->getAttribute('id'))) {
                         $existant = true;
                         $utilisateursParent->replaceChild(utilisateurNode($utilisateur), $child);
-                        $doc->save(__DIR__.'/../cinema.xml');
+                        $doc->save(__DIR__."/../xml/cinema.xml");
                         return $child;
                     }
                 }
@@ -56,7 +58,7 @@
                     if ($child->nodeType == 1 && ($utilisateur->getId() == $child->getAttribute('id'))) {
                         $existant = true;
                         $utilisateursParent->removeChild($child);
-                        $doc->save(__DIR__.'/../cinema.xml');
+                        $doc->save(__DIR__."/../xml/cinema.xml");
                         return $child;
                     }
                 }

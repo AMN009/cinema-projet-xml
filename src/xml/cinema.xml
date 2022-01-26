@@ -8,6 +8,23 @@
             <tel>+212-684-989-567</tel>
             <carte-credit>1234-5689-8532-6955</carte-credit>
         </utilisateur>
+        <utilisateur id="U2">
+            <nom>Vincent Moule 2</nom>
+            <email>vincent.moule@gmail.com 2</email>
+            <tel>+212-684-989-567 2</tel>
+            <carte-credit>1234-5689-8532-6955 2</carte-credit>
+        </utilisateur>
+        <utilisateur id="U3">
+            <nom>Vincent Moule 3</nom>
+            <email>vincent.moule@gmail.com 3</email>
+            <tel>+212-684-989-567 3</tel>
+            <carte-credit>1234-5689-8532-6955 3</carte-credit>
+        </utilisateur>
+        <utilisateur id="U21">
+            <nom>Aymen</nom>
+            <email>aymen@gmail.com</email>
+            <tel>+212-236-458-896</tel>
+        </utilisateur>
     </utilisateurs>
 
     <films>
@@ -16,13 +33,22 @@
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="poster"/>
+            <poster source="poster" />
         </film>
-        
+        <film id="F21" anne="2014">
+            <titre>Whiplash</titre>
+            <genre>Drame</genre>
+            <realisateur>Damien Chazelle</realisateur>
+            <duree>1h46m</duree>
+            <poster source="poster" />
+        </film>
+
     </films>
 
     <salles>
-        <salle id="S08" capacite="70"/>
+        <salle id="S08" capacite="70" />
+        <salle id="S15" capacite="80" />
+        <salle id="S22" capacite="120" />
     </salles>
 
     <sieges>

@@ -9,11 +9,6 @@
     $xproces->importStylesheet($xsl);
 
   // Transformer du XML en HTML à l'aide du fichier XSL
-    //echo $xproces->transformToXML($doc);
-    foreach($doc->getElementsByTagName('utilisateur') as $u) {
-        if ($u->nodeType == 1) {
-            echo 'element';
-        }
-    }
+    echo $xproces->transformToXML($doc);
 
 ?>

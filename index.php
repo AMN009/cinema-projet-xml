@@ -1,16 +1,18 @@
 <?php
 
-    require_once('src/parsers/UtilisateurParser.php');
-    require_once('src/models/Utilisateur.php');
-    require_once('src/parsers/FilmParser.php');
-    require_once('src/models/Film.php');
-    require_once('src/parsers/SalleParser.php');
-    require_once('src/models/Salle.php');
-    // require_once('src/views/admin/salles/php/script.php');
-    require_once('src/views/admin/liste_utilisateurs/php/script.php');
+    // require_once('src/parsers/UtilisateurParser.php');
+    // require_once('src/models/Utilisateur.php');
+    // require_once('src/parsers/FilmParser.php');
+    // require_once('src/models/Film.php');
+    // require_once('src/parsers/SalleParser.php');
+    // require_once('src/models/Salle.php');
 
-    //ajouterUtilisateur(new Utilisateur('U21', 'Aymen', 'aymen@gmail.com', '+212-236-458-896'));
-    //echo 'utilisateur ajouté'
+    // $ajouté = false;
+
+    // $ajouté = ajouterUtilisateur(new Utilisateur('U21', 'Aymen', 'aymen@gmail.com', '+212-236-458-896'));
+    // if ($ajouté) {
+    //     echo 'utilisateur ajouté';
+    // }
     //modifierUtilisateur(new Utilisateur('U21', 'Chlahbi', 'aymen@gmail.com', '+212-236-458-896'));
     //echo 'utilisateur modifié'
     //supprimerUtilisateur(new Utilisateur('U21', 'Aymen', 'aymen@gmail.com', '+212-236-458-896'));
