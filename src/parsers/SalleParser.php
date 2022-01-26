@@ -17,6 +17,8 @@
                 $sallesParent->appendChild(salleNode($salle));
                 
                 $doc->save(__DIR__.'/../cinema.xml');
+
+                return true;
             }
             else {
                 var_dump("Salle à ajouter est null !");
