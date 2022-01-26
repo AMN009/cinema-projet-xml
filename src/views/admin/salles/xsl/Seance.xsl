@@ -30,7 +30,8 @@
                       <td><xsl:value-of select="@id"></xsl:value-of></td>
                       <td><xsl:value-of select="date"></xsl:value-of></td>
                       <td><xsl:value-of select="heure"></xsl:value-of></td>
-                      <td><xsl:value-of select="film"></xsl:value-of></td>
+                      <xsl:variable name="idfilm" select="film"/>
+                      <td><xsl:value-of select="../../films/film[@id=$idfilm]/titre"></xsl:value-of></td>
                       <td><xsl:value-of select="salle"></xsl:value-of></td>
                       <td><xsl:value-of select="prix"></xsl:value-of></td>
                     </tr>

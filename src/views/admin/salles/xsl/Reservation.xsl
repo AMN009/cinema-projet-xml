@@ -30,7 +30,8 @@
                       <td><xsl:value-of select="@code"></xsl:value-of></td>
                       <td><xsl:value-of select="date"></xsl:value-of></td>
                       <td><xsl:value-of select="heure"></xsl:value-of></td>
-                      <td><xsl:value-of select="utilisateur"></xsl:value-of></td>
+                      <xsl:variable name="utilisateur" select="utilisateur"/>
+                      <td><xsl:value-of select="../../utilisateurs/utilisateur[@id=$utilisateur]/nom"></xsl:value-of></td>
                       <td><xsl:value-of select="siege"></xsl:value-of></td>
                       <td><xsl:value-of select="seance"></xsl:value-of></td>
                     </tr>
