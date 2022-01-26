@@ -42,6 +42,13 @@
             <duree>1h46m</duree>
             <poster source="poster" />
         </film>
+        <film id="F22" anne="2014">
+            <titre>Whiplash 2</titre>
+            <genre>Drame</genre>
+            <realisateur>Damien Chazelle</realisateur>
+            <duree>1h46m</duree>
+            <poster source="poster" />
+        </film>
 
     </films>
 
@@ -57,16 +64,29 @@
             <rang>7</rang>
             <numero>44</numero>
         </siege>
+        <siege id="S89">
+            <salle>S08</salle>
+            <rang>7</rang>
+            <numero>44</numero>
+        </siege>
     </sieges>
 
     <seances>
-        <seance id="SE658">
+        <seance id="S659">
             <date>06/11/2021</date>
             <heure>18h45m</heure>
             <film>F21</film>
             <salle>S08</salle>
             <prix>60</prix>
         </seance>
+        <seance id="S658">
+            <date>06/11/2021</date>
+            <heure>18h45m</heure>
+            <film>F22</film>
+            <salle>S08</salle>
+            <prix>60</prix>
+        </seance>
+
     </seances>
 
     <reservations>
@@ -76,6 +96,20 @@
             <utilisateur>U1</utilisateur>
             <siege>SI889</siege>
             <seance>SE658</seance>
+        </reservation>
+        <reservation code="487">
+            <date>01/11/2021</date>
+            <heure>23h02m</heure>
+            <utilisateur>U1</utilisateur>
+            <siege>SI889</siege>
+            <seance>SE658</seance>
+        </reservation>
+        <reservation code="t">
+            <date>test</date>
+            <heure>test</heure>
+            <utilisateur>U1</utilisateur>
+            <siege>2</siege>
+            <seance>4</seance>
         </reservation>
     </reservations>
 
