@@ -1,0 +1,14 @@
+<?php
+
+  // Créez un document DOM et charger la feuille de style XSL
+	$xsl = new DomDocument;
+	$xsl->load(__DIR__.'/../xsl/style.xsl');
+	$xproces = new XSLTProcessor;
+
+  // importer la feuille de style XSL dans le processus XSLT
+    $xproces->importStylesheet($xsl);
+
+  // Transformer du XML en HTML à l'aide du fichier XSL
+    echo $xproces->transformToXML($doc);
+
+?>
