@@ -2,7 +2,8 @@
 
   // Créez un document DOM et charger la feuille de style XSL
 	$xsl = new DomDocument;
-	$xsl->load(__DIR__.'/../xsl/style.xsl');
+	// $xsl->load(__DIR__.'/../stylesheets/style.xsl');
+  $xsl->load(__DIR__.'/../stylesheets/stylesheet.xsl');
 	$xproces = new XSLTProcessor;
 
   // importer la feuille de style XSL dans le processus XSLT
