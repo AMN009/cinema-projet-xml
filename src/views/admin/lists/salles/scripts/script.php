@@ -1,11 +1,16 @@
 <?php
 
-$xp = new XSLTProcessor();
-$xsl = new DomDocument;
-$xsl->load('../stylesheets/style.xsl');
-// importer la feuille de style XSL dans le processus XSLT
- $xp->importStylesheet($xsl);
- $xml_doc = new DomDocument;
- $xml_doc->load('../../../../../xml/cinema.xml');
- print $xp->transformToXML($xml_doc)
+  // Créez un document DOM et charger la feuille de style XSL
+	$xsl = new DomDocument;
+	$xsl->load(__DIR__.'/../stylesheets/style.xsl');
+  // $xsl->load(__DIR__.'/../stylesheets/stylesheet.xsl');
+	$xproces = new XSLTProcessor;
+
+  // importer la feuille de style XSL dans le processus XSLT
+    $xproces->importStylesheet($xsl);
+
+  // Transformer du XML en HTML à l'aide du fichier XSL
+    echo $xproces->transformToXML($doc);
+    // file_put_contents('test.html', $html);
+
 ?>
