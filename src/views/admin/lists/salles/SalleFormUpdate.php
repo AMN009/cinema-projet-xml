@@ -40,11 +40,11 @@
 
 
             <script src="../../../style/vendor/global/global.min.js"></script>
-	<script src="../../../style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-    <script src="../../../style/vendor/chart.js/Chart.bundle.min.js"></script>
-    <script src="../../../style/js/custom.min.js"></script>
-	<script src="../../../style/js/deznav-init.js"></script>
-	<!-- Apex Chart -->
-	<script src="../../../style/vendor/apexchart/apexchart.js"></script>
+            <script src="../../../style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+            <script src="../../../style/vendor/chart.js/Chart.bundle.min.js"></script>
+            <script src="../../../style/js/custom.min.js"></script>
+            <script src="../../../style/js/deznav-init.js"></script>
+            <!-- Apex Chart -->
+            <script src="../../../style/vendor/apexchart/apexchart.js"></script>
 </body>
 </html>
