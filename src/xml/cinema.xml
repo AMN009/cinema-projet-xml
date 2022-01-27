@@ -73,11 +73,11 @@
     <film id="F7" annee="1975"><titre>testq</titre><genre>drame</genre><realisateur>tetst</realisateur><duree>30</duree><poster source="src/views/posters/1.PNG"/><description>test</description></film></films>
 
     <salles>
-        <salle id="S08" capacite="70"/>
-        <salle id="S15" capacite="80"/>
-        <salle id="S22" capacite="120"/>
-        <salle id="45" capacite="40"/>
-    </salles>
+        <salle id="S1" capacite="70"/>
+        <salle id="S2" capacite="80"/>
+        <salle id="S3" capacite="120"/>
+        <salle id="S4" capacite="40"/>
+    <salle id="S5" capacite="100"/></salles>
 
     <sieges>
         <siege id="SI889">
