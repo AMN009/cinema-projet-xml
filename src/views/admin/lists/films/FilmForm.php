@@ -766,7 +766,7 @@
                                         <div class="form-group row">
                                             <label class="col-sm-3 col-form-label">annee</label>
                                             <div class="col-sm-9">
-                                                <input type="text" name="annee" class="form-control" placeholder="annee publication">
+                                                <input type="number" name="annee" value="1975" class="form-control" min="0" max="2500" step="1">
                                             </div>
                                         </div>
                                         <div class="form-group">

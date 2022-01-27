@@ -27,7 +27,7 @@
       $siege->appendChild($numero);
       $sieges->item(0)->appendChild($siege);
 
-      $doc->save(__DIR__.'/../cinema.xml');
+      $doc->save((__DIR__."/../xml/cinema.xml");
 
      }
 
@@ -44,7 +44,7 @@
             $siege->parentNode->removeChild($siege);
           }
        }
-       $doc->save(__DIR__.'/../cinema.xml');
+       $doc->save((__DIR__."/../xml/cinema.xml");
       }
        
       
@@ -79,7 +79,7 @@
             
           }
        }
-       $doc->save(__DIR__.'/../cinema.xml');
+       $doc->save((__DIR__."/../xml/cinema.xml");
         
        }
 

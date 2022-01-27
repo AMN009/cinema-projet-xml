@@ -7,13 +7,22 @@
 
         function ajouterFilm($film) {
             if ($film != null) {
-                global $doc, $filmsParent;
+                global $xml_doc_location, $doc, $filmsParent;
+                 $i=1;
 
                 foreach ($filmsParent->childNodes as $child) {
-                    if ($child->nodeType == 1 && ($film->getId() == $child->getAttribute('id')))
+                    if ($child->nodeType == 1)
+                    {   
+                        $i++;
+                        if ($film->getId() == $child->getAttribute('id'))
                         return false;
+                    }
                 }
+                
+                $film->setId('F'.$i);
+                echo $film->getId();
 
+                
                 $filmsParent->appendChild(filmNode($film));
                 
                 $doc->save(__DIR__."/../xml/cinema.xml");
@@ -107,6 +116,7 @@
         if(isset($_GET['ajout'])){
             $film = new Film(1,$_GET['titre'],$_GET['genre'],$_GET['realisateur'],$_GET['annee'],$_GET['duree'],$_GET['poste'],$_GET['description']);
             ajouterFilm($film);
+            
         }
 
 ?>
