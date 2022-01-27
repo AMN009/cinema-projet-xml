@@ -9,27 +9,30 @@
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>CINEWEB - Liste des séances</title>
-                <!-- Favicon icon -->
-                <link rel="icon" type="image/png" sizes="16x16" href="src/views/style/images/favicon.png" />
                 <!-- Alternative -->
-                <link rel="icon" type="image/png" sizes="16x16" href="../../../../style/images/favicon.png" />
+                <link rel="icon" type="image/png" sizes="16x16" href="../../../../../style/images/favicon.png" />
+                <!-- Alternative -->
+                <!-- Daterange picker -->
+                <link href="../../../../../style/vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+                <!-- Clockpicker -->
+                <link href="../../../../../style/vendor/clockpicker/css/bootstrap-clockpicker.min.css" rel="stylesheet" />
+                <!-- asColorpicker -->
+                <link href="../../../../../style/vendor/jquery-asColorPicker/css/asColorPicker.min.css" rel="stylesheet" />
+                <!-- Material color picker -->
+                <link href="../../../../../style/vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+                <!-- Pick date -->
+                <link rel="stylesheet" href="../../../../../style/vendor/pickadate/themes/default.css" />
+                <link rel="stylesheet" href="../../../../../style/vendor/pickadate/themes/default.date.css" />
 
-                <!-- Custom Stylesheet -->
-                <link href="src/views/style/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
-                <link href="src/views/style/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
-                <link href="src/views/style/css/style.css" rel="stylesheet" />
-                <!-- Alternative -->
-                <link href="../../../../style/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
-                <link href="../../../../style/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
-                <link href="../../../../style/css/style.css" rel="stylesheet" />
-                <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet" />
+                <link href="../../../../../style/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
+                <link href="../../../../../style/css/style.css" rel="stylesheet" />
 
             </head>
             <body>
 
                 <!--*******************
-        Preloader start
-    ********************-->
+    Preloader start
+********************-->
                 <div id="preloader">
                     <div class="sk-three-bounce">
                         <div class="sk-child sk-bounce1"></div>
@@ -38,18 +41,18 @@
                     </div>
                 </div>
                 <!--*******************
-        Preloader end
-    ********************-->
+    Preloader end
+********************-->
 
 
                 <!--**********************************
-        Main wrapper start
-    ***********************************-->
+    Main wrapper start
+***********************************-->
                 <div id="main-wrapper">
 
                     <!--**********************************
-            Nav header start
-        ***********************************-->
+        Nav header start
+    ***********************************-->
                     <div class="nav-header">
                         <a href="index.html" class="brand-logo">
                             <img class="logo-abbr" src="src/views/style/images/logo.png" alt="" />
@@ -66,12 +69,12 @@
                         </div>
                     </div>
                     <!--**********************************
-            Nav header end
-        ***********************************-->
+        Nav header end
+    ***********************************-->
 
                     <!--**********************************
-            Chat box start
-        ***********************************-->
+        Chat box start
+    ***********************************-->
                     <div class="chatbox">
                         <div class="chatbox-close"></div>
                         <div class="custom-tab-1">
@@ -670,13 +673,13 @@
                         </div>
                     </div>
                     <!--**********************************
-            Chat box End
-        ***********************************-->
+        Chat box End
+    ***********************************-->
 
 
                     <!--**********************************
-            Header start
-        ***********************************-->
+        Header start
+    ***********************************-->
                     <div class="header">
                         <div class="header-content">
                             <nav class="navbar navbar-expand">
@@ -740,8 +743,8 @@
                                                         <li>
                                                             <div class="timeline-panel">
                                                                 <div class="media mr-2 media-info">
-														KG
-													</div>
+                                                    KG
+                                                </div>
                                                                 <div class="media-body">
                                                                     <h6 class="mb-1">Resport created successfully</h6>
                                                                     <small class="d-block">29 July 2020 - 02:26 PM</small>
@@ -773,8 +776,8 @@
                                                         <li>
                                                             <div class="timeline-panel">
                                                                 <div class="media mr-2 media-danger">
-														KG
-													</div>
+                                                    KG
+                                                </div>
                                                                 <div class="media-body">
                                                                     <h6 class="mb-1">Resport created successfully</h6>
                                                                     <small class="d-block">29 July 2020 - 02:26 PM</small>
@@ -841,12 +844,12 @@
                         </div>
                     </div>
                     <!--**********************************
-            Header end ti-comment-alt
-        ***********************************-->
+        Header end ti-comment-alt
+    ***********************************-->
 
                     <!--**********************************
-            Sidebar start
-        ***********************************-->
+        Sidebar start
+    ***********************************-->
                     <div class="deznav">
                         <div class="deznav-scroll">
                             <ul class="metismenu" id="menu">
@@ -1125,10 +1128,10 @@
                             </ul>
 
                             <!-- <div class="add-menu-sidebar">
-                                <img src="src/views/style/images/icon1.png" alt="" />
-                                <p>Organize your menus through button bellow</p>
-                                <a href="javascript:void(0);" class="btn btn-primary btn-block light">+ Add Menus</a>
-                            </div> -->
+                            <img src="src/views/style/images/icon1.png" alt="" />
+                            <p>Organize your menus through button bellow</p>
+                            <a href="javascript:void(0);" class="btn btn-primary btn-block light">+ Add Menus</a>
+                        </div> -->
                             <div class="copyright">
                                 <p>
                                     <strong>CINEWEB - ADMIN Dashboard</strong>
@@ -1143,115 +1146,92 @@
                         </div>
                     </div>
                     <!--**********************************
-            Sidebar end
-        ***********************************-->
+        Sidebar end
+    ***********************************-->
 
                     <!--**********************************
-            Content body start
-        ***********************************-->
+        Content body start
+    ***********************************-->
                     <div class="content-body">
                         <div class="container-fluid">
                             <div class="form-head d-flex mb-3 align-items-start">
                                 <div class="mr-auto d-none d-lg-block">
-                                    <h2 class="text-black font-w600 mb-0">Séances</h2>
-                                    <p class="mb-0">La liste de toutes les séances</p>
-                                </div>
-                                <div>
-                                    <button type="button" class="btn btn-primary btn-block light" onclick="location.href='src/views/admin/forms/ajout/seance/scripts/show-script.php';">
-                                        <span class="fs-16 ml-3">Ajouter une séance</span>
-                                        <i class="fa fa-plus scale5 ml-3"></i>
-                                    </button>
+                                    <h2 class="text-black font-w600 mb-0">Ajouter une séance</h2>
+                                    <p class="mb-0">Remplissez les informations nécessaires</p>
                                 </div>
                             </div>
                             <!-- row -->
 
                             <div class="row">
-                                <div class="col-12">
-                                    <div class="table-responsive">
-                                        <table id="example5" class="display mb-4 dataTablesCard" style="min-width: 845px;">
-                                            <thead>
-                                                <tr>
-                                                    <th>ID Séance</th>
-                                                    <th>Film</th>
-                                                    <th>Salle</th>
-                                                    <th>Date</th>
-                                                    <th>Heure</th>
-                                                    <th>Prix</th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
+                                <div class="col-xl-12 col-lg-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Nouvelle Séance</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="basic-form">
+                                                <form action="add-script.php" method="post">
 
-                                                <xsl:for-each select="cinema/seances/seance">
-                                                    <xsl:sort select="@id" />
-                                                    <xsl:variable name="film" select="film" />
-                                                    <tr>
-                                                        <td>
-                                                            #
-                                                            <xsl:value-of select="@id" />
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex align-items-center">
-                                                                <img src="{ ../../films/film[@id = $film]/poster/@source }" class="rounded-lg mr-2" width="24" alt="" />
-                                                                <span class="w-space-no">
-                                                                    <xsl:value-of select="../../films/film[@id = $film]/titre" />
-                                                                </span>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label>Date de la séance</label>
+                                                            <input name="date" class="datepicker-default form-control" id="datepicker" placeholder="Date ..." required="required" />
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>Heure de la diffusion</label>
+                                                            <div class="input-group">
+                                                                <input name="heure" class="form-control" id="single-input" value="" placeholder="Heure ..." required="required" />
                                                             </div>
-                                                        </td>
-                                                        <td>
-                                                            <xsl:value-of select="salle" />
-                                                        </td>
-                                                        <td>
-                                                            <xsl:value-of select="date" />
-                                                        </td>
-                                                        <td>
-                                                            <xsl:value-of select="heure" />
-                                                        </td>
-                                                        <td>
-                                                            <xsl:value-of select="prix" />
-                                                        </td>
-                                                        <td>
-                                                            <div class="dropdown ml-auto text-right">
-                                                                <div class="btn-link" data-toggle="dropdown">
-                                                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                            <rect x="0" y="0" width="24" height="24"></rect>
-                                                                            <circle fill="#000000" cx="5" cy="12" r="2"></circle>
-                                                                            <circle fill="#000000" cx="12" cy="12" r="2"></circle>
-                                                                            <circle fill="#000000" cx="19" cy="12" r="2"></circle>
-                                                                        </g>
-                                                                    </svg>
-                                                                </div>
-                                                                <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a class="dropdown-item" href="#">
-                                                                        <i class="las la-pen-square scale5 text-success mr-2"></i>
-                                                                        Modifier la séance
-                                                                    </a>
-                                                                    <a class="dropdown-item" href="src/views/admin/lists/seances/scripts/delete-script.php?seance={@id}">
-                                                                        <i class="las la-trash scale5 text-danger mr-2"></i>
-                                                                        Supprimer la séance
-                                                                    </a>
-                                                                </div>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>Films</label>
+                                                            <select name="film" class="form-control" required="">
+                                                                <option selected="">Choisissez...</option>
+                                                                <xsl:for-each select="cinema/films/film">
+                                                                    <option value="{@id}">
+                                                                        <xsl:value-of select="titre" />
+                                                                    </option>
+                                                                </xsl:for-each>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>Salles</label>
+                                                            <select name="salle" class="form-control" required="">
+                                                                <option selected="">Choisissez...</option>
+                                                                <xsl:for-each select="cinema/salles/salle">
+                                                                    <option>
+                                                                        <xsl:value-of select="@id" />
+                                                                    </option>
+                                                                </xsl:for-each>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="input-group col-md-2">
+                                                            <input name="prix" type="text" class="form-control" required="required" />
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text">DH</span>
                                                             </div>
-                                                        </td>
-                                                    </tr>
-                                                </xsl:for-each>
-
-                                            </tbody>
-                                        </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group"></div>
+                                                    <button type="submit" class="btn btn-primary">Ajouter</button>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--**********************************
-            Content body end
-        ***********************************-->
+        Content body end
+    ***********************************-->
 
 
                     <!--**********************************
-            Footer start
-        ***********************************-->
+        Footer start
+    ***********************************-->
                     <div class="footer">
                         <div class="copyright">
                             <p>
@@ -1262,60 +1242,64 @@
                         </div>
                     </div>
                     <!--**********************************
-            Footer end
-        ***********************************-->
+        Footer end
+    ***********************************-->
 
                     <!--**********************************
-           Support ticket button start
-        ***********************************-->
+       Support ticket button start
+    ***********************************-->
 
                     <!--**********************************
-           Support ticket button end
-        ***********************************-->
+       Support ticket button end
+    ***********************************-->
 
 
                 </div>
                 <!--**********************************
-        Main wrapper end
-    ***********************************-->
+    Main wrapper end
+***********************************-->
 
                 <!--**********************************
-        Scripts
-    ***********************************-->
+    Scripts
+***********************************-->
                 <!-- Required vendors -->
-                <script src="src/views/style/vendor/global/global.min.js"></script>
-                <script src="src/views/style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-                <script src="src/views/style/js/custom.min.js"></script>
-                <script src="src/views/style/js/deznav-init.js"></script>
-                <!-- Alternative -->
-                <script src="../../../../style/vendor/global/global.min.js"></script>
-                <script src="../../../../style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-                <script src="../../../../style/js/custom.min.js"></script>
-                <script src="../../../../style/js/deznav-init.js"></script>
+                <script src="../../../../../style/vendor/global/global.min.js"></script>
+                <script src="../../../../../style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+                <script src="../../../../../style/vendor/chart.js/Chart.bundle.min.js"></script>
+                <script src="../../../../../style/js/custom.min.js"></script>
+                <script src="../../../../../style/js/deznav-init.js"></script>
+                <!-- Apex Chart -->
+                <script src="../../../../../style/vendor/apexchart/apexchart.js"></script>
 
-                <!-- Datatable -->
-                <script src="src/views/style/vendor/datatables/js/jquery.dataTables.min.js"></script>
-                <!-- Alternative -->
-                <script src="../../../../style/vendor/datatables/js/jquery.dataTables.min.js"></script>
 
-                <script>
-                (function($) {
-                
-                    var table = $('#example5').DataTable({
-                        searching: false,
-                        paging:true,
-                        select: false,
-                        //info: false,         
-                        lengthChange:false 
-                        
-                    });
-                    $('#example tbody').on('click', 'tr', function () {
-                        var data = table.row( this ).data();
-                        
-                    });
-                
-                })(jQuery);
-                </script>
+                <!-- Daterangepicker -->
+                <!-- momment js is must -->
+                <script src="../../../../../style/vendor/moment/moment.min.js"></script>
+                <script src="../../../../../style/vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
+                <!-- clockpicker -->
+                <script src="../../../../../style/vendor/clockpicker/js/bootstrap-clockpicker.min.js"></script>
+                <!-- asColorPicker -->
+                <script src="../../../../../style/vendor/jquery-asColor/jquery-asColor.min.js"></script>
+                <script src="../../../../../style/vendor/jquery-asGradient/jquery-asGradient.min.js"></script>
+                <script src="../../../../../style/vendor/jquery-asColorPicker/js/jquery-asColorPicker.min.js"></script>
+                <!-- Material color picker -->
+                <script src="../../../../../style/vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+                <!-- pickdate -->
+                <script src="../../../../../style/vendor/pickadate/picker.js"></script>
+                <script src="../../../../../style/vendor/pickadate/picker.time.js"></script>
+                <script src="../../../../../style/vendor/pickadate/picker.date.js"></script>
+
+
+                <!-- Daterangepicker -->
+                <script src="../../../../../style/js/plugins-init/bs-daterange-picker-init.js"></script>
+                <!-- Clockpicker init -->
+                <script src="../../../../../style/js/plugins-init/clock-picker-init.js"></script>
+                <!-- asColorPicker init -->
+                <script src="../../../../../style/js/plugins-init/jquery-asColorPicker.init.js"></script>
+                <!-- Material color picker init -->
+                <script src="../../../../../style/js/plugins-init/material-date-picker-init.js"></script>
+                <!-- Pickdate -->
+                <script src="../../../../../style/js/plugins-init/pickadate-init.js"></script>
 
             </body>
         </html>

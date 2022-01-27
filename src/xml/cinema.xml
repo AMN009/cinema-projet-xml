@@ -111,7 +111,7 @@
             <salle>S08</salle>
             <prix>60</prix>
         </seance>
-        
+
         <seance id="S598">
             <date>06/11/2021</date>
             <heure>18h45m</heure>
@@ -120,7 +120,14 @@
             <prix>60</prix>
         </seance>
 
-    </seances>
+        <seance id="S599">
+            <salle>S15</salle>
+            <date>4/02/2022</date>
+            <film>F1</film>
+            <heure>10h30m</heure>
+            <prix>50</prix>
+        </seance>
+    <seance id="S600"><salle>S08</salle><date>1/02/2022</date><film>F3</film><heure>08h20m</heure><prix>95</prix></seance><seance id="S601"><salle>S22</salle><date>22/02/2022</date><film>F1</film><heure>10h00m</heure><prix>50</prix></seance></seances>
 
     <reservations>
         <reservation code="R-215-487">
