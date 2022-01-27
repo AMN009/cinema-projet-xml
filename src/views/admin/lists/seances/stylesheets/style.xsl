@@ -11,12 +11,19 @@
                 <title>CINEWEB - Liste des séances</title>
                 <!-- Favicon icon -->
                 <link rel="icon" type="image/png" sizes="16x16" href="src/views/style/images/favicon.png" />
+                <!-- Alternative -->
+                <link rel="icon" type="image/png" sizes="16x16" href="../../../../style/images/favicon.png" />
 
                 <!-- Custom Stylesheet -->
                 <link href="src/views/style/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
                 <link href="src/views/style/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
                 <link href="src/views/style/css/style.css" rel="stylesheet" />
+                <!-- Alternative -->
+                <link href="../../../../style/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+                <link href="../../../../style/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
+                <link href="../../../../style/css/style.css" rel="stylesheet" />
                 <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet" />
+
             </head>
             <body>
 
@@ -1150,7 +1157,7 @@
                                     <p class="mb-0">La liste de toutes les séances</p>
                                 </div>
                                 <div>
-                                    <button type="button" class="btn btn-primary btn-block light">
+                                    <button type="button" class="btn btn-primary btn-block light" onclick="location.href='src/views/admin/lists/seances/scripts/script.php';">
                                         <span class="fs-16 ml-3">Ajouter une séance</span>
                                         <i class="fa fa-plus scale5 ml-3"></i>
                                     </button>
@@ -1280,9 +1287,16 @@
                 <script src="src/views/style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
                 <script src="src/views/style/js/custom.min.js"></script>
                 <script src="src/views/style/js/deznav-init.js"></script>
+                <!-- Alternative -->
+                <script src="../../../../style/vendor/global/global.min.js"></script>
+                <script src="../../../../style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+                <script src="../../../../style/js/custom.min.js"></script>
+                <script src="../../../../style/js/deznav-init.js"></script>
 
                 <!-- Datatable -->
                 <script src="src/views/style/vendor/datatables/js/jquery.dataTables.min.js"></script>
+                <!-- Alternative -->
+                <script src="../../../../style/vendor/datatables/js/jquery.dataTables.min.js"></script>
 
                 <script>
                 (function($) {
@@ -1302,15 +1316,6 @@
                 
                 })(jQuery);
                 </script>
-
-
-                <!-- <script src="src/views/style/vendor/global/global.min.js"></script>
-                <script src="src/views/style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-                <script src="src/views/style/vendor/chart.js/Chart.bundle.min.js"></script>
-                <script src="src/views/style/js/custom.min.js"></script>
-                <script src="src/views/style/js/deznav-init.js"></script>
-                 Apex Chart
-                <script src="src/views/style/vendor/apexchart/apexchart.js"></script> -->
 
             </body>
         </html>
