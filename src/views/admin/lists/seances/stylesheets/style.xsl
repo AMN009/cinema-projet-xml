@@ -11,10 +11,19 @@
                 <title>CINEWEB - Liste des séances</title>
                 <!-- Favicon icon -->
                 <link rel="icon" type="image/png" sizes="16x16" href="src/views/style/images/favicon.png" />
+                <!-- Alternative -->
+                <link rel="icon" type="image/png" sizes="16x16" href="../../../../style/images/favicon.png" />
 
                 <!-- Custom Stylesheet -->
+                <link href="src/views/style/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
                 <link href="src/views/style/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
                 <link href="src/views/style/css/style.css" rel="stylesheet" />
+                <!-- Alternative -->
+                <link href="../../../../style/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+                <link href="../../../../style/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
+                <link href="../../../../style/css/style.css" rel="stylesheet" />
+                <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet" />
+
             </head>
             <body>
 
@@ -1115,20 +1124,20 @@
                                 </li>
                             </ul>
 
-                            <div class="add-menu-sidebar">
+                            <!-- <div class="add-menu-sidebar">
                                 <img src="src/views/style/images/icon1.png" alt="" />
                                 <p>Organize your menus through button bellow</p>
                                 <a href="javascript:void(0);" class="btn btn-primary btn-block light">+ Add Menus</a>
-                            </div>
+                            </div> -->
                             <div class="copyright">
                                 <p>
-                                    <strong>Davur - Restaurant Admin Dashboard</strong>
-                                    © 2020 All Rights Reserved
+                                    <strong>CINEWEB - ADMIN Dashboard</strong>
+                                    © 2022 All Rights Reserved
                                 </p>
                                 <p>
                                     Made with
                                     <i class="fa fa-heart"></i>
-                                    by DexignZone
+                                    by Fahd &amp; Aymen
                                 </p>
                             </div>
                         </div>
@@ -1142,1141 +1151,94 @@
         ***********************************-->
                     <div class="content-body">
                         <div class="container-fluid">
-                            <div class="row page-titles mx-0">
-                                <div class="col-sm-6 p-md-0">
-                                    <div class="welcome-text">
-                                        <h4>Hi, welcome back!</h4>
-                                        <p class="mb-0">Your business dashboard template</p>
-                                    </div>
+                            <div class="form-head d-flex mb-3 align-items-start">
+                                <div class="mr-auto d-none d-lg-block">
+                                    <h2 class="text-black font-w600 mb-0">Séances</h2>
+                                    <p class="mb-0">La liste de toutes les séances</p>
                                 </div>
-                                <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item">
-                                            <a href="javascript:void(0)">Table</a>
-                                        </li>
-                                        <li class="breadcrumb-item active">
-                                            <a href="javascript:void(0)">Bootstrap</a>
-                                        </li>
-                                    </ol>
+                                <div>
+                                    <button type="button" class="btn btn-primary btn-block light" onclick="location.href='src/views/admin/lists/seances/scripts/script.php';">
+                                        <span class="fs-16 ml-3">Ajouter une séance</span>
+                                        <i class="fa fa-plus scale5 ml-3"></i>
+                                    </button>
                                 </div>
                             </div>
                             <!-- row -->
 
                             <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Recent Payments Queue</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-responsive-md">
-                                                    <thead>
-                                                        <tr>
-                                                            <th style="width:80px;">
-                                                                <strong>#</strong>
-                                                            </th>
-                                                            <th>
-                                                                <strong>PATIENT</strong>
-                                                            </th>
-                                                            <th>
-                                                                <strong>DR NAME</strong>
-                                                            </th>
-                                                            <th>
-                                                                <strong>DATE</strong>
-                                                            </th>
-                                                            <th>
-                                                                <strong>STATUS</strong>
-                                                            </th>
-                                                            <th>
-                                                                <strong>PRICE</strong>
-                                                            </th>
-                                                            <th></th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <strong>01</strong>
-                                                            </td>
-                                                            <td>Mr. Bobby</td>
-                                                            <td>Dr. Jackson</td>
-                                                            <td>01 August 2020</td>
-                                                            <td>
-                                                                <span class="badge light badge-success">Successful</span>
-                                                            </td>
-                                                            <td>$21.56</td>
-                                                            <td>
-                                                                <div class="dropdown">
-                                                                    <button type="button" class="btn btn-success light sharp" data-toggle="dropdown">
-                                                                        <svg width="20px" height="20px" viewBox="0 0 24 24" version="1.1">
-                                                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                                <rect x="0" y="0" width="24" height="24" />
-                                                                                <circle fill="#000000" cx="5" cy="12" r="2" />
-                                                                                <circle fill="#000000" cx="12" cy="12" r="2" />
-                                                                                <circle fill="#000000" cx="19" cy="12" r="2" />
-                                                                            </g>
-                                                                        </svg>
-                                                                    </button>
-                                                                    <div class="dropdown-menu">
-                                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                                        <a class="dropdown-item" href="#">Delete</a>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <strong>02</strong>
-                                                            </td>
-                                                            <td>Mr. Bobby</td>
-                                                            <td>Dr. Jackson</td>
-                                                            <td>01 August 2020</td>
-                                                            <td>
-                                                                <span class="badge light badge-danger">Canceled</span>
-                                                            </td>
-                                                            <td>$21.56</td>
-                                                            <td>
-                                                                <div class="dropdown">
-                                                                    <button type="button" class="btn btn-danger light sharp" data-toggle="dropdown">
-                                                                        <svg width="20px" height="20px" viewBox="0 0 24 24" version="1.1">
-                                                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                                <rect x="0" y="0" width="24" height="24" />
-                                                                                <circle fill="#000000" cx="5" cy="12" r="2" />
-                                                                                <circle fill="#000000" cx="12" cy="12" r="2" />
-                                                                                <circle fill="#000000" cx="19" cy="12" r="2" />
-                                                                            </g>
-                                                                        </svg>
-                                                                    </button>
-                                                                    <div class="dropdown-menu">
-                                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                                        <a class="dropdown-item" href="#">Delete</a>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <strong>03</strong>
-                                                            </td>
-                                                            <td>Mr. Bobby</td>
-                                                            <td>Dr. Jackson</td>
-                                                            <td>01 August 2020</td>
-                                                            <td>
-                                                                <span class="badge light badge-warning">Pending</span>
-                                                            </td>
-                                                            <td>$21.56</td>
-                                                            <td>
-                                                                <div class="dropdown">
-                                                                    <button type="button" class="btn btn-warning light sharp" data-toggle="dropdown">
-                                                                        <svg width="20px" height="20px" viewBox="0 0 24 24" version="1.1">
-                                                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                                <rect x="0" y="0" width="24" height="24" />
-                                                                                <circle fill="#000000" cx="5" cy="12" r="2" />
-                                                                                <circle fill="#000000" cx="12" cy="12" r="2" />
-                                                                                <circle fill="#000000" cx="19" cy="12" r="2" />
-                                                                            </g>
-                                                                        </svg>
-                                                                    </button>
-                                                                    <div class="dropdown-menu">
-                                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                                        <a class="dropdown-item" href="#">Delete</a>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Exam Toppers</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-responsive-md">
-                                                    <thead>
-                                                        <tr>
-                                                            <th style="width:50px;">
-                                                                <div class="custom-control custom-checkbox checkbox-success check-lg mr-3">
-                                                                    <input type="checkbox" class="custom-control-input" id="checkAll" required="" />
-                                                                    <label class="custom-control-label" for="checkAll"></label>
-                                                                </div>
-                                                            </th>
-                                                            <th>
-                                                                <strong>ROLL NO.</strong>
-                                                            </th>
-                                                            <th>
-                                                                <strong>NAME</strong>
-                                                            </th>
-                                                            <th>
-                                                                <strong>Email</strong>
-                                                            </th>
-                                                            <th>
-                                                                <strong>Date</strong>
-                                                            </th>
-                                                            <th>
-                                                                <strong>Status</strong>
-                                                            </th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <div class="custom-control custom-checkbox checkbox-success check-lg mr-3">
-                                                                    <input type="checkbox" class="custom-control-input" id="customCheckBox2" required="" />
-                                                                    <label class="custom-control-label" for="customCheckBox2"></label>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <strong>542</strong>
-                                                            </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <img src="src/views/style/images/avatar/1.jpg" class="rounded-lg mr-2" width="24" alt="" />
-                                                                    <span class="w-space-no">Dr. Jackson</span>
-                                                                </div>
-                                                            </td>
-                                                            <td>example@example.com	</td>
-                                                            <td>01 August 2020</td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <i class="fa fa-circle text-success mr-1"></i>
-                                                                    Successful
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <a href="#" class="btn btn-primary shadow btn-xs sharp mr-1">
-                                                                        <i class="fa fa-pencil"></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp">
-                                                                        <i class="fa fa-trash"></i>
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div class="custom-control custom-checkbox checkbox-success check-lg mr-3">
-                                                                    <input type="checkbox" class="custom-control-input" id="customCheckBox3" required="" />
-                                                                    <label class="custom-control-label" for="customCheckBox3"></label>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <strong>542</strong>
-                                                            </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <img src="src/views/style/images/avatar/2.jpg" class="rounded-lg mr-2" width="24" alt="" />
-                                                                    <span class="w-space-no">Dr. Jackson</span>
-                                                                </div>
-                                                            </td>
-                                                            <td>example@example.com	</td>
-                                                            <td>01 August 2020</td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <i class="fa fa-circle text-danger mr-1"></i>
-                                                                    Canceled
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <a href="#" class="btn btn-primary shadow btn-xs sharp mr-1">
-                                                                        <i class="fa fa-pencil"></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp">
-                                                                        <i class="fa fa-trash"></i>
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div class="custom-control custom-checkbox checkbox-success check-lg mr-3">
-                                                                    <input type="checkbox" class="custom-control-input" id="customCheckBox4" required="" />
-                                                                    <label class="custom-control-label" for="customCheckBox4"></label>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <strong>542</strong>
-                                                            </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <img src="src/views/style/images/avatar/3.jpg" class="rounded-lg mr-2" width="24" alt="" />
-                                                                    <span class="w-space-no">Dr. Jackson</span>
-                                                                </div>
-                                                            </td>
-                                                            <td>example@example.com	</td>
-                                                            <td>01 August 2020</td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <i class="fa fa-circle text-warning mr-1"></i>
-                                                                    Pending
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <a href="#" class="btn btn-primary shadow btn-xs sharp mr-1">
-                                                                        <i class="fa fa-pencil"></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp">
-                                                                        <i class="fa fa-trash"></i>
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Basic</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-responsive-sm">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Name</th>
-                                                            <th>Status</th>
-                                                            <th>Date</th>
-                                                            <th>Price</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>1</th>
-                                                            <td>Kolor Tea Shirt For Man</td>
-                                                            <td>
-                                                                <span class="badge badge-primary light">Sale</span>
-                                                            </td>
-                                                            <td>January 22</td>
-                                                            <td class="color-primary">$21.56</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>2</th>
-                                                            <td>Kolor Tea Shirt For Women</td>
-                                                            <td>
-                                                                <span class="badge badge-success">Tax</span>
-                                                            </td>
-                                                            <td>January 30</td>
-                                                            <td class="color-success">$55.32</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>3</th>
-                                                            <td>Blue Backpack For Baby</td>
-                                                            <td>
-                                                                <span class="badge badge-danger">Extended</span>
-                                                            </td>
-                                                            <td>January 25</td>
-                                                            <td class="color-danger">$14.85</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Table Striped</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-striped table-responsive-sm">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Name</th>
-                                                            <th>Status</th>
-                                                            <th>Date</th>
-                                                            <th>Price</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>1</th>
-                                                            <td>Kolor Tea Shirt For Man</td>
-                                                            <td>
-                                                                <span class="badge badge-primary">Sale</span>
-                                                            </td>
-                                                            <td>January 22</td>
-                                                            <td class="color-primary">$21.56</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>2</th>
-                                                            <td>Kolor Tea Shirt For Women</td>
-                                                            <td>
-                                                                <span class="badge badge-success light">Tax</span>
-                                                            </td>
-                                                            <td>January 30</td>
-                                                            <td class="color-success">$55.32</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>3</th>
-                                                            <td>Blue Backpack For Baby</td>
-                                                            <td>
-                                                                <span class="badge badge-danger">Extended</span>
-                                                            </td>
-                                                            <td>January 25</td>
-                                                            <td class="color-danger">$14.85</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Table Bordered</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-bordered table-responsive-sm">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Name</th>
-                                                            <th>Status</th>
-                                                            <th>Date</th>
-                                                            <th>Price</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>1</th>
-                                                            <td>Kolor Tea Shirt For Man</td>
-                                                            <td>
-                                                                <span class="badge badge-primary">Sale</span>
-                                                            </td>
-                                                            <td>January 22</td>
-                                                            <td class="color-primary">$21.56</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>2</th>
-                                                            <td>Kolor Tea Shirt For Women</td>
-                                                            <td>
-                                                                <span class="badge badge-success">Tax</span>
-                                                            </td>
-                                                            <td>January 30</td>
-                                                            <td class="color-success">$55.32</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>3</th>
-                                                            <td>Blue Backpack For Baby</td>
-                                                            <td>
-                                                                <span class="badge badge-danger">Extended</span>
-                                                            </td>
-                                                            <td>January 25</td>
-                                                            <td class="color-danger">$14.85</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Table Hover</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-hover table-responsive-sm">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Name</th>
-                                                            <th>Status</th>
-                                                            <th>Date</th>
-                                                            <th>Price</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>1</th>
-                                                            <td>Kolor Tea Shirt For Man</td>
-                                                            <td>
-                                                                <span class="badge badge-primary light">Sale</span>
-                                                            </td>
-                                                            <td>January 22</td>
-                                                            <td class="color-primary">$21.56</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>2</th>
-                                                            <td>Kolor Tea Shirt For Women</td>
-                                                            <td>
-                                                                <span class="badge badge-success">Tax</span>
-                                                            </td>
-                                                            <td>January 30</td>
-                                                            <td class="color-success">$55.32</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>3</th>
-                                                            <td>Blue Backpack For Baby</td>
-                                                            <td>
-                                                                <span class="badge badge-danger light">Extended</span>
-                                                            </td>
-                                                            <td>January 25</td>
-                                                            <td class="color-danger">$14.85</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /# card -->
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Hover Table</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table header-border table-hover verticle-middle">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">#</th>
-                                                            <th scope="col">Product</th>
-                                                            <th scope="col">Popularity</th>
-                                                            <th scope="col">Sales</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>1</th>
-                                                            <td>Air Conditioner</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(127, 99, 244, .1)">
-                                                                    <div class="progress-bar" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <span class="badge badge-primary light">70%</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>2</th>
-                                                            <td>Textiles</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(76, 175, 80, .1)">
-                                                                    <div class="progress-bar bg-success" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <span class="badge badge-success">70%</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>3</th>
-                                                            <td>Milk Powder</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(70, 74, 83, .1)">
-                                                                    <div class="progress-bar bg-dark" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <span class="badge badge-dark light">70%</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>4</th>
-                                                            <td>Vehicles</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(255, 87, 34, .1)">
-                                                                    <div class="progress-bar bg-danger" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <span class="badge badge-danger">70%</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>5</th>
-                                                            <td>Boats</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(255, 193, 7, .1)">
-                                                                    <div class="progress-bar bg-warning" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <span class="badge badge-warning">70%</span>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Bordered Table</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-bordered verticle-middle table-responsive-sm">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">Task</th>
-                                                            <th scope="col">Progress</th>
-                                                            <th scope="col">Deadline</th>
-                                                            <th scope="col">Label</th>
-                                                            <th scope="col">Action</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Air Conditioner</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(127, 99, 244, .1)">
-                                                                    <div class="progress-bar bg-primary" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>Apr 20,2018</td>
-                                                            <td>
-                                                                <span class="badge badge-primary light">70%</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>
-                                                                    <a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                        <i class="fa fa-pencil color-muted"></i>
-                                                                    </a>
-                                                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close">
-                                                                        <i class="fa fa-close color-danger"></i>
-                                                                    </a>
+                                <div class="col-12">
+                                    <div class="table-responsive">
+                                        <table id="example5" class="display mb-4 dataTablesCard" style="min-width: 845px;">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID Séance</th>
+                                                    <th>Film</th>
+                                                    <th>Salle</th>
+                                                    <th>Date</th>
+                                                    <th>Heure</th>
+                                                    <th>Prix</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <xsl:for-each select="cinema/seances/seance">
+                                                    <xsl:sort select="@id" />
+                                                    <xsl:variable name="film" select="film" />
+                                                    <tr>
+                                                        <td>
+                                                            #
+                                                            <xsl:value-of select="@id" />
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <img src="{ ../../films/film[@id = $film]/poster/@source }" class="rounded-lg mr-2" width="24" alt="" />
+                                                                <span class="w-space-no">
+                                                                    <xsl:value-of select="../../films/film[@id = $film]/titre" />
                                                                 </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Textiles</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(76, 175, 80, .1)">
-                                                                    <div class="progress-bar bg-success" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <xsl:value-of select="salle" />
+                                                        </td>
+                                                        <td>
+                                                            <xsl:value-of select="date" />
+                                                        </td>
+                                                        <td>
+                                                            <xsl:value-of select="heure" />
+                                                        </td>
+                                                        <td>
+                                                            <xsl:value-of select="prix" />
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown ml-auto text-right">
+                                                                <div class="btn-link" data-toggle="dropdown">
+                                                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <rect x="0" y="0" width="24" height="24"></rect>
+                                                                            <circle fill="#000000" cx="5" cy="12" r="2"></circle>
+                                                                            <circle fill="#000000" cx="12" cy="12" r="2"></circle>
+                                                                            <circle fill="#000000" cx="19" cy="12" r="2"></circle>
+                                                                        </g>
+                                                                    </svg>
                                                                 </div>
-                                                            </td>
-                                                            <td>May 27,2018</td>
-                                                            <td>
-                                                                <span class="badge badge-success">70%</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>
-                                                                    <a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                        <i class="fa fa-pencil color-muted"></i>
+                                                                <div class="dropdown-menu dropdown-menu-right">
+                                                                    <a class="dropdown-item" href="#">
+                                                                        <i class="las la-pen-square scale5 text-success mr-2"></i>
+                                                                        Modifier la séance
                                                                     </a>
-                                                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close">
-                                                                        <i class="fa fa-close color-danger"></i>
+                                                                    <a class="dropdown-item" href="#">
+                                                                        <i class="las la-trash scale5 text-danger mr-2"></i>
+                                                                        Supprimer la séance
                                                                     </a>
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Milk Powder</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(70, 74, 83, .1)">
-                                                                    <div class="progress-bar bg-dark" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
                                                                 </div>
-                                                            </td>
-                                                            <td>May 18,2018</td>
-                                                            <td>
-                                                                <span class="badge badge-dark light">70%</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>
-                                                                    <a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                        <i class="fa fa-pencil color-muted"></i>
-                                                                    </a>
-                                                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close">
-                                                                        <i class="fa fa-close color-danger"></i>
-                                                                    </a>
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Vehicles</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(255, 87, 34, .1)">
-                                                                    <div class="progress-bar bg-danger" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>Mar 27,2018</td>
-                                                            <td>
-                                                                <span class="badge badge-danger">70%</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>
-                                                                    <a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                        <i class="fa fa-pencil color-muted"></i>
-                                                                    </a>
-                                                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close">
-                                                                        <i class="fa fa-close color-danger"></i>
-                                                                    </a>
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Boats</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(255, 193, 7, .1)">
-                                                                    <div class="progress-bar bg-warning" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>Jun 28,2018</td>
-                                                            <td>
-                                                                <span class="badge badge-warning">70%</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>
-                                                                    <a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                        <i class="fa fa-pencil color-muted"></i>
-                                                                    </a>
-                                                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close">
-                                                                        <i class="fa fa-close color-danger"></i>
-                                                                    </a>
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Table Stripped</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-bordered table-striped verticle-middle table-responsive-sm">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">Task</th>
-                                                            <th scope="col">Progress</th>
-                                                            <th scope="col">Deadline</th>
-                                                            <th scope="col">Label</th>
-                                                            <th scope="col">Action</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Air Conditioner</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(127, 99, 244, .1)">
-                                                                    <div class="progress-bar bg-primary" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>Apr 20,2018</td>
-                                                            <td>
-                                                                <span class="badge badge-primary">70%</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>
-                                                                    <a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                        <i class="fa fa-pencil color-muted"></i>
-                                                                    </a>
-                                                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close">
-                                                                        <i class="fa fa-close color-danger"></i>
-                                                                    </a>
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Textiles</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(76, 175, 80, .1)">
-                                                                    <div class="progress-bar bg-success" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>May 27,2018</td>
-                                                            <td>
-                                                                <span class="badge badge-success">70%</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>
-                                                                    <a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                        <i class="fa fa-pencil color-muted"></i>
-                                                                    </a>
-                                                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close">
-                                                                        <i class="fa fa-close color-danger"></i>
-                                                                    </a>
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Milk Powder</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(70, 74, 83, .1)">
-                                                                    <div class="progress-bar bg-dark" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>May 18,2018</td>
-                                                            <td>
-                                                                <span class="badge badge-dark">70%</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>
-                                                                    <a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                        <i class="fa fa-pencil color-muted"></i>
-                                                                    </a>
-                                                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close">
-                                                                        <i class="fa fa-close color-danger"></i>
-                                                                    </a>
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Boats</td>
-                                                            <td>
-                                                                <div class="progress" style="background: rgba(255, 193, 7, .1)">
-                                                                    <div class="progress-bar bg-warning" style="width: 70%;" role="progressbar">
-                                                                        <span class="sr-only">70% Complete</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>Jun 28,2018</td>
-                                                            <td>
-                                                                <span class="badge badge-warning">70%</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>
-                                                                    <a href="javascript:void()" class="mr-4" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                        <i class="fa fa-pencil color-muted"></i>
-                                                                    </a>
-                                                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title="Close">
-                                                                        <i class="fa fa-close color-danger"></i>
-                                                                    </a>
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Responsive Table</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table header-border table-responsive-sm">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Invoice</th>
-                                                            <th>User</th>
-                                                            <th>Date</th>
-                                                            <th>Amount</th>
-                                                            <th>Status</th>
-                                                            <th>Country</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="javascript:void(0)">Order #26589</a>
-                                                            </td>
-                                                            <td>Herman Beck</td>
-                                                            <td>
-                                                                <span class="text-muted">Oct 16, 2017</span>
-                                                            </td>
-                                                            <td>$45.00</td>
-                                                            <td>
-                                                                <span class="badge badge-success">Paid</span>
-                                                            </td>
-                                                            <td>EN</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="javascript:void(0)">Order #58746</a>
-                                                            </td>
-                                                            <td>Mary Adams</td>
-                                                            <td>
-                                                                <span class="text-muted">Oct 12, 2017</span>
-                                                            </td>
-                                                            <td>$245.30</td>
-                                                            <td>
-                                                                <span class="badge badge-info light">Shipped</span>
-                                                            </td>
-                                                            <td>CN</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="javascript:void(0)">Order #98458</a>
-                                                            </td>
-                                                            <td>Caleb Richards</td>
-                                                            <td>
-                                                                <span class="text-muted">May 18, 2017</span>
-                                                            </td>
-                                                            <td>$38.00</td>
-                                                            <td>
-                                                                <span class="badge badge-danger">Shipped</span>
-                                                            </td>
-                                                            <td>AU</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="javascript:void(0)">Order #32658</a>
-                                                            </td>
-                                                            <td>June Lane</td>
-                                                            <td>
-                                                                <span class="text-muted">Apr 28, 2017</span>
-                                                            </td>
-                                                            <td>$77.99</td>
-                                                            <td>
-                                                                <span class="badge badge-success">Paid</span>
-                                                            </td>
-                                                            <td>FR</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Heading With Background</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table">
-                                                    <thead class="thead-info">
-                                                        <tr>
-                                                            <th scope="col">#</th>
-                                                            <th scope="col">First</th>
-                                                            <th scope="col">Last</th>
-                                                            <th scope="col">Handle</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>1</th>
-                                                            <td>Mark</td>
-                                                            <td>Otto</td>
-                                                            <td>@mdo</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>2</th>
-                                                            <td>Jacob</td>
-                                                            <td>Thornton</td>
-                                                            <td>@fat</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>3</th>
-                                                            <td>Larry</td>
-                                                            <td>the Bird</td>
-                                                            <td>@twitter</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Primary Table</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table primary-table-bordered">
-                                                    <thead class="thead-primary">
-                                                        <tr>
-                                                            <th scope="col">#</th>
-                                                            <th scope="col">First</th>
-                                                            <th scope="col">Last</th>
-                                                            <th scope="col">Handle</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>1</th>
-                                                            <td>Mark</td>
-                                                            <td>Otto</td>
-                                                            <td>@mdo</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>2</th>
-                                                            <td>Jacob</td>
-                                                            <td>Thornton</td>
-                                                            <td>@fat</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>3</th>
-                                                            <td>Larry</td>
-                                                            <td>the Bird</td>
-                                                            <td>@twitter</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Primary Table Hover</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table primary-table-bg-hover">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">#</th>
-                                                            <th scope="col">First</th>
-                                                            <th scope="col">Last</th>
-                                                            <th scope="col">Handle</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>1</th>
-                                                            <td>Mark</td>
-                                                            <td>Otto</td>
-                                                            <td>@mdo</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>2</th>
-                                                            <td>Jacob</td>
-                                                            <td>Thornton</td>
-                                                            <td>@fat</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>3</th>
-                                                            <td>Larry</td>
-                                                            <td>the Bird</td>
-                                                            <td>@twitter</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>4</th>
-                                                            <td>Larry</td>
-                                                            <td>the Bird</td>
-                                                            <td>@twitter</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>5</th>
-                                                            <td>Larry</td>
-                                                            <td>the Bird</td>
-                                                            <td>@twitter</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>5</th>
-                                                            <td>Larry</td>
-                                                            <td>the Bird</td>
-                                                            <td>@twitter</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Contextual Table</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table header-border" style="min-width: 500px;">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Column heading</th>
-                                                            <th>Column heading</th>
-                                                            <th>Column heading</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr class="table-active">
-                                                            <td>1</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                        </tr>
-                                                        <tr class="table-primary">
-                                                            <td>1</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                        </tr>
-                                                        <tr class="table-success">
-                                                            <td>2</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                        </tr>
-                                                        <tr class="table-info">
-                                                            <td>3</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                        </tr>
-                                                        <tr class="table-warning">
-                                                            <td>4</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                        </tr>
-                                                        <tr class="table-danger">
-                                                            <td>5</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                            <td>Column content</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </xsl:for-each>
+
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -2294,8 +1256,8 @@
                         <div class="copyright">
                             <p>
                                 Copyright © Designed &amp; Developed by
-                                <a href="http://dexignzone.com/" target="_blank">DexignZone</a>
-                                2020
+                                <a href="#">Fahd Bouachrine &amp; Aymen Rhalloussi</a>
+                                2022
                             </p>
                         </div>
                     </div>
@@ -2323,13 +1285,40 @@
                 <!-- Required vendors -->
                 <script src="src/views/style/vendor/global/global.min.js"></script>
                 <script src="src/views/style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-                <script src="src/views/style/vendor/chart.js/Chart.bundle.min.js"></script>
                 <script src="src/views/style/js/custom.min.js"></script>
                 <script src="src/views/style/js/deznav-init.js"></script>
-                <!-- Apex Chart -->
-                <script src="src/views/style/vendor/apexchart/apexchart.js"></script>
+                <!-- Alternative -->
+                <script src="../../../../style/vendor/global/global.min.js"></script>
+                <script src="../../../../style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+                <script src="../../../../style/js/custom.min.js"></script>
+                <script src="../../../../style/js/deznav-init.js"></script>
+
+                <!-- Datatable -->
+                <script src="src/views/style/vendor/datatables/js/jquery.dataTables.min.js"></script>
+                <!-- Alternative -->
+                <script src="../../../../style/vendor/datatables/js/jquery.dataTables.min.js"></script>
+
+                <script>
+                (function($) {
+                
+                    var table = $('#example5').DataTable({
+                        searching: false,
+                        paging:true,
+                        select: false,
+                        //info: false,         
+                        lengthChange:false 
+                        
+                    });
+                    $('#example tbody').on('click', 'tr', function () {
+                        var data = table.row( this ).data();
+                        
+                    });
+                
+                })(jQuery);
+                </script>
 
             </body>
         </html>
     </xsl:template>
+
 </xsl:stylesheet>
