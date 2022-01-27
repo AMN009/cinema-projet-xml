@@ -70,7 +70,7 @@
             <poster source="Carte de controle c.pptx"/>
             <description>hhs</description>
         </film>
-    </films>
+    <film id="F7" annee="1975"><titre>testq</titre><genre>drame</genre><realisateur>tetst</realisateur><duree>30</duree><poster source="src/views/posters/1.PNG"/><description>test</description></film></films>
 
     <salles>
         <salle id="S08" capacite="70"/>
