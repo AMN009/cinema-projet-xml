@@ -58,7 +58,7 @@
             <duree>1h46m</duree>
             <poster source="poster"/>
         </film>
-    <film id="F4" annee="1334"><titre>test</titre><genre>drame</genre><realisateur>test</realisateur><duree>30</duree><poster source="ddn.txt"/><description>retsts</description></film><film id="F5" annee="1334"><titre>test</titre><genre>drame</genre><realisateur>test</realisateur><duree>30</duree><poster source="ddn.txt"/><description>retsts</description></film></films>
+    <film id="F4" annee="1334"><titre>test</titre><genre>drame</genre><realisateur>test</realisateur><duree>30</duree><poster source="ddn.txt"/><description>retsts</description></film><film id="F5" annee="1334"><titre>test</titre><genre>drame</genre><realisateur>test</realisateur><duree>30</duree><poster source="ddn.txt"/><description>retsts</description></film><film id="F6" annee="30"><titre>y</titre><genre>drame</genre><realisateur>y</realisateur><duree>30</duree><poster source="Carte de controle c.pptx"/><description>hhs</description></film></films>
 
     <salles>
         <salle id="S08" capacite="70"/>
