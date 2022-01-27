@@ -66,8 +66,7 @@
        $doc->save(__DIR__."/../xml/cinema.xml");
       }
             
-      $r= new Reservation('y','2',2,'2',2,2);
-      insertReservation($r);
+      
       
        //done
        Function updateReservation($reserv){

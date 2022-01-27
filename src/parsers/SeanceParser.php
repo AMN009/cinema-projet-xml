@@ -36,7 +36,7 @@
       $seance->appendChild($prix);
       $seances->item(0)->appendChild($seance);
 
-      $doc->save(__DIR__.'/../cinema.xml');
+      $doc->save((__DIR__."/../xml/cinema.xml");
      }
 
 
@@ -52,7 +52,7 @@
             $seance->parentNode->removeChild($seance);
           }
        }
-       $doc->save(__DIR__.'/../cinema.xml');
+       $doc->save((__DIR__."/../xml/cinema.xml");
       }
       
 
@@ -96,7 +96,7 @@
             $seance->parentNode->replaceChild($newseance, $seance);
           }
        }
-       $doc->save(__DIR__.'/../cinema.xml');
+       $doc->save((__DIR__."/../xml/cinema.xml");
 
        }
 ?>
