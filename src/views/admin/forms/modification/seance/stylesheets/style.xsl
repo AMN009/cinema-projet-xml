@@ -1175,21 +1175,23 @@
                                             <div class="basic-form">
                                                 <form action="modification-script.php" method="post">
                                                     <xsl:variable name="seance" select="/cinema/seances/seance[@id = $seanceId]" />
-
+                                                    <input name="id" type="hidden" value="{$seanceId}" />
                                                     <div class="form-row">
                                                         <div class="form-group col-md-6">
                                                             <label>Date de la séance</label>
-                                                            <input name="date" class="datepicker-default form-control" id="datepicker" placeholder="{$seance/date}" required="required" />
+                                                            <input name="seance-date" type="hidden" value="{$seance/date}" />
+                                                            <input name="date" class="datepicker-default form-control" id="datepicker" placeholder="{$seance/date}" />
                                                         </div>
                                                         <div class="form-group col-md-6">
                                                             <label>Heure de la diffusion</label>
                                                             <div class="input-group">
-                                                                <input name="heure" class="form-control" id="single-input" value="" placeholder="{$seance/heure}" required="required" />
+                                                                <input name="seance-heure" type="hidden" value="{$seance/heure}" />
+                                                                <input name="heure" class="form-control" id="single-input" value="" placeholder="{$seance/heure}" />
                                                             </div>
                                                         </div>
                                                         <div class="form-group col-md-6">
                                                             <label>Films</label>
-                                                            <select name="film" class="form-control" required="">
+                                                            <select name="film" class="form-control">
                                                                 <xsl:for-each select="cinema/films/film">
 
                                                                     <xsl:choose>
@@ -1210,7 +1212,7 @@
                                                         </div>
                                                         <div class="form-group col-md-6">
                                                             <label>Salles</label>
-                                                            <select name="salle" class="form-control" required="">
+                                                            <select name="salle" class="form-control">
                                                                 <xsl:for-each select="cinema/salles/salle">
                                                                     <xsl:choose>
                                                                         <xsl:when test="@id = $seance/salle">
@@ -1230,7 +1232,8 @@
                                                     </div>
                                                     <div class="form-row">
                                                         <div class="input-group col-md-2">
-                                                            <input name="prix" type="text" class="form-control" required="required" placeholder="{$seance/prix}" />
+                                                            <input name="seance-prix" type="hidden" value="{$seance/prix}" />
+                                                            <input name="prix" type="text" class="form-control" placeholder="{$seance/prix}" />
                                                             <div class="input-group-append">
                                                                 <span class="input-group-text">DH</span>
                                                             </div>
