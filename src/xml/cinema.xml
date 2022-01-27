@@ -119,6 +119,6 @@
             <siege>2</siege>
             <seance>4</seance>
         </reservation>
-    <reservation code="z"><date>t</date><heure>ee</heure><utilisateur>3</utilisateur><siege>2</siege><seance>1</seance></reservation></reservations>
+    <reservation code="z"><date>t</date><heure>ee</heure><utilisateur>3</utilisateur><siege>2</siege><seance>1</seance></reservation><reservation code="y"><date>2</date><heure>2</heure><utilisateur>2</utilisateur><siege>2</siege><seance>2</seance></reservation></reservations>
 
 </cinema>

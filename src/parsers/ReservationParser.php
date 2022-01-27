@@ -3,9 +3,18 @@
      include 'ParserSetup.php';
      include __DIR__.'/../models/Reservation.php';
      
+
+     $reservationsParent = $root->getElementsByTagName('reservations')->item(0);
+
      //done
      Function insertReservation($reserv){   
-       global $doc;     
+       
+      global $doc,  $reservationsParent;  
+      foreach ($reservationsParent->childNodes as $child) {
+        if ($child->nodeType == 1 && ($reserv->getCode() == $child->getAttribute('code')))
+            return false;
+    }
+
         $reservations = $doc->getElementsByTagName('reservations'); 
         $reservation = $doc->createElement("reservation"); 
         $reservation->setAttribute("code", $reserv->getCode()); 
@@ -38,7 +47,7 @@
 
         $reservations->item(0)->appendChild($reservation);
 
-        $doc->save(__DIR__.'/../cinema.xml');
+        $doc->save(__DIR__."/../xml/cinema.xml");
      }
 
 
@@ -54,9 +63,11 @@
             $reservation->parentNode->removeChild($reservation);
           }
        }
-       $doc->save(__DIR__.'/../cinema.xml');
+       $doc->save(__DIR__."/../xml/cinema.xml");
       }
             
+      $r= new Reservation('y','2',2,'2',2,2);
+      insertReservation($r);
       
        //done
        Function updateReservation($reserv){
@@ -99,7 +110,7 @@
             $reservation->parentNode->replaceChild($newreservation, $reservation);
           }
        }
-       $doc->save(__DIR__.'/../cinema.xml');
+       $doc->save(__DIR__."/../xml/cinema.xml");
        }
 
 ?>
