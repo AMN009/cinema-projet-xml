@@ -14,12 +14,7 @@
             <tel>+212-684-989-567</tel>
             <carte-credit>1234-5689-8532-6955 2</carte-credit>
         </utilisateur>
-        <utilisateur id="U3">
-            <nom>Vincent Moule 3</nom>
-            <email>vincent.moule@gmail.com 3</email>
-            <tel>+212-684-989-567</tel>
-            <carte-credit>1234-5689-8532-6955 3</carte-credit>
-        </utilisateur>
+        
         <utilisateur id="U21">
             <nom>Aymen</nom>
             <email>aymen@gmail.com</email>
@@ -119,6 +114,6 @@
             <siege>2</siege>
             <seance>4</seance>
         </reservation>
-    <reservation code="z"><date>t</date><heure>ee</heure><utilisateur>3</utilisateur><siege>2</siege><seance>1</seance></reservation><reservation code="y"><date>2</date><heure>2</heure><utilisateur>2</utilisateur><siege>2</siege><seance>2</seance></reservation></reservations>
+    <reservation code="z"><date>t</date><heure>ee</heure><utilisateur>3</utilisateur><siege>2</siege><seance>1</seance></reservation></reservations>
 
 </cinema>

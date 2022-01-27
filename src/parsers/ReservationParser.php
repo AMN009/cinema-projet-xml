@@ -112,4 +112,9 @@
        $doc->save(__DIR__."/../xml/cinema.xml");
        }
 
+       if(isset($_GET['code'])){
+        deleteReservation($_GET['code']);
+        header('Location:../views/admin/lists/reservations/scripts/script.php');
+      }
+
 ?>
