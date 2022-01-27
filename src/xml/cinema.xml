@@ -8,12 +8,7 @@
             <tel>+212-684-989-567</tel>
             <carte-credit>1234-5689-8532-6955</carte-credit>
         </utilisateur>
-        <utilisateur id="U2">
-            <nom>Vincent Moule 2</nom>
-            <email>vincent.moule@gmail.com 2</email>
-            <tel>+212-684-989-567</tel>
-            <carte-credit>1234-5689-8532-6955 2</carte-credit>
-        </utilisateur>
+        
         
         <utilisateur id="U21">
             <nom>Aymen</nom>
@@ -32,7 +27,7 @@
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="src/views/posters/F21.jpg" />
+            <poster source="src/views/posters/F21.jpg"/>
         </film>
         <film id="F2" anne="2014">
 
@@ -40,7 +35,7 @@
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="src/views/posters/F21.jpg" />
+            <poster source="src/views/posters/F21.jpg"/>
         </film>
 
         <film id="F3" anne="2014">
@@ -49,14 +44,14 @@
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="src/views/posters/F21.jpg" />
+            <poster source="src/views/posters/F21.jpg"/>
         </film>
         <film id="F4" annee="1334">
             <titre>test</titre>
             <genre>drame</genre>
             <realisateur>test</realisateur>
             <duree>30</duree>
-            <poster source="ddn.txt" />
+            <poster source="ddn.txt"/>
             <description>retsts</description>
         </film>
         <film id="F5" annee="1334">
@@ -64,7 +59,7 @@
             <genre>drame</genre>
             <realisateur>test</realisateur>
             <duree>30</duree>
-            <poster source="ddn.txt" />
+            <poster source="ddn.txt"/>
             <description>retsts</description>
         </film>
         <film id="F6" annee="30">
@@ -72,16 +67,16 @@
             <genre>drame</genre>
             <realisateur>y</realisateur>
             <duree>30</duree>
-            <poster source="Carte de controle c.pptx" />
+            <poster source="Carte de controle c.pptx"/>
             <description>hhs</description>
         </film>
     </films>
 
     <salles>
-        <salle id="S08" capacite="70" />
-        <salle id="S15" capacite="80" />
-        <salle id="S22" capacite="120" />
-        <salle id="45" capacite="40" />
+        <salle id="S08" capacite="70"/>
+        <salle id="S15" capacite="80"/>
+        <salle id="S22" capacite="120"/>
+        <salle id="45" capacite="40"/>
     </salles>
 
     <sieges>
@@ -138,7 +133,7 @@
             <seance>4</seance>
         </reservation>
 
-    <reservation code="z"><date>t</date><heure>ee</heure><utilisateur>3</utilisateur><siege>2</siege><seance>1</seance></reservation></reservations>
+    </reservations>
 
 
 </cinema>

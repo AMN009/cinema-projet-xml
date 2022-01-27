@@ -15,8 +15,10 @@
   // importer la feuille de style XSL dans le processus XSLT
     $xproces->importStylesheet($xsl);
 
+    $docf = new DomDocument;
+ $docf->load('../../../../../xml/cinema.xml');
   // Transformer du XML en HTML à l'aide du fichier XSL
-    echo $xproces->transformToXML($doc);
+    echo $xproces->transformToXML($docf);
     // file_put_contents('test.html', $html);
 
 ?>
