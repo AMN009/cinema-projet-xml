@@ -37,7 +37,7 @@
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="src/views/posters/F21.jpg"/>
+            <poster source="src/views/posters/F21.jpg" />
         </film>
         <film id="F2" anne="2014">
 
@@ -45,7 +45,7 @@
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="src/views/posters/F21.jpg"/>
+            <poster source="src/views/posters/F21.jpg" />
         </film>
 
         <film id="F3" anne="2014">
@@ -54,14 +54,14 @@
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="src/views/posters/F21.jpg"/>
+            <poster source="src/views/posters/F21.jpg" />
         </film>
         <film id="F4" annee="1334">
             <titre>test</titre>
             <genre>drame</genre>
             <realisateur>test</realisateur>
             <duree>30</duree>
-            <poster source="ddn.txt"/>
+            <poster source="ddn.txt" />
             <description>retsts</description>
         </film>
         <film id="F5" annee="1334">
@@ -69,7 +69,7 @@
             <genre>drame</genre>
             <realisateur>test</realisateur>
             <duree>30</duree>
-            <poster source="ddn.txt"/>
+            <poster source="ddn.txt" />
             <description>retsts</description>
         </film>
         <film id="F6" annee="30">
@@ -77,16 +77,16 @@
             <genre>drame</genre>
             <realisateur>y</realisateur>
             <duree>30</duree>
-            <poster source="Carte de controle c.pptx"/>
+            <poster source="Carte de controle c.pptx" />
             <description>hhs</description>
         </film>
     </films>
 
     <salles>
-        <salle id="S08" capacite="70"/>
-        <salle id="S15" capacite="80"/>
-        <salle id="S22" capacite="120"/>
-        <salle id="45" capacite="40"/>
+        <salle id="S08" capacite="70" />
+        <salle id="S15" capacite="80" />
+        <salle id="S22" capacite="120" />
+        <salle id="45" capacite="40" />
     </salles>
 
     <sieges>
@@ -103,15 +103,6 @@
     </sieges>
 
     <seances>
-
-        <seance id="S658">
-            <date>06/11/2021</date>
-            <heure>18h45m</heure>
-            <film>F2</film>
-            <salle>S08</salle>
-            <prix>60</prix>
-        </seance>
-
         <seance id="S598">
             <date>06/11/2021</date>
             <heure>18h45m</heure>
@@ -122,12 +113,26 @@
 
         <seance id="S599">
             <salle>S15</salle>
-            <date>4/02/2022</date>
+            <date>04/02/2022</date>
             <film>F1</film>
             <heure>10h30m</heure>
             <prix>50</prix>
         </seance>
-    <seance id="S600"><salle>S08</salle><date>1/02/2022</date><film>F3</film><heure>08h20m</heure><prix>95</prix></seance><seance id="S601"><salle>S22</salle><date>22/02/2022</date><film>F1</film><heure>10h00m</heure><prix>50</prix></seance></seances>
+        <seance id="S600">
+            <salle>S08</salle>
+            <date>01/02/2022</date>
+            <film>F3</film>
+            <heure>08h20m</heure>
+            <prix>95</prix>
+        </seance>
+        <seance id="S601">
+            <salle>S08</salle>
+            <date>04/02/2022</date>
+            <film>F2</film>
+            <heure>01h35m</heure>
+            <prix>120</prix>
+        </seance>
+    </seances>
 
     <reservations>
         <reservation code="R-215-487">

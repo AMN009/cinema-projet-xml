@@ -10,7 +10,7 @@
 
     $months = ['January' => '01', 'February' => '02', 'March' => '03', 'April' => '04', 'May' => '05', 'June' => '06', 'July' => '07', 'August' => '08', 'September' => '09', 'October' => '10', 'November' => '11', 'December' => '12'];
     $date_components = explode(' ', $_POST['date']);
-    $date = $date_components[0].'/'.$months[substr($date_components[1], 0, -1)].'/'.$date_components[2];
+    $date = ((strlen($date_components[0]) == 1) ? '0'.$date_components[0] : $date_components[0]).'/'.$months[substr($date_components[1], 0, -1)].'/'.$date_components[2];
 
     $film = $_POST['film'];
 
