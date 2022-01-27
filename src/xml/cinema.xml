@@ -34,32 +34,39 @@
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="poster"/>
+            <poster source="src/views/posters/F21.jpg" />
         </film>
         <film id="F22" anne="2014">
             <titre>Whiplash</titre>
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <description/>
-            <poster source="poster"/>
+            <poster source="src/views/posters/F21.jpg" />
         </film>
         <film id="F23" anne="2014">
             <titre>Whiplash 2</titre>
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
-            <description/>
             <duree>1h46m</duree>
-            <poster source="poster"/>
+            <poster source="src/views/posters/F21.jpg" />
         </film>
 
-    <film id="1" annee="22"><titre>ta</titre><genre>drame</genre><realisateur>ta</realisateur><duree>30</duree><poster source=""/><description>jsjjs</description></film></films>
+        <film id="1" annee="22">
+            <titre>ta</titre>
+            <genre>drame</genre>
+            <realisateur>ta</realisateur>
+            <duree>30</duree>
+            <poster source="src/views/posters/F21.jpg" />
+            <description>jsjjs</description>
+        </film>
+    </films>
 
     <salles>
-        <salle id="S08" capacite="70"/>
-        <salle id="S15" capacite="80"/>
-        <salle id="S22" capacite="120"/>
-    <salle id="45" capacite="40"/></salles>
+        <salle id="S08" capacite="70" />
+        <salle id="S15" capacite="80" />
+        <salle id="S22" capacite="120" />
+        <salle id="45" capacite="40" />
+    </salles>
 
     <sieges>
         <siege id="SI889">
