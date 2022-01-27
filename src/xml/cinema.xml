@@ -28,15 +28,19 @@
         </utilisateur>
     </utilisateurs>
 
+
     <films>
-        <film id="F21" annee="2014">
+
+        <film id="F1" anne="2014">
+
             <titre>Whiplash</titre>
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
             <poster source="poster"/>
         </film>
-        <film id="F22" anne="2014">
+        <film id="F2" anne="2014">
+
             <titre>Whiplash</titre>
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
@@ -44,7 +48,9 @@
             <description/>
             <poster source="poster"/>
         </film>
-        <film id="F23" anne="2014">
+
+        <film id="F3" anne="2014">
+
             <titre>Whiplash 2</titre>
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
@@ -52,8 +58,7 @@
             <duree>1h46m</duree>
             <poster source="poster"/>
         </film>
-
-    <film id="1" annee="22"><titre>ta</titre><genre>drame</genre><realisateur>ta</realisateur><duree>30</duree><poster source=""/><description>jsjjs</description></film></films>
+    <film id="F4" annee="1334"><titre>test</titre><genre>drame</genre><realisateur>test</realisateur><duree>30</duree><poster source="ddn.txt"/><description>retsts</description></film><film id="F5" annee="1334"><titre>test</titre><genre>drame</genre><realisateur>test</realisateur><duree>30</duree><poster source="ddn.txt"/><description>retsts</description></film></films>
 
     <salles>
         <salle id="S08" capacite="70"/>
@@ -78,14 +83,14 @@
         <seance id="S659">
             <date>06/11/2021</date>
             <heure>18h45m</heure>
-            <film>F21</film>
+            <film>F1</film>
             <salle>S08</salle>
             <prix>60</prix>
         </seance>
         <seance id="S658">
             <date>06/11/2021</date>
             <heure>18h45m</heure>
-            <film>F22</film>
+            <film>F2</film>
             <salle>S08</salle>
             <prix>60</prix>
         </seance>
@@ -114,6 +119,6 @@
             <siege>2</siege>
             <seance>4</seance>
         </reservation>
-    </reservations>
+    <reservation code="z"><date>t</date><heure>ee</heure><utilisateur>3</utilisateur><siege>2</siege><seance>1</seance></reservation></reservations>
 
 </cinema>
