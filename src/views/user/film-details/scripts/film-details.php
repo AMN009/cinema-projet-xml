@@ -10,7 +10,7 @@
 
   // importer la feuille de style XSL dans le processus XSLT
     $xproces->importStylesheet($xsl);
-    $xproces->setParameter('', 'filmId', 'F1');
+    $xproces->setParameter('', 'filmId', 'F4');
     // $xproces->setParameter('', 'seanceId', $_GET['seance']);
 
   // Transformer du XML en HTML à l'aide du fichier XSL

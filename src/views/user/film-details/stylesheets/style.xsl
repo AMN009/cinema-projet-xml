@@ -2,6 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method='html' />
 
+    <!-- <xsl:key name="date" match="/cinema/seances/seance[film = 'F4']/date/text()" use="." /> -->
     <xsl:template match="/">
         <html lang="en">
             <head>
@@ -1200,16 +1201,36 @@
                                                                     </li>
                                                                 </ul>
                                                                 <span class="review-text">(34 reviews) </span>
-                                                                <!-- <a class="product-review" href="#">Write a review?</a> -->
                                                             </div>
                                                             <p class="price">
                                                                 <xsl:variable name="minPrix">
-                                                                    
+                                                                    <xsl:for-each select="/cinema/seances/seance[film = $filmId]/prix">
+                                                                        <xsl:sort data-type="number" />
+                                                                        <xsl:if test="position()=1">
+                                                                            <xsl:value-of select="." />
+                                                                        </xsl:if>
+                                                                    </xsl:for-each>
                                                                 </xsl:variable>
                                                                 <xsl:variable name="maxPrix">
-                                                                    
+                                                                    <xsl:for-each select="/cinema/seances/seance[film = $filmId]/prix">
+                                                                        <xsl:sort data-type="number" order="descending" />
+                                                                        <xsl:if test="position()=1">
+                                                                            <xsl:value-of select="." />
+                                                                        </xsl:if>
+                                                                    </xsl:for-each>
                                                                 </xsl:variable>
-                                                                50DH - 75DH
+                                                                <xsl:choose>
+                                                                    <xsl:when test="$minPrix = $maxPrix">
+                                                                        <xsl:value-of select="$maxPrix" />
+                                                                        DH
+                                                                    </xsl:when>
+                                                                    <xsl:otherwise>
+                                                                        <xsl:value-of select="$minPrix" />
+                                                                        DH -
+                                                                        <xsl:value-of select="$maxPrix" />
+                                                                        DH
+                                                                    </xsl:otherwise>
+                                                                </xsl:choose>
                                                             </p>
                                                             <p>
                                                                 Année:
@@ -1221,7 +1242,7 @@
                                                                 Durée:
                                                                 <span class="item">
                                                                     <xsl:value-of select="$film/duree" />
-                                                                    <i class="fa fa-clock-o"></i>
+                                                                    <!-- <i class="fa fa-clock-o"></i> -->
                                                                 </span>
                                                             </p>
                                                             <p>
@@ -1236,29 +1257,90 @@
                                                                     <xsl:value-of select="$film/genre" />
                                                                 </span>
                                                             </p>
-                                                            <p class="text-content"><xsl:value-of select="$film/description" /></p>
+                                                            <p class="text-content">
+                                                                <xsl:value-of select="$film/description" />
+                                                            </p>
                                                             <div class="filtaring-area my-3">
                                                                 <div class="size-filter">
-                                                                    <h4 class="m-b-15">Select size</h4>
-                                                                    <ul>
-                                                                        <li class="btn btn-primary light sharp">x</li>
-                                                                        <li class="btn btn-primary light sharp">m</li>
-                                                                        <li class="btn btn-primary light sharp">l</li>
-                                                                        <li class="btn btn-primary light sharp">xs</li>
-                                                                        <li class="btn btn-primary light sharp">xl</li>
+                                                                    <h4 class="m-b-15">Séances</h4>
+                                                                    <xsl:variable name="dates" select="/cinema/seances/seance[film = $filmId]/date" />
+                                                                    <xsl:variable name="filmSeances" select="/cinema/seances/seance[film = $filmId]" />
+                                                                    <ul class="nav nav-pills mb-4 light">
+                                                                        <!-- <xsl:for-each select="/cinema/seances/seance[film = $filmId]/date/text()[generate-id() = generate-id(key('date',.)[1])]"> -->
+                                                                        <xsl:for-each select="$dates">
+                                                                            <xsl:if test="generate-id() = generate-id($dates[. = current()][1])">
+                                                                                <xsl:choose>
+                                                                                    <xsl:when test="position() = 1">
+                                                                                        <li class=" nav-item">
+                                                                                            <a href="#navpills-{position()}" class="nav-link active" data-toggle="tab" aria-expanded="false">
+                                                                                                <xsl:value-of select="." />
+                                                                                            </a>
+                                                                                        </li>
+                                                                                    </xsl:when>
+                                                                                    <xsl:when test="position() = last()">
+                                                                                        <li class=" nav-item">
+                                                                                            <a href="#navpills-{position()}" class="nav-link" data-toggle="tab" aria-expanded="true">
+                                                                                                <xsl:value-of select="." />
+                                                                                            </a>
+                                                                                        </li>
+                                                                                    </xsl:when>
+                                                                                    <xsl:otherwise>
+                                                                                        <li class=" nav-item">
+                                                                                            <a href="#navpills-{position()}" class="nav-link" data-toggle="tab" aria-expanded="false">
+                                                                                                <xsl:value-of select="." />
+                                                                                            </a>
+                                                                                        </li>
+                                                                                    </xsl:otherwise>
+                                                                                </xsl:choose>
+                                                                            </xsl:if>
+                                                                        </xsl:for-each>
                                                                     </ul>
+                                                                    <div class="tab-content">
+                                                                        <xsl:for-each select="$dates">
+                                                                            <xsl:if test="generate-id() = generate-id($dates[. = current()][1])">
+                                                                                <xsl:variable name="date" select="." />
+                                                                                <xsl:choose>
+                                                                                    <xsl:when test="position() = 1">
+                                                                                        <div id="navpills-{position()}" class="tab-pane active">
+                                                                                            <div class="row">
+                                                                                                <div class="col-md-12">
+                                                                                                    <xsl:for-each select="$filmSeances[date = $date]/heure">
+                                                                                                        <button type="button" class="btn-xs btn-rounded btn-warning mr-1">
+                                                                                                            <xsl:value-of select="." />
+                                                                                                        </button>
+                                                                                                    </xsl:for-each>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </xsl:when>
+                                                                                    <xsl:otherwise>
+                                                                                        <div id="navpills-{position()}" class="tab-pane">
+                                                                                            <div class="row">
+                                                                                                <div class="col-md-12">
+                                                                                                    <xsl:for-each select="$filmSeances[date = $date]/heure">
+                                                                                                        <button type="button" class="btn-xs btn-rounded btn-warning mr-1">
+                                                                                                            <xsl:value-of select="." />
+                                                                                                        </button>
+                                                                                                    </xsl:for-each>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </xsl:otherwise>
+                                                                                </xsl:choose>
+                                                                            </xsl:if>
+                                                                        </xsl:for-each>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                             <!--Quantity start-->
-                                                            <div class="col-2 px-0">
+                                                            <!-- <div class="col-2 px-0">
                                                                 <input type="number" name="num" class="form-control input-btn input-number" value="1" />
-                                                            </div>
+                                                            </div> -->
                                                             <!--Quanatity End-->
                                                             <div class="shopping-cart mt-3">
                                                                 <a class="btn btn-primary btn-lg" href="#">
-                                                                    <i class="fa fa-shopping-basket mr-2"></i>
-                                                                    Add
-                                                        to cart
+                                                                    <i class="fa fa-ticket mr-2"></i>
+                                                                    Réserver
                                                                 </a>
                                                             </div>
                                                         </div>

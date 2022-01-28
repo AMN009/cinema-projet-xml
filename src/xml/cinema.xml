@@ -111,6 +111,13 @@
             <heure>01h35m</heure>
             <prix>120</prix>
         </seance>
+        <seance id="S602">
+            <salle>S20</salle>
+            <date>01/02/2022</date>
+            <film>F4</film>
+            <heure>20h15m</heure>
+            <prix>45</prix>
+        </seance>
     </seances>
 
     <reservations>
