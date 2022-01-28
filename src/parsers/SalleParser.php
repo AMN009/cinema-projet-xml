@@ -5,7 +5,7 @@
 
     $sallesParent = $root->getElementsByTagName('salles')->item(0);
 
-        function ajouterSalle($salle) {
+        function ajouterSalle($salle) { 
             if ($salle != null) {
                 global $doc, $sallesParent;
 
@@ -82,8 +82,13 @@
         }
 
         if(isset($_GET['ajout'])){
-            $salle = new Salle($_GET['id'],$_GET['capacite']);
+            $salle = new Salle('S'.$_GET['id'],$_GET['capacite']);
             ajouterSalle($salle);
+        }
+        if(isset($_GET['change'])){
+            $salle = new Salle($_GET['id'],$_GET['capacite']);
+            modifierSalle($salle);
+            header('Location:../views/admin/lists/salles/scripts/script.php');
         }
 
 ?>

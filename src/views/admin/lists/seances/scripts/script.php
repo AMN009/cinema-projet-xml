@@ -1,7 +1,7 @@
 <?php
 
-  require_once(__DIR__.'/../../../../../parsers/SeanceParser.php');
-  require_once(__DIR__.'/../../../../../models/Seance.php');
+    require_once(__DIR__.'/../../../../../parsers/SeanceParser.php');
+    require_once(__DIR__.'/../../../../../models/Seance.php');
 
   // Créez un document DOM et charger la feuille de style XSL
 	$xsl = new DomDocument;

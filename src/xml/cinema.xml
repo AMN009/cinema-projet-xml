@@ -8,18 +8,8 @@
             <tel>+212-684-989-567</tel>
             <carte-credit>1234-5689-8532-6955</carte-credit>
         </utilisateur>
-        <utilisateur id="U2">
-            <nom>Vincent Moule 2</nom>
-            <email>vincent.moule@gmail.com 2</email>
-            <tel>+212-684-989-567</tel>
-            <carte-credit>1234-5689-8532-6955 2</carte-credit>
-        </utilisateur>
-        <utilisateur id="U3">
-            <nom>Vincent Moule 3</nom>
-            <email>vincent.moule@gmail.com 3</email>
-            <tel>+212-684-989-567</tel>
-            <carte-credit>1234-5689-8532-6955 3</carte-credit>
-        </utilisateur>
+
+
         <utilisateur id="U21">
             <nom>Aymen</nom>
             <email>aymen@gmail.com</email>
@@ -62,10 +52,11 @@
     </films>
 
     <salles>
-        <salle id="S08" capacite="70"/>
-        <salle id="S15" capacite="80"/>
-        <salle id="S20" capacite="60"/>
-        <salle id="S10" capacite="100"/>
+        <salle id="S1" capacite="70"/>
+        <salle id="S2" capacite="80"/>
+        <salle id="S3" capacite="120"/>
+        <salle id="S4" capacite="90"/>
+        <salle id="S5" capacite="100"/>
     </salles>
 
     <sieges>
@@ -97,8 +88,14 @@
             <heure>10h30m</heure>
             <prix>50</prix>
         </seance>
-        <seance id="S600"><salle>S08</salle><date>01/02/2022</date><film>F4</film><heure>08h20m</heure><prix>95</prix></seance>
-        <seance id="S601"><salle>S08</salle><date>04/02/2022</date><film>F4</film><heure>01h35m</heure><prix>120</prix></seance>
+        <seance id="S600">
+            <salle>S08</salle>
+            <date>01/02/2022</date>
+            <film>F4</film>
+            <heure>08h20m</heure>
+            <prix>95</prix>
+        </seance>
+        <seance id="S601"><salle>S1</salle><date>04/02/2022</date><film>F4</film><heure>01h35m</heure><prix>120</prix></seance>
     </seances>
 
     <reservations>
@@ -123,20 +120,6 @@
             <siege>2</siege>
             <seance>4</seance>
         </reservation>
-        <reservation code="z">
-            <date>t</date>
-            <heure>ee</heure>
-            <utilisateur>3</utilisateur>
-            <siege>2</siege>
-            <seance>1</seance>
-        </reservation>
-        <reservation code="y">
-            <date>2</date>
-            <heure>2</heure>
-            <utilisateur>2</utilisateur>
-            <siege>2</siege>
-            <seance>2</seance>
-        </reservation>
-    </reservations>
 
+    </reservations>
 </cinema>

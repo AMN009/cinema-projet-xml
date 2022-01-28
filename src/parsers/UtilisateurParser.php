@@ -48,27 +48,16 @@
             }
         }
 
-        function supprimerUtilisateur($utilisateur) {
-            if ($utilisateur != null) {
-                global $doc, $utilisateursParent;
+        function supprimerUtilisateur($id) {
+            global $doc, $utilisateursParent;
 
-                $existant = false;
-
-                foreach ($utilisateursParent->childNodes as $child) {
-                    if ($child->nodeType == 1 && ($utilisateur->getId() == $child->getAttribute('id'))) {
-                        $existant = true;
-                        $utilisateursParent->removeChild($child);
-                        $doc->save(__DIR__."/../xml/cinema.xml");
-                        return $child;
-                    }
-                }
-
-                if (!$existant)
-                    var_dump("Utilisateur à supprimer n'existe pas dans la liste des utilisateurs !");
+            foreach($utilisateursParent->childNodes as $utilisateur){
+            if($utilisateur->nodeType==1 and $utilisateur->getAttribute('id')==$id){
+                $utilisateur->parentNode->removeChild($utilisateur);
             }
-            else {
-                var_dump("Utilisateur à supprimer est null !");
-            }
+        }
+        $doc->save(__DIR__."/../xml/cinema.xml");
+            
         }
 
         function utilisateurNode($utilisateur) {
@@ -90,6 +79,11 @@
                 $utilisateurNode->appendChild($telNode);
 
                 return $utilisateurNode;
+        }
+
+        if(isset($_GET['id'])){
+          supprimerUtilisateur($_GET['id']);
+          header('Location:../views/admin/lists/utilisateurs/scripts/script.php');
         }
 
 ?>

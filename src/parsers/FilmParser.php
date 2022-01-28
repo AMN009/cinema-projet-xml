@@ -114,7 +114,7 @@
 
 
         if(isset($_GET['ajout'])){
-            $film = new Film(1,$_GET['titre'],$_GET['genre'],$_GET['realisateur'],$_GET['annee'],$_GET['duree'],$_GET['poste'],$_GET['description']);
+            $film = new Film(1,$_GET['titre'],$_GET['genre'],$_GET['realisateur'],$_GET['annee'],$_GET['duree'],"src/views/posters/".$_GET['poste'],$_GET['description']);
             ajouterFilm($film);
             
         }
