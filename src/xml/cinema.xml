@@ -37,7 +37,7 @@
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="src/views/posters/F21.jpg"/>
+            <poster source="F1.jpg"/>
         </film>
         <film id="F2" anne="2014">
 
@@ -45,7 +45,7 @@
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="src/views/posters/F21.jpg"/>
+            <poster source="F2.jpg"/>
         </film>
 
         <film id="F3" anne="2014">
@@ -54,7 +54,7 @@
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="src/views/posters/F21.jpg"/>
+            <poster source="F3.jpg"/>
         </film>
         <film id="F4" annee="1334">
             <titre>test</titre>
@@ -64,29 +64,16 @@
             <poster source="ddn.txt"/>
             <description>retsts</description>
         </film>
-        <film id="F5" annee="1334">
-            <titre>test</titre>
-            <genre>drame</genre>
-            <realisateur>test</realisateur>
-            <duree>30</duree>
-            <poster source="ddn.txt"/>
-            <description>retsts</description>
-        </film>
-        <film id="F6" annee="30">
-            <titre>y</titre>
-            <genre>drame</genre>
-            <realisateur>y</realisateur>
-            <duree>30</duree>
-            <poster source="Carte de controle c.pptx"/>
-            <description>hhs</description>
-        </film>
+        
+
     </films>
 
     <salles>
         <salle id="S08" capacite="70"/>
         <salle id="S15" capacite="80"/>
+
         <salle id="S22" capacite="120"/>
-        <salle id="45" capacite="40"/>
+
     </salles>
 
     <sieges>
@@ -125,7 +112,13 @@
             <heure>08h20m</heure>
             <prix>95</prix>
         </seance>
-        <seance id="S601"><salle>S08</salle><date>04/02/2022</date><film>F3</film><heure>01h35m</heure><prix>120</prix></seance>
+        <seance id="S601">
+            <salle>S08</salle>
+            <date>04/02/2022</date>
+            <film>F3</film>
+            <heure>01h35m</heure>
+            <prix>120</prix>
+        </seance>
     </seances>
 
     <reservations>

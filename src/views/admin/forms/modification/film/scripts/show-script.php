@@ -1,7 +1,7 @@
 <?php
 
-  require_once(__DIR__.'/../../../../../parsers/SeanceParser.php');
-  require_once(__DIR__.'/../../../../../models/Seance.php');
+  require_once(__DIR__.'/../../../../../../parsers/FilmParser.php');
+  require_once(__DIR__.'/../../../../../../models/Film.php');
 
   // Créez un document DOM et charger la feuille de style XSL
 	$xsl = new DomDocument;
@@ -10,9 +10,11 @@
 
   // importer la feuille de style XSL dans le processus XSLT
     $xproces->importStylesheet($xsl);
+    $xproces->setParameter('', 'filmId', $_GET['film']);
 
   // Transformer du XML en HTML à l'aide du fichier XSL
     echo $xproces->transformToXML($doc);
+    // $html = $xproces->transformToXML($doc);
     // file_put_contents('test.html', $html);
 
 ?>

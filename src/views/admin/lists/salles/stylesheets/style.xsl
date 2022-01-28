@@ -1198,7 +1198,7 @@
                                                                         <i class="las la-pen-square scale5 text-success mr-2"></i>
                                                                         Modifier la salle
                                                                     </a>
-                                                                    <a class="dropdown-item" href="#">
+                                                                    <a class="dropdown-item" href="src/views/admin/lists/salles/scripts/delete-script.php?salle={@id}">
                                                                         <i class="las la-trash scale5 text-danger mr-2"></i>
                                                                         Supprimer la salle
                                                                     </a>

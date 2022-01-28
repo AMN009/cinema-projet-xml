@@ -1184,7 +1184,7 @@
                                                         </td>
                                                         <td>
                                                             <div class="d-flex align-items-center">
-                                                                <img src="{ poster/@source }" class="rounded-lg mr-2" width="24" alt="" />
+                                                                <img src="src/views/posters/{ poster/@source }" class="rounded-lg mr-2" width="24" alt="" />
                                                                 <span class="w-space-no">
                                                                     <xsl:value-of select="titre" />
                                                                 </span>
@@ -1217,11 +1217,11 @@
                                                                     </svg>
                                                                 </div>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a class="dropdown-item" href="#">
+                                                                    <a class="dropdown-item" href="src/views/admin/forms/modification/film/scripts/show-script.php?film={@id}">
                                                                         <i class="las la-pen-square scale5 text-success mr-2"></i>
                                                                         Modifier le film
                                                                     </a>
-                                                                    <a class="dropdown-item" href="#">
+                                                                    <a class="dropdown-item" href="src/views/admin/lists/films/scripts/delete-script.php?film={@id}">
                                                                         <i class="las la-trash scale5 text-danger mr-2"></i>
                                                                         Supprimer le film
                                                                     </a>

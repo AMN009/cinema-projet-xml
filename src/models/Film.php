@@ -22,7 +22,7 @@
         }
 
         public static function emptyFilm() {
-            return new Film('', '', '', '', 0, '', '');
+            return new Film('', '', '', '', 0, '', '', '');
         }
 
 

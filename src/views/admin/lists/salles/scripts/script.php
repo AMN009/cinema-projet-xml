@@ -1,5 +1,8 @@
 <?php
 
+    require_once(__DIR__.'/../../../../../parsers/SalleParser.php');
+    require_once(__DIR__.'/../../../../../models/Salle.php');
+
   // Créez un document DOM et charger la feuille de style XSL
 	$xsl = new DomDocument;
 	$xsl->load(__DIR__.'/../stylesheets/style.xsl');
