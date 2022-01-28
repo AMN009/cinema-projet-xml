@@ -36,15 +36,15 @@
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="F1.jpg"/>
-            <description/>
+            <poster source="F1.jpg" />
+            <description>Il n'y a que la musique dans la vie d'Andrew. Le jeune homme de 19 ans n'hésite pas à sacrifier ses relations amoureuses, amicales et familiales pour devenir un des meilleurs batteurs de jazz de sa génération.</description>
         </film>
         <film id="F2" annee="2014">
             <titre>Whiplash 2</titre>
             <genre>Drame, Music</genre>
             <realisateur>Damien Chazelle 2</realisateur>
             <duree>1h46m</duree>
-            <poster source="F2.jpg"/>
+            <poster source="F2.jpg" />
             <description>Film waaaa3er</description>
         </film>
 
@@ -54,7 +54,7 @@
             <genre>Drame</genre>
             <realisateur>Réalisateur</realisateur>
             <duree>2h44m</duree>
-            <poster source="F4.jpg"/>
+            <poster source="F4.jpg" />
             <description>Film naaaaadi !</description>
         </film>
 
@@ -62,10 +62,10 @@
     </films>
 
     <salles>
-        <salle id="S08" capacite="70"/>
-        <salle id="S15" capacite="80"/>
-        <salle id="S20" capacite="60"/>
-        <salle id="S10" capacite="100"/>
+        <salle id="S08" capacite="70" />
+        <salle id="S15" capacite="80" />
+        <salle id="S20" capacite="60" />
+        <salle id="S10" capacite="100" />
     </salles>
 
     <sieges>
@@ -97,8 +97,20 @@
             <heure>10h30m</heure>
             <prix>50</prix>
         </seance>
-        <seance id="S600"><salle>S08</salle><date>01/02/2022</date><film>F4</film><heure>08h20m</heure><prix>95</prix></seance>
-        <seance id="S601"><salle>S08</salle><date>04/02/2022</date><film>F4</film><heure>01h35m</heure><prix>120</prix></seance>
+        <seance id="S600">
+            <salle>S08</salle>
+            <date>01/02/2022</date>
+            <film>F4</film>
+            <heure>08h20m</heure>
+            <prix>95</prix>
+        </seance>
+        <seance id="S601">
+            <salle>S08</salle>
+            <date>04/02/2022</date>
+            <film>F4</film>
+            <heure>01h35m</heure>
+            <prix>120</prix>
+        </seance>
     </seances>
 
     <reservations>
