@@ -1202,7 +1202,15 @@
                                                                 <span class="review-text">(34 reviews) </span>
                                                                 <!-- <a class="product-review" href="#">Write a review?</a> -->
                                                             </div>
-                                                            <p class="price">50DH - 75DH</p>
+                                                            <p class="price">
+                                                                <xsl:variable name="minPrix">
+                                                                    
+                                                                </xsl:variable>
+                                                                <xsl:variable name="maxPrix">
+                                                                    
+                                                                </xsl:variable>
+                                                                50DH - 75DH
+                                                            </p>
                                                             <p>
                                                                 Année:
                                                                 <span class="item">
