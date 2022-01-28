@@ -9,7 +9,7 @@
 		<meta charset="utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="viewport" content="width=device-width,initial-scale=1"/>
-		<title>Davur - Restaurant Food Order Bootstrap Admin Dashboard</title>
+		<title>movies</title>
 		<!-- Favicon icon -->
 		<link rel="icon" type="image/png" sizes="16x16" href="../../style/images/favicon.png"/>
 			<link href="../../style/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet"/>
@@ -894,7 +894,7 @@
 											<img class="img-fluid" src="{poster/@source}" alt=""/>
 										</div>
 										<div class="new-arrival-content text-center mt-3">
-											<h4> <xsl:value-of select="titre"></xsl:value-of> </h4>
+											<h4><a href="#"><xsl:value-of select="titre"></xsl:value-of></a> </h4>
 											<ul class="star-rating">
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star"></i></li>

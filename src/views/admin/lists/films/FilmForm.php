@@ -750,7 +750,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="basic-form">
-                                    <form  action="../../../../parsers/FilmParser.php" method="get" >
+                                    <form  action="../../../../parsers/FilmParser.php" method="post" >
                                         <div class="form-group row">
                                             <label class="col-sm-3 col-form-label">titre</label>
                                             <div class="col-sm-9">

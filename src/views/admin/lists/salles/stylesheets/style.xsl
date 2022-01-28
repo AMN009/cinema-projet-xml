@@ -1307,7 +1307,7 @@
                                             <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
                                             </button>
                             </div>
-                     <form  action="../../../../../parsers/SalleParser.php" method="get" >
+                     <form  action="../../../../../parsers/SalleParser.php" method="post" >
                         <div class="modal-body">
                         
                         </div>

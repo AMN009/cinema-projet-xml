@@ -51,7 +51,7 @@
             <genre>action</genre>
             <realisateur>test</realisateur>
             <duree>30</duree>
-            <poster source="src/views/posters/1.PNG"/>
+            <poster source="../../posters/F21.jpg"/>
             <description>retsts</description>
         </film>
         <film id="F5" annee="1334">
@@ -59,7 +59,7 @@
             <genre>drame</genre>
             <realisateur>test</realisateur>
             <duree>30</duree>
-            <poster source="src/views/posters/1.PNG"/>
+            <poster source="../../posters/F21.jpg"/>
             <description>retsts</description>
         </film>
         <film id="F6" annee="30">
@@ -67,7 +67,7 @@
             <genre>drame</genre>
             <realisateur>y</realisateur>
             <duree>30</duree>
-            <poster source="src/views/posters/1.PNG"/>
+            <poster source="../../posters/F21.jpg"/>
             <description>hhs</description>
         </film>
    </films>
