@@ -1161,73 +1161,51 @@
                                         </div>
                                         <div class="card-body">
                                             <div class="basic-form">
-                                                <form action="modification-script.php" method="post">
-                                                    <xsl:variable name="seance" select="/cinema/seances/seance[@id = $seanceId]" />
-                                                    <input name="id" type="hidden" value="{$seanceId}" />
+                                                <form action="modification-script.php" method="post" enctype="multipart/form-data">
+                                                    <xsl:variable name="film" select="/cinema/films/film[@id = $filmId]" />
+                                                    <input name="id" type="hidden" value="{$filmId}" />
                                                     <div class="form-row">
                                                         <div class="form-group col-md-6">
-                                                            <label>Date de la séance</label>
-                                                            <input name="seance-date" type="hidden" value="{$seance/date}" />
-                                                            <input name="date" class="datepicker-default form-control" id="datepicker" placeholder="{$seance/date}" />
+                                                            <label>Titre du film</label>
+                                                            <input name="film-titre" type="hidden" value="{$film/titre}" />
+                                                            <input name="titre" class="form-control form-control-lg" type="text" placeholder="{$film/titre}" />
                                                         </div>
                                                         <div class="form-group col-md-6">
-                                                            <label>Heure de la diffusion</label>
-                                                            <div class="input-group">
-                                                                <input name="seance-heure" type="hidden" value="{$seance/heure}" />
-                                                                <input name="heure" class="form-control" id="single-input" value="" placeholder="{$seance/heure}" />
-                                                            </div>
+                                                            <label>Genre(s) du film</label>
+                                                            <input name="film-genre" type="hidden" value="{$film/genre}" />
+                                                            <input name="genre" class="form-control form-control-lg" type="text" placeholder="{$film/genre}" />
                                                         </div>
                                                         <div class="form-group col-md-6">
-                                                            <label>Films</label>
-                                                            <select name="film" class="form-control">
-                                                                <xsl:for-each select="cinema/films/film">
-
-                                                                    <xsl:choose>
-                                                                        <xsl:when test="@id = $seance/film">
-                                                                            <option selected="" value="{@id}">
-                                                                                <xsl:value-of select="titre" />
-                                                                            </option>
-                                                                        </xsl:when>
-                                                                        <xsl:otherwise>
-                                                                            <option value="{@id}">
-                                                                                <xsl:value-of select="titre" />
-                                                                            </option>
-                                                                        </xsl:otherwise>
-                                                                    </xsl:choose>
-
-                                                                </xsl:for-each>
-                                                            </select>
+                                                            <label>Réalisateur du film</label>
+                                                            <input name="film-realisateur" type="hidden" value="{$film/realisateur}" />
+                                                            <input name="realisateur" class="form-control form-control-lg" type="text" placeholder="{$film/realisateur}" />
                                                         </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label>Salles</label>
-                                                            <select name="salle" class="form-control">
-                                                                <xsl:for-each select="cinema/salles/salle">
-                                                                    <xsl:choose>
-                                                                        <xsl:when test="@id = $seance/salle">
-                                                                            <option selected="">
-                                                                                <xsl:value-of select="@id" />
-                                                                            </option>
-                                                                        </xsl:when>
-                                                                        <xsl:otherwise>
-                                                                            <option>
-                                                                                <xsl:value-of select="@id" />
-                                                                            </option>
-                                                                        </xsl:otherwise>
-                                                                    </xsl:choose>
-                                                                </xsl:for-each>
-                                                            </select>
+                                                        <div class="form-group col-md-3">
+                                                            <label>Durée du film</label>
+                                                            <input name="film-duree" type="hidden" value="{$film/duree}" />
+                                                            <input name="duree" class="form-control form-control-lg" type="text" placeholder="{$film/duree}" />
                                                         </div>
-                                                    </div>
-                                                    <div class="form-row">
-                                                        <div class="input-group col-md-2">
-                                                            <input name="seance-prix" type="hidden" value="{$seance/prix}" />
-                                                            <input name="prix" type="text" class="form-control" placeholder="{$seance/prix}" />
-                                                            <div class="input-group-append">
-                                                                <span class="input-group-text">DH</span>
+                                                        <div class="form-group col-md-3">
+                                                            <label>Année de sortie</label>
+                                                            <input name="film-annee" type="hidden" value="{$film/@annee}" />
+                                                            <input name="annee" class="form-control form-control-lg" type="text" placeholder="{$film/@annee}" />
+                                                        </div>
+                                                        <div class="form-group col-md-9">
+                                                            <label>Description du film</label>
+                                                            <input name="film-description" type="hidden" value="{$film/description}" />
+                                                            <textarea name="description" class="form-control" rows="4" id="comment">
+                                                                <xsl:value-of select="$film/description" />
+                                                            </textarea>
+                                                        </div>
+                                                        <div class="form-group col-md-3">
+                                                            <label>Poster du film</label>
+                                                            <input name="film-poster" type="hidden" value="{$film/poster/@source}" />
+                                                            <div class="custom-file">
+                                                                <input name="poster" type="file" class="custom-file-input" />
+                                                                <label class="custom-file-label">Choose file</label>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group"></div>
                                                     <button type="submit" class="btn btn-primary">Valider</button>
                                                 </form>
                                             </div>

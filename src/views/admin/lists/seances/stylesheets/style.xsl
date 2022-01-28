@@ -1192,7 +1192,7 @@
                                                         </td>
                                                         <td>
                                                             <div class="d-flex align-items-center">
-                                                                <img src="{ ../../films/film[@id = $film]/poster/@source }" class="rounded-lg mr-2" width="24" alt="" />
+                                                                <img src="../../../../posters/{ ../../films/film[@id = $film]/poster/@source }" class="rounded-lg mr-2" width="24" alt="" />
                                                                 <span class="w-space-no">
                                                                     <xsl:value-of select="../../films/film[@id = $film]/titre" />
                                                                 </span>

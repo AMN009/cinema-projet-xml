@@ -31,49 +31,41 @@
 
     <films>
 
-        <film id="F1" anne="2014">
-
+        <film id="F1" annee="2014">
             <titre>Whiplash</titre>
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
             <poster source="F1.jpg"/>
+            <description/>
         </film>
-        <film id="F2" anne="2014">
-
-            <titre>Whiplash</titre>
-            <genre>Drame</genre>
-            <realisateur>Damien Chazelle</realisateur>
+        <film id="F2" annee="2014">
+            <titre>Whiplash 2</titre>
+            <genre>Drame, Music</genre>
+            <realisateur>Damien Chazelle 2</realisateur>
             <duree>1h46m</duree>
             <poster source="F2.jpg"/>
+            <description>Film waaaa3er</description>
         </film>
 
-        <film id="F3" anne="2014">
 
-            <titre>Whiplash 2</titre>
+        <film id="F4" annee="1994">
+            <titre>Forrest Gump 2</titre>
             <genre>Drame</genre>
-            <realisateur>Damien Chazelle</realisateur>
-            <duree>1h46m</duree>
-            <poster source="F3.jpg"/>
+            <realisateur>Réalisateur</realisateur>
+            <duree>2h44m</duree>
+            <poster source="F4.jpg"/>
+            <description>Film naaaaadi !</description>
         </film>
-        <film id="F4" annee="1334">
-            <titre>test</titre>
-            <genre>drame</genre>
-            <realisateur>test</realisateur>
-            <duree>30</duree>
-            <poster source="ddn.txt"/>
-            <description>retsts</description>
-        </film>
-        
+
 
     </films>
 
     <salles>
         <salle id="S08" capacite="70"/>
         <salle id="S15" capacite="80"/>
-
-        <salle id="S22" capacite="120"/>
-
+        <salle id="S20" capacite="60"/>
+        <salle id="S10" capacite="100"/>
     </salles>
 
     <sieges>
@@ -105,20 +97,8 @@
             <heure>10h30m</heure>
             <prix>50</prix>
         </seance>
-        <seance id="S600">
-            <salle>S08</salle>
-            <date>01/02/2022</date>
-            <film>F3</film>
-            <heure>08h20m</heure>
-            <prix>95</prix>
-        </seance>
-        <seance id="S601">
-            <salle>S08</salle>
-            <date>04/02/2022</date>
-            <film>F3</film>
-            <heure>01h35m</heure>
-            <prix>120</prix>
-        </seance>
+        <seance id="S600"><salle>S08</salle><date>01/02/2022</date><film>F4</film><heure>08h20m</heure><prix>95</prix></seance>
+        <seance id="S601"><salle>S08</salle><date>04/02/2022</date><film>F4</film><heure>01h35m</heure><prix>120</prix></seance>
     </seances>
 
     <reservations>

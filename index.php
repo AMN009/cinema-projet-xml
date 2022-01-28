@@ -6,7 +6,7 @@
     require_once('src/models/Film.php');
     require_once('src/parsers/SalleParser.php');
     require_once('src/models/Salle.php');
-    require_once('src/views/admin/lists/films/scripts/script.php');
+    // require_once('src/views/admin/lists/films/scripts/script.php');
     // require_once('src/views/admin/lists/salles/scripts/script.php');
     // require_once('src/views/admin/lists/utilisateurs/scripts/script.php');
     // require_once('src/views/admin/lists/reservations/scripts/script.php');
