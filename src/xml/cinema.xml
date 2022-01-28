@@ -76,7 +76,7 @@
         <salle id="S1" capacite="70"/>
         <salle id="S2" capacite="80"/>
         <salle id="S3" capacite="120"/>
-        <salle id="S4" capacite="40"/>
+        <salle id="S4" capacite="90"/>
     <salle id="S5" capacite="100"/></salles>
 
     <sieges>

@@ -117,4 +117,9 @@
         header('Location:../views/admin/lists/reservations/scripts/script.php');
       }
 
+      if(isset($_GET['code'])){
+        deleteReservation($_GET['code']);
+        header('Location:../views/admin/lists/reservations/scripts/script.php');
+      }
+
 ?>
