@@ -1299,9 +1299,6 @@
                         });
 
                     </script>
-
-
-
                     <div class="modal fade" id="empModal" role="dialog">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
@@ -1310,7 +1307,6 @@
                                             <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
                                             </button>
                             </div>
-
                      <form  action="../../../../../parsers/SalleParser.php" method="get" >
                         <div class="modal-body">
                         

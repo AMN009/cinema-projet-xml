@@ -125,13 +125,15 @@
             <siege>SI889</siege>
             <seance>SE658</seance>
         </reservation>
-        <reservation code="t">
-            <date>test</date>
-            <heure>test</heure>
+        <reservation code="47">
+            <date>01/11/2021</date>
+            <heure>23h02m</heure>
             <utilisateur>U1</utilisateur>
-            <siege>2</siege>
-            <seance>4</seance>
+            <siege>SI889</siege>
+            <seance>SE658</seance>
         </reservation>
+        
+        
 
     </reservations>
 
