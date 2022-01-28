@@ -27,31 +27,31 @@
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="src/views/posters/F21.jpg"/>
+            <poster source="../../posters/F21.jpg"/>
         </film>
         <film id="F2" anne="2014">
 
             <titre>Whiplash</titre>
-            <genre>Drame</genre>
+            <genre>science</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="src/views/posters/F21.jpg"/>
+            <poster source="../../posters/F21.jpg"/>
         </film>
 
         <film id="F3" anne="2014">
 
             <titre>Whiplash 2</titre>
-            <genre>Drame</genre>
+            <genre>action</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="src/views/posters/F21.jpg"/>
+            <poster source="../../posters/F21.jpg"/>
         </film>
         <film id="F4" annee="1334">
             <titre>test</titre>
-            <genre>drame</genre>
+            <genre>action</genre>
             <realisateur>test</realisateur>
             <duree>30</duree>
-            <poster source="ddn.txt"/>
+            <poster source="src/views/posters/1.PNG"/>
             <description>retsts</description>
         </film>
         <film id="F5" annee="1334">
@@ -59,7 +59,7 @@
             <genre>drame</genre>
             <realisateur>test</realisateur>
             <duree>30</duree>
-            <poster source="ddn.txt"/>
+            <poster source="src/views/posters/1.PNG"/>
             <description>retsts</description>
         </film>
         <film id="F6" annee="30">
@@ -67,10 +67,10 @@
             <genre>drame</genre>
             <realisateur>y</realisateur>
             <duree>30</duree>
-            <poster source="Carte de controle c.pptx"/>
+            <poster source="src/views/posters/1.PNG"/>
             <description>hhs</description>
         </film>
-    <film id="F7" annee="1975"><titre>testq</titre><genre>drame</genre><realisateur>tetst</realisateur><duree>30</duree><poster source="src/views/posters/1.PNG"/><description>test</description></film></films>
+   </films>
 
     <salles>
         <salle id="S1" capacite="70"/>

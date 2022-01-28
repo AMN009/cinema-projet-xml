@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method='html' />
 
-<xsl:template match="/">
+<xsl:template match="/cinema">
 	
 <html lang="en">
 	<head>
@@ -884,15 +884,17 @@
 						</div>
 					</div>
 					<div class="row">
+
+						<xsl:for-each select="films/film">
 						<div class="col-xl-4 col-lg-7 col-md-5 col-sm-7">
 							<div class="card">
 								<div class="card-body">
 									<div class="new-arrival-product">
 										<div class="new-arrivals-img-contnent">
-											<img class="img-fluid" src="../../style/images/product/1.jpg" alt=""/>
+											<img class="img-fluid" src="{poster/@source}" alt=""/>
 										</div>
 										<div class="new-arrival-content text-center mt-3">
-											<h4>Bonorum et Malorum</h4>
+											<h4> <xsl:value-of select="titre"></xsl:value-of> </h4>
 											<ul class="star-rating">
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star"></i></li>
@@ -900,166 +902,16 @@
 												<li><i class="fa fa-star-half-empty"></i></li>
 												<li><i class="fa fa-star-half-empty"></i></li>
 											</ul>
-											<span class="price">$761.00</span>
+											<span class="price"><xsl:value-of select="genre"></xsl:value-of></span>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-4 col-lg-7 col-md-5 col-sm-7">
-							<div class="card">
-								<div class="card-body">
-									<div class="new-arrival-product">
-										<div class="new-arrivals-img-contnent">
-											<img class="img-fluid" src="../../style/images/product/2.jpg" alt=""/>
-										</div>
-										<div class="new-arrival-content text-center mt-3">
-											<h4>Striped Dress</h4>
-											<ul class="star-rating">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-											<span class="price">$159.00</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-7 col-md-5 col-sm-7">
-							<div class="card">
-								<div class="card-body">
-									<div class="new-arrival-product">
-										<div class="new-arrivals-img-contnent">
-											<img class="img-fluid" src="../../style/images/product/3.jpg" alt=""/>
-										</div>
-										<div class="new-arrival-content text-center mt-3">
-											<h4>BBow polka-dot</h4>
-											<ul class="star-rating">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-											<span class="price">$357.00</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-7 col-md-5 col-sm-7">
-							<div class="card">
-								<div class="card-body">
-									<div class="new-arrival-product">
-										<div class="new-arrivals-img-contnent">
-											<img class="img-fluid" src="../../style/images/product/4.jpg" alt=""/>
-										</div>
-										<div class="new-arrival-content text-center mt-3">
-											<h4>Z Product 360</h4>
-											<ul class="star-rating">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star-half-empty"></i></li>
-												<li><i class="fa fa-star-half-empty"></i></li>
-											</ul>
-											<span class="price">$654.00</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-7 col-md-5 col-sm-7">
-							<div class="card">
-								<div class="card-body">
-									<div class="new-arrival-product">
-										<div class="new-arrivals-img-contnent">
-											<img class="img-fluid" src="../../style/images/product/5.jpg" alt=""/>
-										</div>
-										<div class="new-arrival-content text-center mt-3">
-											<h4>Chair Grey</h4>
-											<ul class="star-rating">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-											<span class="price">$369.00</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-7 col-md-5 col-sm-7">
-							<div class="card">
-								<div class="card-body">
-									<div class="new-arrival-product">
-										<div class="new-arrivals-img-contnent">
-											<img class="img-fluid" src="../../style/images/product/6.jpg" alt=""/>
-										</div>
-										<div class="new-arrival-content text-center mt-3">
-											<h4>fox sake withe</h4>
-											<ul class="star-rating">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-											<span class="price">$245.00</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-7 col-md-5 col-sm-7">
-							<div class="card">
-								<div class="card-body">
-									<div class="new-arrival-product">
-										<div class="new-arrivals-img-contnent">
-											<img class="img-fluid" src="../../style/images/product/7.jpg" alt=""/>
-										</div>
-										<div class="new-arrival-content text-center mt-3">
-											<h4>Back Bag</h4>
-											<ul class="star-rating">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-											<span class="price">$364.00</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-7 col-md-5 col-sm-7">
-							<div class="card">
-								<div class="card-body">
-									<div class="new-arrival-product">
-										<div class="new-arrivals-img-contnent">
-											<img class="img-fluid" src="../../style/images/product/1.jpg" alt=""/>
-										</div>
-										<div class="new-arrival-content text-center mt-3">
-											<h4>FLARE DRESS</h4>
-											<ul class="star-rating">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star-half-empty"></i></li>
-												<li><i class="fa fa-star-half-empty"></i></li>
-											</ul>
-											<span class="price">$548.00</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+
+
+						</xsl:for-each>
+						
 					</div>
 				</div>
 			</div>
