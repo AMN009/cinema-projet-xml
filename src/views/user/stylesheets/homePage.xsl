@@ -903,6 +903,7 @@
 												<li><i class="fa fa-star-half-empty"></i></li>
 											</ul>
 											<span class="price"><xsl:value-of select="genre"></xsl:value-of></span>
+											<h6><a href="#">more details</a> </h6>
 										</div>
 									</div>
 								</div>
