@@ -4,9 +4,10 @@
 
     class Siege {
         private string $id;
-        private int $salle;
-        private int $rang;
-        private int $numero;
+        private string $salle;
+        private string $rang;
+        private string $numero;
+        private bool $libre;
 
         function __construct($id, $salle,$rang,$numero)
         {
@@ -14,6 +15,7 @@
             $this->salle = $salle;
             $this->rang = $rang;
             $this->numero = $numero;
+            $this->libre = true;
         }
         
 
@@ -34,6 +36,10 @@
             return $this->numero;
         }
 
+        public function isLibre(){
+            return $this->libre;
+        }
+
 
         //Setters
         public function setId($id){
@@ -50,6 +56,10 @@
 
         public function setNumero($numero){
             $this->numero = $numero;
+        }
+
+        public function setLibre($libre){
+            $this->libre = $libre;
         }
 
     }

@@ -1339,7 +1339,7 @@
                                                             <!--Quanatity End-->
                                                             <form action="src/views/user/film-details/scripts/reservation.php" method="post">
                                                                 <input name="utilisateur" type="hidden" value="U1" />
-                                                                <input name="seance" id="seanceId" type="hidden" value="" />
+                                                                <input name="seance" id="seanceId" type="hidden" />
                                                                 <div class="shopping-cart mt-3">
                                                                     <a class="btn btn-primary btn-lg" href="#" onclick="this.closest('form').submit();return false;">
                                                                         <i class="fa fa-ticket mr-2"></i>

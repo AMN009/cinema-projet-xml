@@ -3,10 +3,10 @@
     class Reservation {
         private string $code;
         private string $date;
-        private int $siege;
+        private string $siege;
         private string $heure;
-        private int $seance;
-        private int $utilisateur;
+        private string $seance;
+        private string $utilisateur;
 
         function __construct($code,$date, $siege,$heure,$seance, $utilisateur)
         {
