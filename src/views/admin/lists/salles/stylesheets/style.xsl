@@ -14,11 +14,15 @@
                 <title>CINEWEB - Liste des salles</title>
                 <!-- Favicon icon -->
                 <link rel="icon" type="image/png" sizes="16x16" href="../../../../style/images/favicon.png" />
+                <link rel="icon" type="image/png" sizes="16x16" href="src/views/style/images/favicon.png" />
 
                 <!-- Custom Stylesheet -->
                 <link href="../../../../style/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
                 <link href="../../../../style/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
                 <link href="../../../../style/css/style.css" rel="stylesheet" />
+                <link href="src/views/style/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+                <link href="src/views/style/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
+                <link href="src/views/style/css/style.css" rel="stylesheet" />
                 <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet" />
             </head>
             <body>
@@ -1177,8 +1181,8 @@
                                                 <xsl:for-each select="cinema/salles/salle">
                                                     <xsl:sort select="@id" />
                                                     <tr>
-                                                        <td >
-                                                            <xsl:value-of select="@id"  />
+                                                        <td>
+                                                            <xsl:value-of select="@id" />
                                                         </td>
                                                         <td id="capacite">
                                                             <xsl:value-of select="@capacite" />
@@ -1196,8 +1200,9 @@
                                                                     </svg>
                                                                 </div>
                                                                 <div class="dropdown-menu dropdown-menu-right  ">
-                                                                    <a class="dropdown-item userinfo " href="#" name="edit" data-id="{@id}"   >
-                                                                        <i class="las la-pen-square scale5 text-success mr-2  "></i> modifier la salle
+                                                                    <a class="dropdown-item userinfo " href="#" name="edit" data-id="{@id}">
+                                                                        <i class="las la-pen-square scale5 text-success mr-2  "></i>
+                                                                        modifier la salle
                                                                     </a>
                                                                     <a class="dropdown-item" href="src/views/admin/lists/salles/scripts/delete-script.php?salle={@id}">
                                                                         <i class="las la-trash scale5 text-danger mr-2"></i>
@@ -1259,9 +1264,14 @@
                 <script src="../../../../style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
                 <script src="../../../../style/js/custom.min.js"></script>
                 <script src="../../../../style/js/deznav-init.js"></script>
+                <script src="src/views/style/vendor/global/global.min.js"></script>
+                <script src="src/views/style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+                <script src="src/views/style/js/custom.min.js"></script>
+                <script src="src/views/style/js/deznav-init.js"></script>
 
                 <!-- Datatable -->
                 <script src="../../../../style/vendor/datatables/js/jquery.dataTables.min.js"></script>
+                <script src="src/views/style/vendor/datatables/js/jquery.dataTables.min.js"></script>
 
                 <script>
                 (function($) {
@@ -1282,7 +1292,7 @@
                 })(jQuery);
                 </script>
 
-                    <script type="text/javascript">
+                <script type="text/javascript">
                         $(document).ready(function(){
                             $('.userinfo').click(function(){
                                 var userid = $(this).data('id');
@@ -1301,28 +1311,26 @@
                     </script>
 
 
-
-                    <div class="modal fade" id="empModal" role="dialog">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
+                <div class="modal fade" id="empModal" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
                             <div class="modal-header">
-                                            <h5 class="modal-title">modifier la salle</h5>
-                                            <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
-                                            </button>
+                                <h5 class="modal-title">modifier la salle</h5>
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <span>&times;</span>
+                                </button>
                             </div>
 
-                     <form  action="../../../../../parsers/SalleParser.php" method="get" >
-                        <div class="modal-body">
-                        
-                        </div>
-                        <div class="modal-footer">
+                            <form action="../../../../../parsers/SalleParser.php" method="get">
+                                <div class="modal-body"></div>
+                                <div class="modal-footer">
                                     <button type="button" class="btn btn-danger light" data-dismiss="modal">Close</button>
                                     <button type="submit" class="btn btn-primary" name="change">Save changes</button>
-                        </div>
-                  </form>
-                            </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
+                </div>
                 <!-- <script src="../../../../style/vendor/global/global.min.js"></script>
                 <script src="../../../../style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
                 <script src="../../../../style/vendor/chart.js/Chart.bundle.min.js"></script>

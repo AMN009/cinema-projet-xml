@@ -19,7 +19,7 @@
 
 
     // ob_start();
-    // header('Location: script.php');
+    // header('Location: film-details.php');
     // ob_end_flush();
     // die();
 

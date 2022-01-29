@@ -4,7 +4,7 @@
   require_once(__DIR__.'/../../../../../../models/Seance.php');
 
     $last_seance = getLastSeance();
-    $id = 'S'.(intval(substr($last_seance->getId(), 1)) + 1);
+    $id = 'SE'.(intval(substr($last_seance->getId(), 2)) + 1);
 
     $salle = $_POST['salle'];
 

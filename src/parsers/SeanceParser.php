@@ -119,15 +119,15 @@
        function getLastSeance() {
           global $root;
           $seance = null;
-          $size = $root->getElementsByTagName('seances')->item(0)->childNodes->count() - 1;
-          for ($i=$size; $i >= 0; $i--) {
+          $size = $root->getElementsByTagName('seances')->item(0)->childNodes->count();
+          for ($i=$size - 1; $i >= 0; $i--) {
             $item = $root->getElementsByTagName('seances')->item(0)->childNodes->item($i);
             if ($item->nodeType == 1) {
-                $seance = $item;
+                $seance = seanceObject($item);
                 break;
             }
           }
-          return seanceObject($seance);
+          return $seance;
         }
 
         function getSeance($seanceId) {

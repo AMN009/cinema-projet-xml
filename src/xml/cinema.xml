@@ -59,20 +59,40 @@
     </salles>
 
     <sieges>
+        <siege id="SI84" libre="true">
+            <salle>S08</salle>
+            <rang>4</rang>
+            <numero>40</numero>
+        </siege>
+        <siege id="SI85" libre="true">
+            <salle>S08</salle>
+            <rang>4</rang>
+            <numero>41</numero>
+        </siege>
+        <siege id="SI86" libre="true">
+            <salle>S08</salle>
+            <rang>4</rang>
+            <numero>42</numero>
+        </siege>
+        <siege id="SI87" libre="true">
+            <salle>S08</salle>
+            <rang>4</rang>
+            <numero>43</numero>
+        </siege>
         <siege id="SI88" libre="false">
             <salle>S08</salle>
             <rang>4</rang>
             <numero>44</numero>
         </siege>
-        <siege id="SI89" libre="true">
+        <siege id="SI89" libre="false">
             <salle>S08</salle>
             <rang>4</rang>
             <numero>45</numero>
         </siege>
-        <siege id="SI90" libre="true">
+        <siege id="SI90" libre="false">
             <salle>S08</salle>
             <rang>4</rang>
-            <numero>45</numero>
+            <numero>46</numero>
         </siege>
     </sieges>
 
@@ -107,11 +127,11 @@
             <prix>120</prix>
         </seance>
         <seance id="SE602">
-            <salle>S20</salle>
-            <date>01/02/2022</date>
+            <salle>S08</salle>
+            <date>04/02/2022</date>
             <film>F4</film>
-            <heure>20h15m</heure>
-            <prix>45</prix>
+            <heure>22h00m</heure>
+            <prix>80</prix>
         </seance>
     </seances>
 
@@ -120,8 +140,22 @@
             <date>01/11/2021</date>
             <heure>23h02m</heure>
             <utilisateur>U1</utilisateur>
-            <siege>SI89</siege>
+            <siege>SI88</siege>
             <seance>SE600</seance>
+        </reservation>
+        <reservation code="R2">
+            <date>29/01/2022</date>
+            <heure>04h45m</heure>
+            <utilisateur>U1</utilisateur>
+            <siege>SI89</siege>
+            <seance>SE602</seance>
+        </reservation>
+        <reservation code="R3">
+            <date>29/01/2022</date>
+            <heure>04h48m</heure>
+            <utilisateur>U1</utilisateur>
+            <siege>SI90</siege>
+            <seance>SE601</seance>
         </reservation>
     </reservations>
 
