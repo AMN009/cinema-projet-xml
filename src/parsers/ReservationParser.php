@@ -117,9 +117,32 @@
         header('Location:../views/admin/lists/reservations/scripts/script.php');
       }
 
-      if(isset($_GET['code'])){
-        deleteReservation($_GET['code']);
-        header('Location:../views/admin/lists/reservations/scripts/script.php');
+      function reservationObject($reservationNode) {
+
+        $reservationId = $reservationNode->getAttribute('code');
+        $reservationDate = $reservationNode->getElementsByTagName('date')->item(0)->nodeValue;
+        $reservationHeure = $reservationNode->getElementsByTagName('heure')->item(0)->nodeValue;
+        $reservationSiege = $reservationNode->getElementsByTagName('siege')->item(0)->nodeValue;
+        $reservationSeance = $reservationNode->getElementsByTagName('seance')->item(0)->nodeValue;
+        $reservationUtilisateur = $reservationNode->getElementsByTagName('utilisateur')->item(0)->nodeValue;
+
+        $reservation = new Reservation($reservationId, $reservationDate, $reservationSiege, $reservationHeure, $reservationSeance, $reservationUtilisateur);
+
+        return $reservation;
+  }
+
+     function getLastReservation() {
+        global $root;
+        $reservation = null;
+        $lastIndex = $root->getElementsByTagName('reservations')->item(0)->childNodes->count() - 1;
+        for ($i=$lastIndex; $i >= 0; $i--) {
+          $item = $root->getElementsByTagName('reservations')->item(0)->childNodes->item($i);
+          if ($item->nodeType == 1) {
+              $reservation = $item;
+              break;
+          }
+        }
+        return reservationObject($reservation);
       }
 
 ?>

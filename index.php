@@ -11,6 +11,7 @@
     // require_once('src/views/admin/lists/utilisateurs/scripts/script.php');
     // require_once('src/views/admin/lists/reservations/scripts/script.php');
     // require_once('src/views/admin/lists/seances/scripts/script.php');
+    require_once('src/views/user/film-details/scripts/film-details.php');
 
     // $ajouté = false;
 

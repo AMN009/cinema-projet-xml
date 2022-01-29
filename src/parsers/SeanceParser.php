@@ -101,7 +101,7 @@
        }
 
        function seanceObject($seanceNode) {
-          global $doc;
+          // global $doc;
 
           $seanceId = $seanceNode->getAttribute('id');
           $seanceDate = $seanceNode->getElementsByTagName('date')->item(0)->nodeValue;
@@ -128,5 +128,17 @@
             }
           }
           return seanceObject($seance);
+        }
+
+        function getSeance($seanceId) {
+          global $root;
+          $seance = null;
+          foreach ($root->getElementsByTagName('seances')->item(0)->childNodes as $item) {
+            if ($item->nodeType == 1 && ($item->getAttribute('id') == $seanceId)) {
+                $seance = seanceObject($item);
+                break;
+            }
+          }
+          return $seance;
         }
 ?>
