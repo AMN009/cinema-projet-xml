@@ -69,6 +69,11 @@
             <rang>4</rang>
             <numero>45</numero>
         </siege>
+        <siege id="SI90" libre="true">
+            <salle>S08</salle>
+            <rang>4</rang>
+            <numero>45</numero>
+        </siege>
     </sieges>
 
     <seances>
@@ -115,8 +120,8 @@
             <date>01/11/2021</date>
             <heure>23h02m</heure>
             <utilisateur>U1</utilisateur>
-            <siege>SI88</siege>
-            <seance>SE658</seance>
+            <siege>SI89</siege>
+            <seance>SE600</seance>
         </reservation>
     </reservations>
 

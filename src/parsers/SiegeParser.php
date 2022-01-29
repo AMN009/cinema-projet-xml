@@ -107,6 +107,7 @@
             if ($item->nodeType == 1) {
               if (($item->getElementsByTagName('salle')->item(0)->nodeValue == $salle) && ($item->getAttribute('libre') == 'true')) {
                 $siege = siegeObject($item);
+                break;
               }
             }
           }
