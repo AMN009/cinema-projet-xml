@@ -8,8 +8,8 @@
             <tel>+212-684-989-567</tel>
             <carte-credit>1234-5689-8532-6955</carte-credit>
         </utilisateur>
-        
-        
+
+
         <utilisateur id="U21">
             <nom>Aymen</nom>
             <email>aymen@gmail.com</email>
@@ -21,12 +21,12 @@
 
     <films>
 
-        <film id="F1" anne="2014">
-
+        <film id="F1" annee="2014">
             <titre>Whiplash</titre>
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
+
             <poster source="../../posters/F21.jpg"/>
         </film>
         <film id="F2" anne="2014">
@@ -36,9 +36,11 @@
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
             <poster source="../../posters/F21.jpg"/>
+            <poster source="F1.jpg" />
+            <description>Il n'y a que la musique dans la vie d'Andrew. Le jeune homme de 19 ans n'hésite pas à sacrifier ses relations amoureuses, amicales et familiales pour devenir un des meilleurs batteurs de jazz de sa génération.</description>
         </film>
 
-        <film id="F3" anne="2014">
+
 
             <titre>Whiplash 2</titre>
             <genre>action</genre>
@@ -72,27 +74,39 @@
         </film>
    </films>
 
+
     <salles>
-        <salle id="S1" capacite="70"/>
-        <salle id="S2" capacite="80"/>
-        <salle id="S3" capacite="120"/>
-        <salle id="S4" capacite="90"/>
-    <salle id="S5" capacite="100"/></salles>
+        <salle id="S08" capacite="70" />
+        <salle id="S15" capacite="80" />
+        <salle id="S20" capacite="60" />
+        <salle id="S10" capacite="100" />
+    </salles>
 
     <sieges>
-        <siege id="SI889">
+        <siege id="SI889" libre="true">
             <salle>S1</salle>
             <rang>7</rang>
             <numero>44</numero>
         </siege>
-        <siege id="S89">
+        <siege id="S89" libre="true">
             <salle>S2</salle>
             <rang>7</rang>
             <numero>44</numero>
         </siege>
+        <siege id="SI89" libre="false">
+            <salle>S08</salle>
+            <rang>4</rang>
+            <numero>45</numero>
+        </siege>
+        <siege id="SI90" libre="false">
+            <salle>S08</salle>
+            <rang>4</rang>
+            <numero>46</numero>
+        </siege>
     </sieges>
 
     <seances>
+
         <seance id="S659">
             <date>06/11/2021</date>
             <heure>18h45m</heure>
@@ -101,6 +115,7 @@
             <prix>60</prix>
         </seance>
         <seance id="S658">
+
             <date>06/11/2021</date>
             <heure>18h45m</heure>
             <film>F2</film>
@@ -108,20 +123,51 @@
             <prix>60</prix>
         </seance>
 
+        <seance id="SE599">
+            <salle>S15</salle>
+            <date>04/02/2022</date>
+            <film>F1</film>
+            <heure>10h30m</heure>
+            <prix>50</prix>
+        </seance>
+        <seance id="SE600">
+            <salle>S08</salle>
+            <date>01/02/2022</date>
+            <film>F4</film>
+            <heure>08h20m</heure>
+            <prix>95</prix>
+        </seance>
+        <seance id="SE601">
+            <salle>S08</salle>
+            <date>04/02/2022</date>
+            <film>F4</film>
+            <heure>01h35m</heure>
+            <prix>120</prix>
+        </seance>
+        <seance id="SE602">
+            <salle>S08</salle>
+            <date>04/02/2022</date>
+            <film>F4</film>
+            <heure>22h00m</heure>
+            <prix>80</prix>
+        </seance>
     </seances>
 
     <reservations>
-        <reservation code="R-215-487">
+        <reservation code="R1">
             <date>01/11/2021</date>
             <heure>23h02m</heure>
             <utilisateur>U1</utilisateur>
+
             <siege>SI889</siege>
             <seance>S659</seance>
+
         </reservation>
-        <reservation code="487">
-            <date>01/11/2021</date>
-            <heure>23h02m</heure>
+        <reservation code="R2">
+            <date>29/01/2022</date>
+            <heure>04h45m</heure>
             <utilisateur>U1</utilisateur>
+
             <siege>SI889</siege>
             <seance>S658</seance>
         </reservation>
@@ -135,7 +181,7 @@
         
         
 
-    </reservations>
 
+    </reservations>
 
 </cinema>
