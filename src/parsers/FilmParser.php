@@ -113,8 +113,8 @@
         }
 
 
-        if(isset($_GET['ajout'])){
-            $film = new Film(1,$_GET['titre'],$_GET['genre'],$_GET['realisateur'],$_GET['annee'],$_GET['duree'],"src/views/posters/".$_GET['poste'],$_GET['description']);
+        if(isset($_POST['ajout'])){
+            $film = new Film(1,$_POST['titre'],$_POST['genre'],$_POST['realisateur'],$_POST['annee'],$_POST['duree'],"../../posters/".$_POST['poste'],$_POST['description']);
             ajouterFilm($film);
             
         }

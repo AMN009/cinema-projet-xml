@@ -81,12 +81,12 @@
                 return $salleNode;
         }
 
-        if(isset($_GET['ajout'])){
-            $salle = new Salle('S'.$_GET['id'],$_GET['capacite']);
+        if(isset($_POST['ajout'])){
+            $salle = new Salle('S'.$_POST['id'],$_POST['capacite']);
             ajouterSalle($salle);
         }
-        if(isset($_GET['change'])){
-            $salle = new Salle($_GET['id'],$_GET['capacite']);
+        if(isset($_POST['change'])){
+            $salle = new Salle($_POST['id'],$_POST['capacite']);
             modifierSalle($salle);
             header('Location:../views/admin/lists/salles/scripts/script.php');
         }

@@ -1310,10 +1310,10 @@
 
                     </script>
 
+                    <div class="modal fade" id="empModal" role="dialog">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
 
-                <div class="modal fade" id="empModal" role="dialog">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title">modifier la salle</h5>
                                 <button type="button" class="close" data-dismiss="modal">
@@ -1321,9 +1321,11 @@
                                 </button>
                             </div>
 
-                            <form action="../../../../../parsers/SalleParser.php" method="get">
-                                <div class="modal-body"></div>
-                                <div class="modal-footer">
+                     <form  action="../../../../../parsers/SalleParser.php" method="post" >
+                        <div class="modal-body">
+                        
+                        </div>
+                        <div class="modal-footer">
                                     <button type="button" class="btn btn-danger light" data-dismiss="modal">Close</button>
                                     <button type="submit" class="btn btn-primary" name="change">Save changes</button>
                                 </div>
