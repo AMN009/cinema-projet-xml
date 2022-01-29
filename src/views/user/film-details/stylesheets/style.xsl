@@ -1305,7 +1305,7 @@
                                                                                             <div class="row">
                                                                                                 <div class="col-md-12">
                                                                                                     <xsl:for-each select="$filmSeances[date = $date]/heure">
-                                                                                                        <button type="button" class="btn-xs btn-rounded btn-warning mr-1">
+                                                                                                        <button type="button" class="btn-xs btn-rounded btn-warning mr-1" onclick="document.getElementById('seanceId').value = '{./../@id}';">
                                                                                                             <xsl:value-of select="." />
                                                                                                         </button>
                                                                                                     </xsl:for-each>
@@ -1318,7 +1318,7 @@
                                                                                             <div class="row">
                                                                                                 <div class="col-md-12">
                                                                                                     <xsl:for-each select="$filmSeances[date = $date]/heure">
-                                                                                                        <button type="button" class="btn-xs btn-rounded btn-warning mr-1">
+                                                                                                        <button type="button" class="btn-xs btn-rounded btn-warning mr-1" onclick="document.getElementById('seanceId').value = '{./../@id}';">
                                                                                                             <xsl:value-of select="." />
                                                                                                         </button>
                                                                                                     </xsl:for-each>
@@ -1337,12 +1337,16 @@
                                                                 <input type="number" name="num" class="form-control input-btn input-number" value="1" />
                                                             </div> -->
                                                             <!--Quanatity End-->
-                                                            <div class="shopping-cart mt-3">
-                                                                <a class="btn btn-primary btn-lg" href="#">
-                                                                    <i class="fa fa-ticket mr-2"></i>
-                                                                    Réserver
-                                                                </a>
-                                                            </div>
+                                                            <form action="src/views/user/film-details/scripts/reservation.php" method="post">
+                                                                <input name="utilisateur" type="hidden" value="U1" />
+                                                                <input name="seance" id="seanceId" type="hidden" value="" />
+                                                                <div class="shopping-cart mt-3">
+                                                                    <a class="btn btn-primary btn-lg" href="#" onclick="this.closest('form').submit();return false;">
+                                                                        <i class="fa fa-ticket mr-2"></i>
+                                                                        Réserver
+                                                                    </a>
+                                                                </div>
+                                                            </form>
                                                         </div>
                                                     </div>
                                                 </div>
