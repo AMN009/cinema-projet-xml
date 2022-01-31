@@ -1,6 +1,6 @@
 <?php
 
-    require_once(__DIR__.'/../../../../parsers/UtilisateurParser.php');
+    require_once(__DIR__.'/../../../../parsers/ParserSetup.php');
     require_once(__DIR__.'/../../../../models/Utilisateur.php');
 
   // Créez un document DOM et charger la feuille de style XSL

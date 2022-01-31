@@ -5,16 +5,15 @@
         <utilisateur id="U1">
             <nom>Vincent Moule</nom>
             <email>vincent.moule@gmail.com</email>
+            <password>test</password>
             <tel>+212-684-989-567</tel>
-            <carte-credit>1234-5689-8532-6955</carte-credit>
         </utilisateur>
 
-
-        <utilisateur id="U21">
+        <utilisateur id="U2">
             <nom>Aymen</nom>
             <email>aymen@gmail.com</email>
+            <password>test</password>
             <tel>+212-236-458-896</tel>
-            <carte-credit>1234-5689-8532-6955 3</carte-credit>
         </utilisateur>
     </utilisateurs>
 
@@ -30,18 +29,14 @@
             <poster source="../../posters/F21.jpg"/>
         </film>
         <film id="F2" anne="2014">
-
             <titre>Whiplash</titre>
             <genre>science</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
             <poster source="../../posters/F21.jpg"/>
-            <poster source="F1.jpg" />
             <description>Il n'y a que la musique dans la vie d'Andrew. Le jeune homme de 19 ans n'hésite pas à sacrifier ses relations amoureuses, amicales et familiales pour devenir un des meilleurs batteurs de jazz de sa génération.</description>
         </film>
-
-
-
+         <film>
             <titre>Whiplash 2</titre>
             <genre>action</genre>
             <realisateur>Damien Chazelle</realisateur>
@@ -76,10 +71,10 @@
 
 
     <salles>
-        <salle id="S08" capacite="70" />
-        <salle id="S15" capacite="80" />
-        <salle id="S20" capacite="60" />
-        <salle id="S10" capacite="100" />
+        <salle id="S08" capacite="70"/>
+        <salle id="S15" capacite="80"/>
+        <salle id="S20" capacite="60"/>
+        <salle id="S10" capacite="100"/>
     </salles>
 
     <sieges>

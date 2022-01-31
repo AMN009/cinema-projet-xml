@@ -74,6 +74,10 @@
                 $emailNode->appendChild($doc->createTextNode($utilisateur->getEmail()));
                 $utilisateurNode->appendChild($emailNode);
 
+                $passwordNode = $doc->createElement('password');
+                $passwordNode->appendChild($doc->createTextNode($utilisateur->getPassword()));
+                $utilisateurNode->appendChild($passwordNode);
+
                 $telNode = $doc->createElement('tel');
                 $telNode->appendChild($doc->createTextNode($utilisateur->getTel()));
                 $utilisateurNode->appendChild($telNode);
@@ -85,5 +89,22 @@
           supprimerUtilisateur($_GET['id']);
           header('Location:../views/admin/lists/utilisateurs/scripts/script.php');
         }
+
+
+        if(isset($_POST['ajout'])){
+            global $doc, $utilisateursParent;
+             $i=0;
+                foreach ($utilisateursParent->childNodes as $child) {
+                    if ($child->nodeType == 1)
+                        $i++;
+                }
+            
+            $i++;
+            $USER = new utilisateur('U'.$i,$_POST['Username'],$_POST['email'],$_POST['password'],'2349000');
+            ajouterUtilisateur($USER);
+            $i=0;
+            header('Location:../views/admin/lists/utilisateurs/scripts/script.php');
+
+          }
 
 ?>

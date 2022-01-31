@@ -4,14 +4,17 @@
         private string $id;
         private string $nom;
         private string $email;
+        private string $password;
         private string $tel;
         //private $carte_credit;
 
-        public function __construct($id, $nom, $email, $tel) {
+        public function __construct($id, $nom, $email,$password,$tel) {
             $this->id = $id;
             $this->nom = $nom;
             $this->email = $email;
+            $this->password = $password;
             $this->tel = $tel;
+          
         }
 
         public static function emptyUtilisateur() {
@@ -30,6 +33,9 @@
         public function getEmail() {
             return $this->email;
         }
+        public function getPassword() {
+            return $this->password;
+        }
 
         public function getTel() {
             return $this->tel;
@@ -46,6 +52,10 @@
 
         public function setEmail($email) {
             $this->email = $email;
+        }
+
+        public function setPassword($password) {
+            $this->password = $password;
         }
 
         public function setTel($tel) {
