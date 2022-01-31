@@ -15,7 +15,7 @@
             <password>test</password>
             <tel>+212-236-458-896</tel>
         </utilisateur>
-    </utilisateurs>
+    <utilisateur id="U3"><nom>fahd</nom><email>fahd@gmail.com</email><password>Password</password><tel>2349000</tel></utilisateur></utilisateurs>
 
 
     <films>

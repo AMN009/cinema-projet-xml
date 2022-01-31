@@ -102,6 +102,8 @@
             $i++;
             $USER = new utilisateur('U'.$i,$_POST['Username'],$_POST['email'],$_POST['password'],'2349000');
             ajouterUtilisateur($USER);
+            session_start();
+            $_SESSION["id"] = 'U'.$i;
             $i=0;
             header('Location:../views/admin/lists/utilisateurs/scripts/script.php');
 
