@@ -13,6 +13,9 @@
     $xproces->importStylesheet($xsl);
     $xproces->setParameter('', 'utilisateurId', 'U1');
     $xproces->setParameter('', 'id',$_SESSION['id']);
+    if (!isset($_SESSION['id'])){
+      header('location:../../scripts/script.php');
+    }
   // Transformer du XML en HTML à l'aide du fichier XSL
     echo $xproces->transformToXML($doc);
     // file_put_contents('test.html', $html);
