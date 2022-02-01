@@ -32,7 +32,19 @@
             <password>aymen</password>
             <tel>2349000</tel>
         </utilisateur>
-    <utilisateur id="U6"><nom>USER</nom><email>user@user.com</email><password>user123</password><tel>2349000</tel></utilisateur><utilisateur id="U7"><nom>HAMADA LGHOUL</nom><email>hamada@gmail.com</email><password>hamada123</password><tel>2349000</tel></utilisateur></utilisateurs>
+        <utilisateur id="U6">
+            <nom>USER</nom>
+            <email>user@user.com</email>
+            <password>user123</password>
+            <tel>2349000</tel>
+        </utilisateur>
+        <utilisateur id="U7">
+            <nom>HAMADA LGHOUL</nom>
+            <email>hamada@gmail.com</email>
+            <password>hamada123</password>
+            <tel>2349000</tel>
+        </utilisateur>
+    </utilisateurs>
 
 
     <films>
@@ -42,14 +54,14 @@
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="F1.jpg"/>
+            <poster source="F1.jpg" />
         </film>
         <film id="F2" annee="2014">
             <titre>Whiplash</titre>
             <genre>science</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="F2.jpg"/>
+            <poster source="F2.jpg" />
             <description>Il n'y a que la musique dans la vie d'Andrew. Le jeune homme de 19 ans n'hésite pas à sacrifier ses relations amoureuses, amicales et familiales pour devenir un des meilleurs batteurs de jazz de sa génération.</description>
         </film>
         <film id="F3" annee="2014">
@@ -57,14 +69,14 @@
             <genre>action</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="F3.jpg"/>
+            <poster source="F3.jpg" />
         </film>
         <film id="F4" annee="1334">
             <titre>test</titre>
             <genre>action</genre>
             <realisateur>test</realisateur>
             <duree>30</duree>
-            <poster source="F4.jpg"/>
+            <poster source="F4.jpg" />
             <description>retsts</description>
         </film>
         <film id="F5" annee="1334">
@@ -72,7 +84,7 @@
             <genre>drame</genre>
             <realisateur>test</realisateur>
             <duree>30</duree>
-            <poster source="F1.jpg"/>
+            <poster source="F1.jpg" />
             <description>retsts</description>
         </film>
         <film id="F6" annee="30">
@@ -80,17 +92,17 @@
             <genre>drame</genre>
             <realisateur>y</realisateur>
             <duree>30</duree>
-            <poster source="F2.jpg"/>
+            <poster source="F2.jpg" />
             <description>hhs</description>
         </film>
     </films>
 
 
     <salles>
-        <salle id="S08" capacite="70"/>
-        <salle id="S15" capacite="80"/>
-        <salle id="S20" capacite="60"/>
-        <salle id="S10" capacite="100"/>
+        <salle id="S08" capacite="70" />
+        <salle id="S15" capacite="80" />
+        <salle id="S20" capacite="60" />
+        <salle id="S10" capacite="100" />
     </salles>
 
     <sieges>
@@ -119,7 +131,11 @@
             <rang>5</rang>
             <numero>50</numero>
         </siege>
-        <siege id="SI101" libre="false"><salle>S08</salle><rang>5</rang><numero>51</numero></siege>
+        <siege id="SI101" libre="false">
+            <salle>S08</salle>
+            <rang>5</rang>
+            <numero>51</numero>
+        </siege>
         <siege id="SI102" libre="true">
             <salle>S08</salle>
             <rang>5</rang>
@@ -195,7 +211,7 @@
     </seances>
 
     <reservations>
-        
+
         <reservation code="R2">
             <date>01/02/2022</date>
             <heure>03h12m</heure>
@@ -217,6 +233,13 @@
             <siege>SI100</siege>
             <seance>SE600</seance>
         </reservation>
-    <reservation code="R5"><date>01/02/2022</date><heure>09h54m</heure><utilisateur>U7</utilisateur><siege>SI101</siege><seance>SE601</seance></reservation></reservations>
+        <reservation code="R5">
+            <date>01/02/2022</date>
+            <heure>09h54m</heure>
+            <utilisateur>U7</utilisateur>
+            <siege>SI101</siege>
+            <seance>SE601</seance>
+        </reservation>
+    </reservations>
 
 </cinema>
