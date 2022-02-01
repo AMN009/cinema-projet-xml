@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method='html' />
 
-    <xsl:template match="/">
+    <xsl:template match="/cinema">
         <html lang="en">
             <head>
                 <meta charset="UTF-8" />
@@ -805,10 +805,10 @@
                                                 <div class="header-info">
                                                     <span>
                                                         Hello,
-                                                        <strong>Samuel</strong>
+                                                        <strong><xsl:value-of select="utilisateurs/utilisateur[@id=$id]/nom"/></strong>
                                                     </span>
                                                 </div>
-                                                <img src="src/views/style/images/profile/pic1.jpg" width="20" alt="" />
+                                                <img src="../../../../style/images/profile/pic1.jpg" width="20" alt="" />
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-right">
                                                 <a href="./app-profile.html" class="dropdown-item ai-icon">
@@ -1182,7 +1182,7 @@
                                             </thead>
                                             <tbody>
 
-                                                <xsl:for-each select="cinema/seances/seance">
+                                                <xsl:for-each select="seances/seance">
                                                     <xsl:sort select="@id" />
                                                     <xsl:variable name="film" select="film" />
                                                     <tr>
