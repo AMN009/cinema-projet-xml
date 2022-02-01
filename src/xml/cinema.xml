@@ -108,8 +108,7 @@
             <salle>S2</salle>
             <prix>60</prix>
         </seance>
-        <seance id="S658">
-
+        <seance id="SE658">
             <date>06/11/2021</date>
             <heure>18h45m</heure>
             <film>F2</film>
@@ -117,7 +116,7 @@
             <prix>60</prix>
         </seance>
 
-        <seance id="SE599">
+        <seance id="S658">
             <salle>S15</salle>
             <date>04/02/2022</date>
             <film>F1</film>
@@ -152,7 +151,6 @@
             <date>01/11/2021</date>
             <heure>23h02m</heure>
             <utilisateur>U1</utilisateur>
-
             <siege>SI889</siege>
             <seance>S659</seance>
 
@@ -161,17 +159,10 @@
             <date>29/01/2022</date>
             <heure>04h45m</heure>
             <utilisateur>U1</utilisateur>
-
             <siege>SI889</siege>
             <seance>S658</seance>
         </reservation>
-        <reservation code="47">
-            <date>01/11/2021</date>
-            <heure>23h02m</heure>
-            <utilisateur>U1</utilisateur>
-            <siege>SI889</siege>
-            <seance>SE658</seance>
-        </reservation>
+        <reservation code="47"><date>01/11/2021</date><heure>23h02m</heure><utilisateur>U1</utilisateur><siege>SI889</siege><seance>SE658</seance></reservation>
         
         
 
