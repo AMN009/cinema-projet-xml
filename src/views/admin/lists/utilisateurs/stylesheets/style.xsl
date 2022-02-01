@@ -86,7 +86,9 @@
 												<div class="header-info">
 													<span>
 														Bonjour,
-														<strong>ADMIN</strong>
+														<strong>
+															<xsl:value-of select="utilisateurs/utilisateur[@id = $id]/nom" />
+														</strong>
 													</span>
 												</div>
 												<img src="../../../../style/images/profile/unknown.jpg" width="20" alt="" />

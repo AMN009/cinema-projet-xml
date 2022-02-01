@@ -2,6 +2,12 @@
 <cinema>
 
     <utilisateurs>
+        <utilisateur id="U0">
+            <nom>ADMIN</nom>
+            <email>admin@admin.com</email>
+            <password>ADMIN</password>
+            <tel>+212-684-989-567</tel>
+        </utilisateur>
         <utilisateur id="U1">
             <nom>Vincent Moule</nom>
             <email>vincent.moule@gmail.com</email>
@@ -18,6 +24,12 @@
             <nom>fahd</nom>
             <email>fahd@gmail.com</email>
             <password>Password</password>
+            <tel>2349000</tel>
+        </utilisateur>
+        <utilisateur id="U5">
+            <nom>AYmen rhalloussi</nom>
+            <email>aymennorhalloussi@gmail.com</email>
+            <password>aymen</password>
             <tel>2349000</tel>
         </utilisateur>
     </utilisateurs>
@@ -102,7 +114,11 @@
             <rang>4</rang>
             <numero>46</numero>
         </siege>
-        <siege id="SI100" libre="false"><salle>S08</salle><rang>5</rang><numero>50</numero></siege>
+        <siege id="SI100" libre="false">
+            <salle>S08</salle>
+            <rang>5</rang>
+            <numero>50</numero>
+        </siege>
         <siege id="SI101" libre="true">
             <salle>S08</salle>
             <rang>5</rang>
@@ -183,14 +199,7 @@
     </seances>
 
     <reservations>
-        <reservation code="R1">
-            <date>01/11/2021</date>
-            <heure>23h02m</heure>
-            <utilisateur>U1</utilisateur>
-            <siege>SI889</siege>
-            <seance>SE659</seance>
-
-        </reservation>
+        
         <reservation code="R2">
             <date>01/02/2022</date>
             <heure>03h12m</heure>
@@ -205,6 +214,13 @@
             <siege>SI90</siege>
             <seance>SE600</seance>
         </reservation>
-    <reservation code="R4"><date>01/02/2022</date><heure>05h12m</heure><utilisateur>U1</utilisateur><siege>SI100</siege><seance>SE600</seance></reservation></reservations>
+        <reservation code="R4">
+            <date>01/02/2022</date>
+            <heure>05h12m</heure>
+            <utilisateur>U1</utilisateur>
+            <siege>SI100</siege>
+            <seance>SE600</seance>
+        </reservation>
+    </reservations>
 
 </cinema>

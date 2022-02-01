@@ -27,18 +27,18 @@
                                         <div class="col-xl-12">
                                             <div class="auth-form">
                                                 <h4 class="text-center mb-4">Connectez vous</h4>
-                                                <form action="index.html">
+                                                <form action="../scripts/login.php" method="post">
                                                     <div class="form-group">
                                                         <label class="mb-1">
                                                             <strong>Email</strong>
                                                         </label>
-                                                        <input type="email" class="form-control" value="bonjour@exemple.com" />
+                                                        <input type="email" name="email" class="form-control" value="bonjour@exemple.com" />
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="mb-1">
                                                             <strong>Mot de passe</strong>
                                                         </label>
-                                                        <input type="password" class="form-control" value="password" />
+                                                        <input type="password" name="password" class="form-control" value="password" />
                                                     </div>
                                                     <div class="text-center">
                                                         <button type="submit" class="btn btn-primary btn-block">Se connecter</button>

@@ -79,22 +79,21 @@
 									</div>
 
 									<ul class="navbar-nav header-right">
-										<!-- <li class="nav-item dropdown notification_dropdown">
-											<a class="nav-link dz-fullscreen primary" href="#">
-												<svg id="Capa_1" enable-background="new 0 0 482.239 482.239" height="22" viewBox="0 0 482.239 482.239" width="22" xmlns="http://www.w3.org/2000/svg">
-													<path d="m0 17.223v120.56h34.446v-103.337h103.337v-34.446h-120.56c-9.52 0-17.223 7.703-17.223 17.223z" fill="" />
-													<path d="m465.016 0h-120.56v34.446h103.337v103.337h34.446v-120.56c0-9.52-7.703-17.223-17.223-17.223z" fill="" />
-													<path d="m447.793 447.793h-103.337v34.446h120.56c9.52 0 17.223-7.703 17.223-17.223v-120.56h-34.446z" fill="" />
-													<path d="m34.446 344.456h-34.446v120.56c0 9.52 7.703 17.223 17.223 17.223h120.56v-34.446h-103.337z" fill="" />
-												</svg>
-											</a>
-										</li> -->
 										<li class="nav-item dropdown header-profile">
 											<a class="nav-link" href="#" role="button" data-toggle="dropdown">
 												<div class="header-info">
 													<span>
 														Bonjour,
-														<strong>Visiteur</strong>
+														<xsl:choose>
+															<xsl:when test="$id = 'visiteur'">
+																<strong>Visiteur</strong>
+															</xsl:when>
+															<xsl:otherwise>
+																<strong>
+																	<xsl:value-of select="utilisateurs/utilisateur[@id = $id]/nom" />
+																</strong>
+															</xsl:otherwise>
+														</xsl:choose>
 													</span>
 												</div>
 												<img src="../../../style/images/profile/unknown.jpg" width="20" alt="" />
@@ -125,7 +124,7 @@
 													</svg>
 													<span class="ml-2">Mes réservations </span>
 												</a>
-												<a href="#" class="dropdown-item ai-icon">
+												<a href="../../logout.php" class="dropdown-item ai-icon">
 													<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 														<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
 														<polyline points="16 17 21 12 16 7"></polyline>
