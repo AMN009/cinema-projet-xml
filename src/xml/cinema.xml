@@ -32,12 +32,7 @@
             <password>aymen</password>
             <tel>2349000</tel>
         </utilisateur>
-        <utilisateur id="U6">
-            <nom>USER</nom>
-            <email>user@user.com</email>
-            <password>user123</password>
-            <tel>2349000</tel>
-        </utilisateur>
+        
         <utilisateur id="U7">
             <nom>HAMADA LGHOUL</nom>
             <email>hamada@gmail.com</email>
@@ -134,20 +129,8 @@
 
     <seances>
 
-        <seance id="SE659">
-            <date>06/11/2021</date>
-            <heure>18h45m</heure>
-            <film>F1</film>
-            <salle>S20</salle>
-            <prix>60</prix>
-        </seance>
-        <seance id="SE658">
-            <date>06/11/2021</date>
-            <heure>18h45m</heure>
-            <film>F2</film>
-            <salle>S1</salle>
-            <prix>60</prix>
-        </seance>
+        
+        <seance id="SE658"><salle>S1</salle><date>06/11/2021</date><film>F2</film><heure>18h45m</heure><prix>70</prix></seance>
 
         <seance id="S658">
             <salle>S15</salle>
@@ -170,13 +153,7 @@
             <heure>01h35m</heure>
             <prix>120</prix>
         </seance>
-        <seance id="SE602">
-            <salle>S08</salle>
-            <date>04/02/2022</date>
-            <film>F4</film>
-            <heure>22h00m</heure>
-            <prix>80</prix>
-        </seance>
+        <seance id="SE602"><salle>S1</salle><date>04/02/2022</date><film>F4</film><heure>22h00m</heure><prix>80</prix></seance>
     </seances>
 
     <reservations>
