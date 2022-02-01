@@ -54,19 +54,7 @@
                     </div>
         <!--**********************************
             Nav header end
-        ***********************************-->
-		
-		<!--**********************************
-            Chat box start
-        ***********************************-->
-		
-		<!--**********************************
-            Chat box End
-        ***********************************-->
-
-
-		
-		
+        ***********************************-->	
         <!--**********************************
             Header start
         ***********************************-->
@@ -166,8 +154,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="basic-form">
-                                    <form  action="../../../../parsers/FilmParser.php" method="post" >
-                                        
+                                    <form  action="../../../../parsers/FilmParser.php" method="post" enctype="multipart/form-data">
                                         <div class="form-group row">
                                             <div class="form-group col-md-6">
                                                 <label>Titre du film</label>
