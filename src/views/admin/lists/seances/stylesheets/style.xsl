@@ -1157,7 +1157,7 @@
                                     <p class="mb-0">La liste de toutes les séances</p>
                                 </div>
                                 <div>
-                                    <button type="button" class="btn btn-primary btn-block light" onclick="location.href='src/views/admin/lists/seances/scripts/script.php';">
+                                    <button type="button" class="btn btn-primary btn-block light" onclick="location.href='src/views/admin/forms/ajout/seance/scripts/show-script.php';">
                                         <span class="fs-16 ml-3">Ajouter une séance</span>
                                         <i class="fa fa-plus scale5 ml-3"></i>
                                     </button>
@@ -1192,7 +1192,7 @@
                                                         </td>
                                                         <td>
                                                             <div class="d-flex align-items-center">
-                                                                <img src="{ ../../films/film[@id = $film]/poster/@source }" class="rounded-lg mr-2" width="24" alt="" />
+                                                                <img src="../../../../posters/{ ../../films/film[@id = $film]/poster/@source }" class="rounded-lg mr-2" width="24" alt="" />
                                                                 <span class="w-space-no">
                                                                     <xsl:value-of select="../../films/film[@id = $film]/titre" />
                                                                 </span>
@@ -1223,11 +1223,11 @@
                                                                     </svg>
                                                                 </div>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a class="dropdown-item" href="#">
+                                                                    <a class="dropdown-item" href="src/views/admin/forms/modification/seance/scripts/show-script.php?seance={@id}">
                                                                         <i class="las la-pen-square scale5 text-success mr-2"></i>
                                                                         Modifier la séance
                                                                     </a>
-                                                                    <a class="dropdown-item" href="#">
+                                                                    <a class="dropdown-item" href="src/views/admin/lists/seances/scripts/delete-script.php?seance={@id}">
                                                                         <i class="las la-trash scale5 text-danger mr-2"></i>
                                                                         Supprimer la séance
                                                                     </a>

@@ -8,7 +8,8 @@
 
       $sieges = $doc->getElementsByTagName('sieges'); 
       $siege = $doc->createElement("siege"); 
-      $siege->setAttribute("id", $sie->getId()); 
+      $siege->setAttribute("id", $sie->getId());
+      $siege->setAttribute("libre", ($sie->isLibre()) ? 'true' : 'false');
 
       $salle= $doc->createElement("salle"); 
       $salledata = $doc->createTextNode($sie->getSalle()); 
@@ -27,7 +28,7 @@
       $siege->appendChild($numero);
       $sieges->item(0)->appendChild($siege);
 
-      $doc->save((__DIR__."/../xml/cinema.xml");
+      $doc->save(__DIR__."/../xml/cinema.xml");
 
      }
 
@@ -44,7 +45,7 @@
             $siege->parentNode->removeChild($siege);
           }
        }
-       $doc->save((__DIR__."/../xml/cinema.xml");
+       $doc->save(__DIR__."/../xml/cinema.xml");
       }
        
       
@@ -56,7 +57,8 @@
         $sieges=$sieges->item(0)->childNodes;
 
         $newsiege = $doc->createElement("siege"); 
-        $newsiege->setAttribute("id", $sie->getId()); 
+        $newsiege->setAttribute("id", $sie->getId());
+        $newsiege->setAttribute("libre", ($sie->isLibre()) ? 'true' : 'false'); 
 
         $salle = $doc->createElement("salle"); 
         $salledata = $doc->createTextNode($sie->getSalle()); 
@@ -79,9 +81,47 @@
             
           }
        }
-       $doc->save((__DIR__."/../xml/cinema.xml");
+       $doc->save(__DIR__."/../xml/cinema.xml");
         
        }
 
+       function siegeObject($siegeNode) {
+        // global $doc;
+
+        $siegeId = $siegeNode->getAttribute('id');
+        $siegeLibre = ($siegeNode->getAttribute('libre') == 'true') ? true : false;
+        $siegeSalle = $siegeNode->getElementsByTagName('salle')->item(0)->nodeValue;
+        $siegeNumero = $siegeNode->getElementsByTagName('numero')->item(0)->nodeValue;
+        $siegeRang = $siegeNode->getElementsByTagName('rang')->item(0)->nodeValue;
+
+        $siege = new Siege($siegeId, $siegeSalle, $siegeRang, $siegeNumero);
+        $siege->setLibre($siegeLibre);
+
+        return $siege;
+      }
+
+       function getSiegeLibre($salle) {
+          global $root;
+          $siege = null;
+          foreach ($root->getElementsByTagName('sieges')->item(0)->childNodes as $item) {
+            if ($item->nodeType == 1) {
+              if (($item->getElementsByTagName('salle')->item(0)->nodeValue == $salle) && ($item->getAttribute('libre') == 'true')) {
+                $siege = siegeObject($item);
+                break;
+              }
+            }
+          }
+          return $siege;
+       }
+
+       function reserverSiege($siege) {
+        $siege->setLibre(false);
+        updateSiege($siege);
+       }
+
+       function libererSiege($siege) {
+        $siege->setLibre(true);
+        updateSiege($siege);
+       }
 
 ?>

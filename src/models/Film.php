@@ -10,7 +10,7 @@
         private string $poster;
         private string $description;
 
-        public function __construct($id, $titre, $genre, $realisateur, $annee, $duree, $poster,$description) {
+        public function __construct($id, $titre, $genre, $realisateur, $annee, $duree, $poster, $description) {
             $this->id = $id;
             $this->titre = $titre;
             $this->genre = $genre;
@@ -22,7 +22,7 @@
         }
 
         public static function emptyFilm() {
-            return new Film('', '', '', '', 0, '', '');
+            return new Film('', '', '', '', 0, '', '', '');
         }
 
 

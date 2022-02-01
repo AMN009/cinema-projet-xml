@@ -8,15 +8,22 @@
                 <meta charset="UTF-8" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>CINEWEB - Liste des films</title>
+                <title>CINEWEB - Liste des séances</title>
                 <!-- Favicon icon -->
                 <link rel="icon" type="image/png" sizes="16x16" href="src/views/style/images/favicon.png" />
+                <!-- Alternative -->
+                <link rel="icon" type="image/png" sizes="16x16" href="../../../../style/images/favicon.png" />
 
                 <!-- Custom Stylesheet -->
                 <link href="src/views/style/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
                 <link href="src/views/style/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
                 <link href="src/views/style/css/style.css" rel="stylesheet" />
+                <!-- Alternative -->
+                <link href="../../../../style/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+                <link href="../../../../style/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
+                <link href="../../../../style/css/style.css" rel="stylesheet" />
                 <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet" />
+
             </head>
             <body>
 
@@ -1146,14 +1153,8 @@
                         <div class="container-fluid">
                             <div class="form-head d-flex mb-3 align-items-start">
                                 <div class="mr-auto d-none d-lg-block">
-                                    <h2 class="text-black font-w600 mb-0">Films</h2>
-                                    <p class="mb-0">La liste de tous les films</p>
-                                </div>
-                                <div>
-                                    <button type="button" class="btn btn-primary btn-block light">
-                                        <span class="fs-16 ml-3">Ajouter un film</span>
-                                        <i class="fa fa-plus scale5 ml-3"></i>
-                                    </button>
+                                    <h2 class="text-black font-w600 mb-0">Réservations</h2>
+                                    <p class="mb-0">L'historique de mes réservations</p>
                                 </div>
                             </div>
                             <!-- row -->
@@ -1164,47 +1165,66 @@
                                         <table id="example5" class="display mb-4 dataTablesCard" style="min-width: 845px;">
                                             <thead>
                                                 <tr>
-                                                    <th>ID Film</th>
-                                                    <th>Titre</th>
-                                                    <th>Réalisateur</th>
-                                                    <th>Genre</th>
-                                                    <th>Année</th>
-                                                    <th>Durée</th>
-                                                    <th></th>
+                                                    <th>CODE Réservation</th>
+                                                    <th>Date</th>
+                                                    <th>Heure</th>
+                                                    <th>Film</th>
+                                                    <th>Siège</th>
+                                                    <th>Prix</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
 
-                                                <xsl:for-each select="cinema/films/film">
-                                                    <xsl:sort select="@id" />
+                                                <xsl:for-each select="cinema/reservations/reservation[utilisateur = $utilisateurId]">
+                                                    <xsl:sort select="@code" />
+                                                    <xsl:variable name="reservationSeance" select="seance" />
+                                                    <xsl:variable name="seanceFilm" select="../../seances/seance[@id = $reservationSeance]" />
+                                                    <xsl:variable name="film" select="../../films/film[@id = $seanceFilm/film]" />
+                                                    <xsl:variable name="reservationSiege" select="siege" />
+                                                    <xsl:variable name="siege" select="../../sieges/siege[@id = $reservationSiege]" />
                                                     <tr>
                                                         <td>
                                                             #
-                                                            <xsl:value-of select="@id" />
+                                                            <xsl:value-of select="@code" />
+                                                        </td>
+                                                        <td>
+                                                            <xsl:value-of select="date" />
+                                                        </td>
+                                                        <td>
+                                                            <xsl:value-of select="heure" />
                                                         </td>
                                                         <td>
                                                             <div class="d-flex align-items-center">
-                                                                <img src="src/views/posters/{ poster/@source }" class="rounded-lg mr-2" width="24" alt="" />
+                                                                <img src="src/views/posters/{ $film/poster/@source }" class="rounded-lg mr-2" width="22" alt="" />
                                                                 <span class="w-space-no">
-                                                                    <xsl:value-of select="titre" />
+                                                                    <xsl:value-of select="$film/titre" />
                                                                 </span>
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <xsl:value-of select="realisateur" />
-                                                        </td>
-                                                        <td>
-                                                            <span class="btn btn-sm light btn-warning fs-16">
-                                                                <xsl:value-of select="genre" />
+                                                            Salle :
+                                                            <span class="badge light badge-danger">
+                                                                <xsl:value-of select="$siege/salle" />
+                                                            </span>
+                                                            <br />
+                                                            Rang :
+                                                            <span class="badge light badge-warning my-1">
+                                                                <xsl:value-of select="$siege/rang" />
+                                                            </span>
+                                                            <br />
+                                                            N° :
+                                                            <span class="badge light badge-info">
+                                                                <xsl:value-of select="$siege/numero" />
                                                             </span>
                                                         </td>
                                                         <td>
-                                                            <xsl:value-of select="@annee" />
+                                                            <span class="badge badge-xl light badge-success">
+                                                                <i class="ti-money mr-1"></i>
+                                                                <xsl:value-of select="$seanceFilm/prix" />
+                                                                DH
+                                                            </span>
                                                         </td>
-                                                        <td>
-                                                            <xsl:value-of select="duree" />
-                                                        </td>
-                                                        <td>
+                                                        <!-- <td>
                                                             <div class="dropdown ml-auto text-right">
                                                                 <div class="btn-link" data-toggle="dropdown">
                                                                     <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -1217,17 +1237,17 @@
                                                                     </svg>
                                                                 </div>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a class="dropdown-item" href="src/views/admin/forms/modification/film/scripts/show-script.php?film={@id}">
+                                                                    <a class="dropdown-item" href="src/views/admin/forms/modification/seance/scripts/show-script.php?seance={@id}">
                                                                         <i class="las la-pen-square scale5 text-success mr-2"></i>
-                                                                        Modifier le film
+                                                                        Modifier la séance
                                                                     </a>
-                                                                    <a class="dropdown-item" href="src/views/admin/lists/films/scripts/delete-script.php?film={@id}">
+                                                                    <a class="dropdown-item" href="src/views/admin/lists/seances/scripts/delete-script.php?seance={@id}">
                                                                         <i class="las la-trash scale5 text-danger mr-2"></i>
-                                                                        Supprimer le film
+                                                                        Supprimer la séance
                                                                     </a>
                                                                 </div>
                                                             </div>
-                                                        </td>
+                                                        </td> -->
                                                     </tr>
                                                 </xsl:for-each>
 
@@ -1281,9 +1301,16 @@
                 <script src="src/views/style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
                 <script src="src/views/style/js/custom.min.js"></script>
                 <script src="src/views/style/js/deznav-init.js"></script>
+                <!-- Alternative -->
+                <script src="../../../../style/vendor/global/global.min.js"></script>
+                <script src="../../../../style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+                <script src="../../../../style/js/custom.min.js"></script>
+                <script src="../../../../style/js/deznav-init.js"></script>
 
                 <!-- Datatable -->
                 <script src="src/views/style/vendor/datatables/js/jquery.dataTables.min.js"></script>
+                <!-- Alternative -->
+                <script src="../../../../style/vendor/datatables/js/jquery.dataTables.min.js"></script>
 
                 <script>
                 (function($) {
@@ -1303,15 +1330,6 @@
                 
                 })(jQuery);
                 </script>
-
-
-                <!-- <script src="src/views/style/vendor/global/global.min.js"></script>
-                <script src="src/views/style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-                <script src="src/views/style/vendor/chart.js/Chart.bundle.min.js"></script>
-                <script src="src/views/style/js/custom.min.js"></script>
-                <script src="src/views/style/js/deznav-init.js"></script>
-                 Apex Chart
-                <script src="src/views/style/vendor/apexchart/apexchart.js"></script> -->
 
             </body>
         </html>
