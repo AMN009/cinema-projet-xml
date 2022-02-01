@@ -217,7 +217,6 @@
 																	</svg>
 																</div>
 																<div class="dropdown-menu dropdown-menu-right">
-																	<a class="dropdown-item" href="#">Edit</a>
 																	<a class="dropdown-item" href="../../../../../parsers/UtilisateurParser.php?id={@id}">Delete</a>
 																</div>
 															</div>
