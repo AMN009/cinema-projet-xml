@@ -103,7 +103,7 @@
         <salle id="S15" capacite="80"/>
         <salle id="S20" capacite="60"/>
         <salle id="S10" capacite="100"/>
-    </salles>
+    <salle id="S1" capacite="200"/></salles>
 
     <sieges>
         <siege id="SI889" libre="false">
