@@ -211,18 +211,24 @@
     </seances>
 
     <reservations>
-
+        <reservation code="R1">
+            <date>01/03/2022</date>
+            <heure>04h12m</heure>
+            <utilisateur>U2</utilisateur>
+            <siege>SI89</siege>
+            <seance>SE659</seance>
+        </reservation>
         <reservation code="R2">
             <date>01/02/2022</date>
             <heure>03h12m</heure>
-            <utilisateur>U1</utilisateur>
+            <utilisateur>U2</utilisateur>
             <siege>SI89</siege>
             <seance>SE659</seance>
         </reservation>
         <reservation code="R3">
             <date>01/02/2022</date>
             <heure>03h30m</heure>
-            <utilisateur>U1</utilisateur>
+            <utilisateur>U2</utilisateur>
             <siege>SI90</siege>
             <seance>SE600</seance>
         </reservation>
