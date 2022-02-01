@@ -8,18 +8,7 @@
         function ajouterFilm($film) {
             if ($film != null) {
                 global $xml_doc_location, $doc, $filmsParent;
-                 $i=1;
 
-                foreach ($filmsParent->childNodes as $child) {
-                    if ($child->nodeType == 1)
-                    {   
-                        $i++;
-                        if ($film->getId() == $child->getAttribute('id'))
-                        return false;
-                    }
-                }
-                
-                $film->setId('F'.$i);
                 $filmsParent->appendChild(filmNode($film));
                 
                 $doc->save(__DIR__."/../xml/cinema.xml");
@@ -111,16 +100,22 @@
 
 
         if(isset($_POST['ajout'])){
-            $film = new Film(1,$_POST['titre'],$_POST['genre'],$_POST['realisateur'],$_POST['annee'],$_POST['duree'],$_FILES['poste']['name'],$_POST['description']);
+            $i=1;
+
+            foreach ($filmsParent->childNodes as $child) {
+                if ($child->nodeType == 1)
+                {   
+                    $i++;
+                }
+            }
             if ($_FILES['poste']['name']) {
                 $path = $_FILES['poste']['name'];
                 $ext = pathinfo($path, PATHINFO_EXTENSION);
-                $file_name = '1.'.$ext;
+                $file_name = "F".$i.".".$ext;
                 unlink('../views/posters/'.$file_name);
                 move_uploaded_file($_FILES['poste']['tmp_name'], '../views/posters/'.$file_name);
-                $poster = '../../posters/'.$file_name;
-                var_dump($_FILES['poste']['name']);
             }
+            $film = new Film("F".$i,$_POST['titre'],$_POST['genre'],$_POST['realisateur'],$_POST['annee'],$_POST['duree'], $file_name,$_POST['description']);
             ajouterFilm($film);
            header('location:../views/admin/lists/films/scripts/script.php');
             
