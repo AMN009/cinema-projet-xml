@@ -5,7 +5,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method='html' />
 
-    <xsl:template match="/">
+    <xsl:template match="/cinema">
         <html lang="en">
             <head>
                 <meta charset="UTF-8" />
@@ -805,7 +805,7 @@
                                                 <div class="header-info">
                                                     <span>
                                                         Hello,
-                                                        <strong>Samuel</strong>
+                                                        <strong><xsl:value-of select="utilisateurs/utilisateur[@id=$id]/nom"/></strong>
                                                     </span>
                                                 </div>
                                                 <img src="../../../../style/images/profile/pic1.jpg" width="20" alt="" />
@@ -1178,7 +1178,7 @@
                                             </thead>
                                             <tbody>
 
-                                                <xsl:for-each select="cinema/salles/salle">
+                                                <xsl:for-each select="salles/salle">
                                                     <xsl:sort select="@id" />
                                                     <tr>
                                                         <td>
