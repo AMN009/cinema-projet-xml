@@ -117,14 +117,22 @@
 													</svg>
 													<span class="ml-2">S'authentifier </span>
 												</a>
-												<!-- <a href="#" class="dropdown-item ai-icon">
+
+												<a href="../../reservations-history/scripts/reservations-history.php" class="dropdown-item ai-icon">
+													<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book text-warning">
+														<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+														<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+													</svg>
+													<span class="ml-2">Mes réservations </span>
+												</a>
+												<a href="#" class="dropdown-item ai-icon">
 													<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 														<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
 														<polyline points="16 17 21 12 16 7"></polyline>
 														<line x1="21" y1="12" x2="9" y2="12"></line>
 													</svg>
-													<span class="ml-2">Logout </span>
-												</a> -->
+													<span class="ml-2">Se déconnecter </span>
+												</a>
 											</div>
 										</li>
 									</ul>
@@ -211,7 +219,7 @@
 													</div>
 													<div class="new-arrival-content text-center mt-3">
 														<h4>
-															<a href="#">
+															<a href="../../film-details/scripts/film-details.php?film={@id}">
 																<xsl:value-of select="titre"></xsl:value-of>
 															</a>
 														</h4>

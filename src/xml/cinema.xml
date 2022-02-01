@@ -82,8 +82,8 @@
     </salles>
 
     <sieges>
-        <siege id="SI889" libre="true">
-            <salle>S1</salle>
+        <siege id="SI889" libre="false">
+            <salle>S08</salle>
             <rang>7</rang>
             <numero>44</numero>
         </siege>
@@ -106,7 +106,7 @@
 
     <seances>
 
-        <seance id="S659">
+        <seance id="SE659">
             <date>06/11/2021</date>
             <heure>18h45m</heure>
             <film>F1</film>
@@ -159,23 +159,8 @@
             <utilisateur>U1</utilisateur>
 
             <siege>SI889</siege>
-            <seance>S659</seance>
+            <seance>SE659</seance>
 
-        </reservation>
-        <reservation code="R2">
-            <date>29/01/2022</date>
-            <heure>04h45m</heure>
-            <utilisateur>U1</utilisateur>
-
-            <siege>SI889</siege>
-            <seance>S658</seance>
-        </reservation>
-        <reservation code="47">
-            <date>01/11/2021</date>
-            <heure>23h02m</heure>
-            <utilisateur>U1</utilisateur>
-            <siege>SI889</siege>
-            <seance>SE658</seance>
         </reservation>
 
 
