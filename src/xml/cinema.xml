@@ -32,7 +32,7 @@
             <password>aymen</password>
             <tel>2349000</tel>
         </utilisateur>
-    <utilisateur id="U6"><nom>USER</nom><email>user@user.com</email><password>user123</password><tel>2349000</tel></utilisateur></utilisateurs>
+    <utilisateur id="U6"><nom>USER</nom><email>user@user.com</email><password>user123</password><tel>2349000</tel></utilisateur><utilisateur id="U7"><nom>HAMADA LGHOUL</nom><email>hamada@gmail.com</email><password>hamada123</password><tel>2349000</tel></utilisateur></utilisateurs>
 
 
     <films>
@@ -119,11 +119,7 @@
             <rang>5</rang>
             <numero>50</numero>
         </siege>
-        <siege id="SI101" libre="true">
-            <salle>S08</salle>
-            <rang>5</rang>
-            <numero>51</numero>
-        </siege>
+        <siege id="SI101" libre="false"><salle>S08</salle><rang>5</rang><numero>51</numero></siege>
         <siege id="SI102" libre="true">
             <salle>S08</salle>
             <rang>5</rang>
@@ -221,6 +217,6 @@
             <siege>SI100</siege>
             <seance>SE600</seance>
         </reservation>
-    </reservations>
+    <reservation code="R5"><date>01/02/2022</date><heure>09h54m</heure><utilisateur>U7</utilisateur><siege>SI101</siege><seance>SE601</seance></reservation></reservations>
 
 </cinema>
