@@ -11,6 +11,7 @@
 
   $xproces->setParameter('', 'id',$_SESSION['id']);
   // importer la feuille de style XSL dans le processus XSLT
+
     $xproces->importStylesheet($xsl);
 
   // Transformer du XML en HTML à l'aide du fichier XSL
