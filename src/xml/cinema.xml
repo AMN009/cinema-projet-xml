@@ -20,6 +20,8 @@
             <password>test</password>
             <tel>+212-236-458-896</tel>
         </utilisateur>
+<<<<<<< HEAD
+=======
         <utilisateur id="U3">
             <nom>fahd</nom>
             <email>fahd@gmail.com</email>
@@ -32,6 +34,7 @@
             <password>aymen</password>
             <tel>2349000</tel>
         </utilisateur>
+>>>>>>> 4b255c3be0f33a975d6d6710b684587229f6a53f
     </utilisateurs>
 
 
