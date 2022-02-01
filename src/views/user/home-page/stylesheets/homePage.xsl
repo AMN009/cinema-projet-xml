@@ -42,10 +42,8 @@
 				Nav header start
 			***********************************-->
 					<div class="nav-header">
-						<a href="index.html" class="brand-logo">
-							<img class="logo-abbr" src="../../../style/images/logo.png" alt="" />
-							<img class="logo-compact" src="../../../style/images/logo-text.png" alt="" />
-							<img class="brand-title" src="../../../style/images/logo-text.png" alt="" />
+						<a href="../scripts/script.php" class="brand-logo">
+							<img class="logo-abbr" src="../../../style/images/movie-logo.png" alt="" />
 						</a>
 
 						<div class="nav-control">
@@ -81,7 +79,7 @@
 									</div>
 
 									<ul class="navbar-nav header-right">
-										<li class="nav-item dropdown notification_dropdown">
+										<!-- <li class="nav-item dropdown notification_dropdown">
 											<a class="nav-link dz-fullscreen primary" href="#">
 												<svg id="Capa_1" enable-background="new 0 0 482.239 482.239" height="22" viewBox="0 0 482.239 482.239" width="22" xmlns="http://www.w3.org/2000/svg">
 													<path d="m0 17.223v120.56h34.446v-103.337h103.337v-34.446h-120.56c-9.52 0-17.223 7.703-17.223 17.223z" fill="" />
@@ -90,7 +88,7 @@
 													<path d="m34.446 344.456h-34.446v120.56c0 9.52 7.703 17.223 17.223 17.223h120.56v-34.446h-103.337z" fill="" />
 												</svg>
 											</a>
-										</li>
+										</li> -->
 										<li class="nav-item dropdown header-profile">
 											<a class="nav-link" href="#" role="button" data-toggle="dropdown">
 												<div class="header-info">
@@ -147,26 +145,17 @@
 								<li>
 									<a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 										<i class="flaticon-381-networking"></i>
-										<span class="nav-text">Dashboard</span>
+										<span class="nav-text">Menu</span>
 									</a>
 									<ul aria-expanded="false">
 										<li>
-											<a href="index.html">Dashboard</a>
+											<a href="../scripts/script.php">Les films disponibles</a>
 										</li>
 										<li>
-											<a href="page-analytics.html">Analytics</a>
+											<a href="../../signup/scripts/signup-form.php">S'inscrire</a>
 										</li>
 										<li>
-											<a href="page-review.html">Review</a>
-										</li>
-										<li>
-											<a href="page-order.html">Order</a>
-										</li>
-										<li>
-											<a href="page-order-list.html">Order List</a>
-										</li>
-										<li>
-											<a href="page-general-customers.html">General Customers</a>
+											<a href="../../login/scripts/login-form.php">Se connecter</a>
 										</li>
 									</ul>
 								</li>
@@ -196,17 +185,16 @@
 							<div class="row page-titles mx-0">
 								<div class="col-sm-6 p-md-0">
 									<div class="welcome-text">
-										<h4>liste des films</h4>
-										<p class="mb-0">Your business dashboard template</p>
+										<h4>Films disponibles maintenant</h4>
 									</div>
 								</div>
 								<div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
 									<ol class="breadcrumb">
 										<li class="breadcrumb-item">
-											<a href="javascript:void(0)">Layout</a>
+											<a href="javascript:void(0)">Liste</a>
 										</li>
 										<li class="breadcrumb-item active">
-											<a href="javascript:void(0)">Blank</a>
+											<a href="javascript:void(0)">Films disponibles</a>
 										</li>
 									</ol>
 								</div>
@@ -273,7 +261,7 @@
 					<div class="footer">
 						<div class="copyright">
 							<p>
-								Copyright © Designed &amp; Developed by
+								Designed &amp; Developed by
 								<a href="#">Fahd Bouachrine &amp; Aymen Rhalloussi</a>
 								2022
 							</p>
