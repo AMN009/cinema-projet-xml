@@ -216,6 +216,7 @@
                                                             #
                                                             <xsl:value-of select="@code" />
                                                         </td>
+                                                        <xsl:variable name="code" select="@code"/>
                                                         <td>
                                                             <xsl:value-of select="date" />
                                                         </td>
@@ -266,7 +267,7 @@
                                                                     </svg>
                                                                 </div>
                                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                                    <a class="dropdown-item" href="#">
+                                                                    <a class="dropdown-item" href="../../tickets/stylesheets/pdf.php?code={$code}">
                                                                         <i class="las la-file-invoice scale5 text-dark mr-2"></i>
                                                                         Consulter le ticket
                                                                     </a>
