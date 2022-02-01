@@ -49,52 +49,20 @@
 
     <films>
 
-        <film id="F1" annee="2014">
-            <titre>Whiplash</titre>
-            <genre>Drame</genre>
-            <realisateur>Damien Chazelle</realisateur>
-            <duree>1h46m</duree>
+        <film id="F1" annee="1996">
+            <titre>Mission Impossible</titre>
+            <genre>Action, Drame, Thriller</genre>
+            <realisateur>Brian De Palma</realisateur>
+            <duree>1h50m</duree>
             <poster source="F1.jpg"/>
+            <description>Jim Phelps dirige le département des "Missions impossibles." Un agent de la CIA, Kittridge, lui demande de mener à bien une délicate affaire, à Prague. Phelps doit y démasquer un agent russe, Alexander Golitsyn, dès que ce dernier aura volé la liste des agents américains opérant en Europe centrale.</description>
         </film>
-        <film id="F2" annee="2014">
-            <titre>Whiplash</titre>
-            <genre>science</genre>
-            <realisateur>Damien Chazelle</realisateur>
-            <duree>1h46m</duree>
-            <poster source="F2.jpg"/>
-            <description>Il n'y a que la musique dans la vie d'Andrew. Le jeune homme de 19 ans n'hésite pas à sacrifier ses relations amoureuses, amicales et familiales pour devenir un des meilleurs batteurs de jazz de sa génération.</description>
-        </film>
-        <film id="F3" annee="2014">
-            <titre>Whiplash 2</titre>
-            <genre>action</genre>
-            <realisateur>Damien Chazelle</realisateur>
-            <duree>1h46m</duree>
-            <poster source="F3.jpg"/>
-        </film>
-        <film id="F4" annee="1334">
-            <titre>test</titre>
-            <genre>action</genre>
-            <realisateur>test</realisateur>
-            <duree>30</duree>
-            <poster source="F4.jpg"/>
-            <description>retsts</description>
-        </film>
-        <film id="F5" annee="1334">
-            <titre>test</titre>
-            <genre>drame</genre>
-            <realisateur>test</realisateur>
-            <duree>30</duree>
-            <poster source="F1.jpg"/>
-            <description>retsts</description>
-        </film>
-        <film id="F6" annee="30">
-            <titre>y</titre>
-            <genre>drame</genre>
-            <realisateur>y</realisateur>
-            <duree>30</duree>
-            <poster source="F2.jpg"/>
-            <description>hhs</description>
-        </film>
+        
+        
+        
+        
+        
+        
     </films>
 
 
@@ -103,7 +71,8 @@
         <salle id="S15" capacite="80"/>
         <salle id="S20" capacite="60"/>
         <salle id="S10" capacite="100"/>
-    <salle id="S1" capacite="200"/></salles>
+        
+    </salles>
 
     <sieges>
         <siege id="SI889" libre="false">

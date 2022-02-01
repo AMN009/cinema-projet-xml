@@ -50,6 +50,8 @@
                 foreach ($filmsParent->childNodes as $child) {
                     if ($child->nodeType == 1 && ($film->getId() == $child->getAttribute('id'))) {
                         $existant = true;
+                        $file_name = $child->getElementsByTagName('poster')->item(0)->getAttribute('source');
+                        unlink('../views/posters/'.$file_name);
                         $filmsParent->removeChild($child);
                         $doc->save(__DIR__."/../xml/cinema.xml");
                         return $child;
@@ -117,7 +119,7 @@
             }
             $film = new Film("F".$i,$_POST['titre'],$_POST['genre'],$_POST['realisateur'],$_POST['annee'],$_POST['duree'], $file_name,$_POST['description']);
             ajouterFilm($film);
-           header('location:../views/admin/lists/films/scripts/script.php');
+           header('location: ../views/admin/lists/films/scripts/script.php');
             
         }
 
