@@ -32,7 +32,7 @@
                                                         <label class="mb-1">
                                                             <strong>Email</strong>
                                                         </label>
-                                                        <input type="email" name="email" class="form-control" value="bonjour@exemple.com" />
+                                                        <input type="email" name="email" class="form-control" placeholder="bonjour@exemple.com" />
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="mb-1">

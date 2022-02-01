@@ -11,11 +11,7 @@
 
   // importer la feuille de style XSL dans le processus XSLT
     $xproces->importStylesheet($xsl);
-    $xproces->setParameter('', 'utilisateurId', 'U1');
-    // $xproces->setParameter('', 'id',$_SESSION['id']);
-    // if (!isset($_SESSION['id'])){
-    //   header('location:../../scripts/script.php');
-    // }
+    $xproces->setParameter('', 'id',$_SESSION['id']);
   // Transformer du XML en HTML à l'aide du fichier XSL
     echo $xproces->transformToXML($doc);
     // file_put_contents('test.html', $html);

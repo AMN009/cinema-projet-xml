@@ -99,39 +99,44 @@
 												<img src="../../../style/images/profile/unknown.jpg" width="20" alt="" />
 											</a>
 											<div class="dropdown-menu dropdown-menu-right">
-												<a href="../../signup/scripts/signup-form.php" class="dropdown-item ai-icon">
-													<svg id="icon-signup" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus text-primary">
-														<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-														<circle cx="8.5" cy="7" r="4"></circle>
-														<line x1="20" y1="8" x2="20" y2="14"></line>
-														<line x1="23" y1="11" x2="17" y2="11"></line>
-													</svg>
-													<span class="ml-2">S'inscrire </span>
-												</a>
-												<a href="../../login/scripts/login-form.php" class="dropdown-item ai-icon">
-													<svg id="icon-login" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in text-success">
-														<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
-														<polyline points="10 17 15 12 10 7"></polyline>
-														<line x1="15" y1="12" x2="3" y2="12"></line>
-													</svg>
-													<span class="ml-2">S'authentifier </span>
-												</a>
-
-												<a href="../../reservations-history/scripts/reservations-history.php" class="dropdown-item ai-icon">
-													<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book text-warning">
-														<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-														<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-													</svg>
-													<span class="ml-2">Mes réservations </span>
-												</a>
-												<a href="../../logout.php" class="dropdown-item ai-icon">
-													<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-														<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-														<polyline points="16 17 21 12 16 7"></polyline>
-														<line x1="21" y1="12" x2="9" y2="12"></line>
-													</svg>
-													<span class="ml-2">Se déconnecter </span>
-												</a>
+												<xsl:choose>
+													<xsl:when test="$id = 'visiteur'">
+														<a href="../../signup/scripts/signup-form.php" class="dropdown-item ai-icon">
+															<svg id="icon-signup" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus text-primary">
+																<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+																<circle cx="8.5" cy="7" r="4"></circle>
+																<line x1="20" y1="8" x2="20" y2="14"></line>
+																<line x1="23" y1="11" x2="17" y2="11"></line>
+															</svg>
+															<span class="ml-2">S'inscrire </span>
+														</a>
+														<a href="../../login/scripts/login-form.php" class="dropdown-item ai-icon">
+															<svg id="icon-login" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in text-success">
+																<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+																<polyline points="10 17 15 12 10 7"></polyline>
+																<line x1="15" y1="12" x2="3" y2="12"></line>
+															</svg>
+															<span class="ml-2">S'authentifier </span>
+														</a>
+													</xsl:when>
+													<xsl:otherwise>
+														<a href="../../reservations-history/scripts/reservations-history.php" class="dropdown-item ai-icon">
+															<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book text-warning">
+																<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+																<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+															</svg>
+															<span class="ml-2">Mes réservations </span>
+														</a>
+														<a href="../../logout.php" class="dropdown-item ai-icon">
+															<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+																<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+																<polyline points="16 17 21 12 16 7"></polyline>
+																<line x1="21" y1="12" x2="9" y2="12"></line>
+															</svg>
+															<span class="ml-2">Se déconnecter </span>
+														</a>
+													</xsl:otherwise>
+												</xsl:choose>
 											</div>
 										</li>
 									</ul>
@@ -158,26 +163,17 @@
 										<li>
 											<a href="../scripts/script.php">Les films disponibles</a>
 										</li>
-										<li>
-											<a href="../../signup/scripts/signup-form.php">S'inscrire</a>
-										</li>
-										<li>
-											<a href="../../login/scripts/login-form.php">Se connecter</a>
-										</li>
+										<xsl:if test="$id = 'visiteur'">
+											<li>
+												<a href="../../signup/scripts/signup-form.php">S'inscrire</a>
+											</li>
+											<li>
+												<a href="../../login/scripts/login-form.php">Se connecter</a>
+											</li>
+										</xsl:if>
 									</ul>
 								</li>
 							</ul>
-							<!-- <div class="copyright">
-								<p>
-									<strong>CINEWEB - ADMIN Dashboard</strong>
-									© 2022 All Rights Reserved
-								</p>
-								<p>
-									Made with
-									<i class="fa fa-heart"></i>
-									by Fahd &amp; Aymen
-								</p>
-							</div> -->
 						</div>
 					</div>
 					<!--**********************************
@@ -243,7 +239,7 @@
 															<xsl:value-of select="genre"></xsl:value-of>
 														</span>
 														<h6>
-															<a href="#">more details</a>
+															<a href="../../film-details/scripts/film-details.php?film={@id}">Plus de détails</a>
 														</h6>
 													</div>
 												</div>

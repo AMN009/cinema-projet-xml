@@ -13,7 +13,7 @@
     $xproces->importStylesheet($xsl);
     $xproces->setParameter('', 'filmId', $_GET['film']);
     // $xproces->setParameter('', 'seanceId', $_GET['seance']);
-  //  $xproces->setParameter('', 'id',$_SESSION['id']);
+   $xproces->setParameter('', 'id',$_SESSION['id']);
   // Transformer du XML en HTML à l'aide du fichier XSL
     echo $xproces->transformToXML($doc);
     // $html = $xproces->transformToXML($doc);

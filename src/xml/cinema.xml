@@ -32,7 +32,7 @@
             <password>aymen</password>
             <tel>2349000</tel>
         </utilisateur>
-    </utilisateurs>
+    <utilisateur id="U6"><nom>USER</nom><email>user@user.com</email><password>user123</password><tel>2349000</tel></utilisateur></utilisateurs>
 
 
     <films>
