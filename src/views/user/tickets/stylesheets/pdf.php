@@ -1,13 +1,16 @@
 
-<?Php
-include '../../../../parsers/ParserSetup.php';
+<?php
 require('fpdf.php');
 
-//$code=$_POST['code'];
+$code = $_GET['code'];
 
-$reservationsParent = $root->getElementsByTagName('reservations')->item(0);
-global $doc;
-$code="487";
+if (isset($code)) {
+    $doc = new DomDocument();
+    $doc->load(__DIR__."/../../../../xml/cinema.xml");
+    $root = $doc->documentElement;
+
+    $reservationsParent = $root->getElementsByTagName('reservations')->item(0);
+
 foreach ($reservationsParent->childNodes as $child) {
     if ($child->nodeType == 1 && ($code == $child->getAttribute('code'))) {
         $reservation=$child;
@@ -109,4 +112,5 @@ $pdf->Cell(30	,2,$siege->childNodes->item(1)->nodeValue,0,1);
 $pdf->Cell(30	,0,'',0,1);
             
 $pdf->Output();
+}
 ?>

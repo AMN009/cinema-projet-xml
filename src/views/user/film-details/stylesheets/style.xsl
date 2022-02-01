@@ -386,7 +386,7 @@
                                                                 <input type="number" name="num" class="form-control input-btn input-number" value="1" />
                                                             </div> -->
                                                             <!--Quanatity End-->
-                                                            <form action="src/views/user/film-details/scripts/reservation.php" method="post">
+                                                            <form action="../../film-details/scripts/reservation.php" method="post">
                                                                 <input name="utilisateur" type="hidden" value="U1" />
                                                                 <input name="seance" id="seanceId" type="hidden" />
                                                                 <div class="shopping-cart mt-3">

@@ -32,7 +32,7 @@
             <duree>1h46m</duree>
             <poster source="F1.jpg" />
         </film>
-        <film id="F2" anne="2014">
+        <film id="F2" annee="2014">
             <titre>Whiplash</titre>
             <genre>science</genre>
             <realisateur>Damien Chazelle</realisateur>
@@ -40,7 +40,7 @@
             <poster source="F2.jpg" />
             <description>Il n'y a que la musique dans la vie d'Andrew. Le jeune homme de 19 ans n'hésite pas à sacrifier ses relations amoureuses, amicales et familiales pour devenir un des meilleurs batteurs de jazz de sa génération.</description>
         </film>
-        <film>
+        <film id="F3" annee="2014">
             <titre>Whiplash 2</titre>
             <genre>action</genre>
             <realisateur>Damien Chazelle</realisateur>
@@ -87,7 +87,7 @@
             <rang>7</rang>
             <numero>44</numero>
         </siege>
-        <siege id="S89" libre="true">
+        <siege id="SI88" libre="false">
             <salle>S2</salle>
             <rang>7</rang>
             <numero>44</numero>
@@ -102,6 +102,41 @@
             <rang>4</rang>
             <numero>46</numero>
         </siege>
+        <siege id="SI100" libre="true">
+            <salle>S08</salle>
+            <rang>5</rang>
+            <numero>50</numero>
+        </siege>
+        <siege id="SI101" libre="true">
+            <salle>S08</salle>
+            <rang>5</rang>
+            <numero>51</numero>
+        </siege>
+        <siege id="SI102" libre="true">
+            <salle>S08</salle>
+            <rang>5</rang>
+            <numero>52</numero>
+        </siege>
+        <siege id="SI103" libre="true">
+            <salle>S08</salle>
+            <rang>5</rang>
+            <numero>53</numero>
+        </siege>
+        <siege id="SI104" libre="true">
+            <salle>S08</salle>
+            <rang>5</rang>
+            <numero>54</numero>
+        </siege>
+        <siege id="SI105" libre="true">
+            <salle>S08</salle>
+            <rang>5</rang>
+            <numero>55</numero>
+        </siege>
+        <siege id="SI91" libre="true">
+            <salle>S20</salle>
+            <rang>4</rang>
+            <numero>46</numero>
+        </siege>
     </sieges>
 
     <seances>
@@ -110,7 +145,7 @@
             <date>06/11/2021</date>
             <heure>18h45m</heure>
             <film>F1</film>
-            <salle>S2</salle>
+            <salle>S20</salle>
             <prix>60</prix>
         </seance>
         <seance id="S658">
@@ -162,8 +197,20 @@
             <seance>SE659</seance>
 
         </reservation>
-
-
+        <reservation code="R2">
+            <date>01/02/2022</date>
+            <heure>03h12m</heure>
+            <utilisateur>U1</utilisateur>
+            <siege>SI89</siege>
+            <seance>SE659</seance>
+        </reservation>
+        <reservation code="R3">
+            <date>01/02/2022</date>
+            <heure>03h30m</heure>
+            <utilisateur>U1</utilisateur>
+            <siege>SI90</siege>
+            <seance>SE600</seance>
+        </reservation>
     </reservations>
 
 </cinema>
