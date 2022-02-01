@@ -1,18 +1,22 @@
 <?php
 
-    require_once('src/parsers/UtilisateurParser.php');
-    require_once('src/models/Utilisateur.php');
-    require_once('src/parsers/FilmParser.php');
-    require_once('src/models/Film.php');
-    require_once('src/parsers/SalleParser.php');
-    require_once('src/models/Salle.php');
+    // require_once('src/parsers/UtilisateurParser.php');
+    // require_once('src/models/Utilisateur.php');
+    // require_once('src/parsers/FilmParser.php');
+    // require_once('src/models/Film.php');
+    // require_once('src/parsers/SalleParser.php');
+    // require_once('src/models/Salle.php');
     // require_once('src/views/admin/lists/films/scripts/script.php');
     // require_once('src/views/admin/lists/salles/scripts/script.php');
     // require_once('src/views/admin/lists/utilisateurs/scripts/script.php');
     // require_once('src/views/admin/lists/reservations/scripts/script.php');
     // require_once('src/views/admin/lists/seances/scripts/script.php');
     // require_once('src/views/user/film-details/scripts/film-details.php');
-    require_once('src/views/user/reservations-history/scripts/reservations-history.php');
+    // require_once('src/views/user/reservations-history/scripts/reservations-history.php');
+    ob_start();
+    header('Location: src/views/user/home-page/scripts/script.php');
+    ob_end_flush();
+    die();
 
     // $ajouté = false;
 

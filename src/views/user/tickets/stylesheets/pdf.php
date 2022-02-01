@@ -1,11 +1,12 @@
 
 <?Php
 include '../../../../parsers/ParserSetup.php';
-//$code=$_POST['code'];
+$code=$_GET['code'];
 
 $reservationsParent = $root->getElementsByTagName('reservations')->item(0);
 global $doc;
-$code="R2";
+// $code="R2";
+
 foreach ($reservationsParent->childNodes as $child) {
     if ($child->nodeType == 1 && ($code == $child->getAttribute('code'))) {
         $reservation=$child;

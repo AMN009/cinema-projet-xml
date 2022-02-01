@@ -115,8 +115,12 @@
        }
 
        function reserverSiege($siege) {
-        $siege->setLibre(false);
-        updateSiege($siege);
+         if (isset($siege)) {
+          $siege->setLibre(false);
+          updateSiege($siege);
+         }
+         else
+          echo "not found";
        }
 
        function libererSiege($siege) {

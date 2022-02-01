@@ -106,8 +106,22 @@
             $_SESSION['id'] = 'U'.$i;
             $i=0;
             
-            header('Location:../views/admin/lists/utilisateurs/scripts/script.php');
+            header('Location:../views/user/home-page/scripts/script.php');
 
           }
+
+        function checkLogin($email, $password) {
+            if ($email != null && $password != null) {
+                global $doc, $utilisateursParent;
+
+                foreach ($utilisateursParent->childNodes as $child) {
+                    if ($child->nodeType == 1 && ($child->getElementsByTagName('email')->item(0)->nodeValue == $email && $child->getElementsByTagName('password')->item(0)->nodeValue == $password))
+                        return $child->getAttribute('id');
+                }
+            }
+            else {
+                var_dump("les données sont null !");
+            }
+        }
 
 ?>

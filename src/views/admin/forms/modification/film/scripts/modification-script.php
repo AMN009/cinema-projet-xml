@@ -31,7 +31,7 @@
         $file_name = $id.'.'.$ext;
         if (strlen($poster) > 0) unlink('../../../../../posters/'.$file_name);
         move_uploaded_file($_FILES['poster']['tmp_name'], '../../../../../posters/'.$file_name);
-        $poster = $file_name;
+        $poster = '../../posters/'.$file_name;
     }
     // var_dump($poster);
 

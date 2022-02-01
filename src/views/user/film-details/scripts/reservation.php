@@ -17,10 +17,9 @@
 
     insertReservation(new Reservation($reservationCode, $date, $siege->getId(), $heure, $seance, $utilisateur));
 
-
-    // ob_start();
-    // header('Location: film-details.php');
-    // ob_end_flush();
-    // die();
+    ob_start();
+    header('Location: ../../tickets/stylesheets/pdf.php?code='.$reservationCode);
+    ob_end_flush();
+    die();
 
 ?>

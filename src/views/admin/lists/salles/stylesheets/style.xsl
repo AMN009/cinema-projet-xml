@@ -14,15 +14,11 @@
                 <title>CINEWEB - Liste des salles</title>
                 <!-- Favicon icon -->
                 <link rel="icon" type="image/png" sizes="16x16" href="../../../../style/images/favicon.png" />
-                <link rel="icon" type="image/png" sizes="16x16" href="src/views/style/images/favicon.png" />
 
                 <!-- Custom Stylesheet -->
                 <link href="../../../../style/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
                 <link href="../../../../style/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
                 <link href="../../../../style/css/style.css" rel="stylesheet" />
-                <link href="src/views/style/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
-                <link href="src/views/style/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
-                <link href="src/views/style/css/style.css" rel="stylesheet" />
                 <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet" />
             </head>
             <body>
@@ -52,9 +48,7 @@
         ***********************************-->
                     <div class="nav-header">
                         <a href="index.html" class="brand-logo">
-                            <img class="logo-abbr" src="../../../../style/images/logo.png" alt="" />
-                            <img class="logo-compact" src="../../../../style/images/logo-text.png" alt="" />
-                            <img class="brand-title" src="../../../../style/images/logo-text.png" alt="" />
+                            <img class="logo-abbr" src="../../../../style/images/movie-logo.png" alt="" />
                         </a>
 
                         <div class="nav-control">
@@ -68,6 +62,16 @@
                     <!--**********************************
             Nav header end
         ***********************************-->
+
+                    <!--**********************************
+            Chat box start
+        ***********************************-->
+
+                    <!--**********************************
+            Chat box End
+        ***********************************-->
+
+
                     <!--**********************************
             Header start
         ***********************************-->
@@ -76,18 +80,7 @@
                             <nav class="navbar navbar-expand">
                                 <div class="collapse navbar-collapse justify-content-between">
                                     <div class="header-left">
-                                        <div class="search_bar dropdown show">
-                                            <div class="dropdown-menu p-0 m-0 show">
-                                                <form>
-                                                    <input class="form-control" type="search" placeholder="Search Here" aria-label="Search" />
-                                                </form>
-                                            </div>
-                                            <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
-                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M23.7871 22.7761L17.9548 16.9437C19.5193 15.145 20.4665 12.7982 20.4665 10.2333C20.4665 4.58714 15.8741 0 10.2333 0C4.58714 0 0 4.59246 0 10.2333C0 15.8741 4.59246 20.4665 10.2333 20.4665C12.7982 20.4665 15.145 19.5193 16.9437 17.9548L22.7761 23.7871C22.9144 23.9255 23.1007 24 23.2816 24C23.4625 24 23.6488 23.9308 23.7871 23.7871C24.0639 23.5104 24.0639 23.0528 23.7871 22.7761ZM1.43149 10.2333C1.43149 5.38004 5.38004 1.43681 10.2279 1.43681C15.0812 1.43681 19.0244 5.38537 19.0244 10.2333C19.0244 15.0812 15.0812 19.035 10.2279 19.035C5.38004 19.035 1.43149 15.0865 1.43149 10.2333Z" fill="#A4A4A4" />
-                                                </svg>
-                                            </span>
-                                        </div>
+                                        <!-- EMPTY -->
                                     </div>
 
                                     <ul class="navbar-nav header-right">
@@ -95,34 +88,20 @@
                                             <a class="nav-link" href="#" role="button" data-toggle="dropdown">
                                                 <div class="header-info">
                                                     <span>
-                                                        Hello,
-                                                        <strong><xsl:value-of select="utilisateurs/utilisateur[@id=$id]/nom"/></strong>
+                                                        Bonjour,
+                                                        <strong>ADMIN</strong>
                                                     </span>
                                                 </div>
-                                                <img src="../../../../style/images/profile/pic1.jpg" width="20" alt="" />
+                                                <img src="../../../../style/images/profile/unknown.jpg" width="20" alt="" />
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="./app-profile.html" class="dropdown-item ai-icon">
-                                                    <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                                        <circle cx="12" cy="7" r="4"></circle>
-                                                    </svg>
-                                                    <span class="ml-2">Profile </span>
-                                                </a>
-                                                <a href="./email-inbox.html" class="dropdown-item ai-icon">
-                                                    <svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" class="text-success" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                                        <polyline points="22,6 12,13 2,6"></polyline>
-                                                    </svg>
-                                                    <span class="ml-2">Inbox </span>
-                                                </a>
-                                                <a href="../../../logout.php" class="dropdown-item ai-icon">
+                                                <a href="#" class="dropdown-item ai-icon">
                                                     <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                         <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
                                                         <polyline points="16 17 21 12 16 7"></polyline>
                                                         <line x1="21" y1="12" x2="9" y2="12"></line>
                                                     </svg>
-                                                    <span class="ml-2">Logout </span>
+                                                    <span class="ml-2">Se déconnecter </span>
                                                 </a>
                                             </div>
                                         </li>
@@ -144,293 +123,27 @@
                                 <li>
                                     <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
                                         <i class="flaticon-381-networking"></i>
-                                        <span class="nav-text">Dashboard</span>
+                                        <span class="nav-text">Toutes les listes</span>
                                     </a>
                                     <ul aria-expanded="false">
                                         <li>
-                                            <a href="index.html">Dashboard</a>
+                                            <a href="../../films/scripts/script.php">Tous les films</a>
                                         </li>
                                         <li>
-                                            <a href="page-analytics.html">Analytics</a>
+                                            <a href="../../reservations/scripts/script.php">Toutes les reservations</a>
                                         </li>
                                         <li>
-                                            <a href="page-review.html">Review</a>
+                                            <a href="../scripts/script.php">Toutes les salles</a>
                                         </li>
                                         <li>
-                                            <a href="page-order.html">Order</a>
+                                            <a href="../../seances/scripts/script.php">Toutes les séances</a>
                                         </li>
                                         <li>
-                                            <a href="page-order-list.html">Order List</a>
-                                        </li>
-                                        <li>
-                                            <a href="page-general-customers.html">General Customers</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-                                        <i class="flaticon-381-television"></i>
-                                        <span class="nav-text">Apps</span>
-                                    </a>
-                                    <ul aria-expanded="false">
-                                        <li>
-                                            <a href="./app-profile.html">Profile</a>
-                                        </li>
-                                        <li>
-                                            <a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
-                                            <ul aria-expanded="false">
-                                                <li>
-                                                    <a href="./email-compose.html">Compose</a>
-                                                </li>
-                                                <li>
-                                                    <a href="./email-inbox.html">Inbox</a>
-                                                </li>
-                                                <li>
-                                                    <a href="./email-read.html">Read</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="./app-calender.html">Calendar</a>
-                                        </li>
-                                        <li>
-                                            <a class="has-arrow" href="javascript:void()" aria-expanded="false">Shop</a>
-                                            <ul aria-expanded="false">
-                                                <li>
-                                                    <a href="./ecom-product-grid.html">Product Grid</a>
-                                                </li>
-                                                <li>
-                                                    <a href="./ecom-product-list.html">Product List</a>
-                                                </li>
-                                                <li>
-                                                    <a href="./ecom-product-detail.html">Product Details</a>
-                                                </li>
-                                                <li>
-                                                    <a href="./ecom-product-order.html">Order</a>
-                                                </li>
-                                                <li>
-                                                    <a href="./ecom-checkout.html">Checkout</a>
-                                                </li>
-                                                <li>
-                                                    <a href="./ecom-invoice.html">Invoice</a>
-                                                </li>
-                                                <li>
-                                                    <a href="./ecom-customers.html">Customers</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-                                        <i class="flaticon-381-controls-3"></i>
-                                        <span class="nav-text">Charts</span>
-                                    </a>
-                                    <ul aria-expanded="false">
-                                        <li>
-                                            <a href="./chart-flot.html">Flot</a>
-                                        </li>
-                                        <li>
-                                            <a href="./chart-morris.html">Morris</a>
-                                        </li>
-                                        <li>
-                                            <a href="./chart-chartjs.html">Chartjs</a>
-                                        </li>
-                                        <li>
-                                            <a href="./chart-chartist.html">Chartist</a>
-                                        </li>
-                                        <li>
-                                            <a href="./chart-sparkline.html">Sparkline</a>
-                                        </li>
-                                        <li>
-                                            <a href="./chart-peity.html">Peity</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-                                        <i class="flaticon-381-internet"></i>
-                                        <span class="nav-text">Bootstrap</span>
-                                    </a>
-                                    <ul aria-expanded="false">
-                                        <li>
-                                            <a href="./ui-accordion.html">Accordion</a>
-                                        </li>
-                                        <li>
-                                            <a href="./ui-alert.html">Alert</a>
-                                        </li>
-                                        <li>
-                                            <a href="./ui-badge.html">Badge</a>
-                                        </li>
-                                        <li>
-                                            <a href="./ui-button.html">Button</a>
-                                        </li>
-                                        <li>
-                                            <a href="./ui-modal.html">Modal</a>
-                                        </li>
-                                        <li>
-                                            <a href="./ui-button-group.html">Button Group</a>
-                                        </li>
-                                        <li>
-                                            <a href="./ui-list-group.html">List Group</a>
-                                        </li>
-                                        <li>
-                                            <a href="./ui-media-object.html">Media Object</a>
-                                        </li>
-                                        <li>
-                                            <a href="./ui-card.html">Cards</a>
-                                        </li>
-                                        <li>
-                                            <a href="./ui-carousel.html">Carousel</a>
-                                        </li>
-                                        <li>
-                                            <a href="./ui-dropdown.html">Dropdown</a>
-                                        </li>
-                                        <li>
-                                            <a href="./ui-popover.html">Popover</a>
-                                        </li>
-                                        <li>
-                                            <a href="./ui-progressbar.html">Progressbar</a>
-                                        </li>
-                                        <li>
-                                            <a href="./ui-tab.html">Tab</a>
-                                        </li>
-                                        <li>
-                                            <a href="./ui-typography.html">Typography</a>
-                                        </li>
-                                        <li>
-                                            <a href="./ui-pagination.html">Pagination</a>
-                                        </li>
-                                        <li>
-                                            <a href="./ui-grid.html">Grid</a>
-                                        </li>
-
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-                                        <i class="flaticon-381-heart"></i>
-                                        <span class="nav-text">Plugins</span>
-                                    </a>
-                                    <ul aria-expanded="false">
-                                        <li>
-                                            <a href="./uc-select2.html">Select 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="./uc-nestable.html">Nestedable</a>
-                                        </li>
-                                        <li>
-                                            <a href="./uc-noui-slider.html">Noui Slider</a>
-                                        </li>
-                                        <li>
-                                            <a href="./uc-sweetalert.html">Sweet Alert</a>
-                                        </li>
-                                        <li>
-                                            <a href="./uc-toastr.html">Toastr</a>
-                                        </li>
-                                        <li>
-                                            <a href="./map-jqvmap.html">Jqv Map</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="widget-basic.html" class="ai-icon" aria-expanded="false">
-                                        <i class="flaticon-381-settings-2"></i>
-                                        <span class="nav-text">Widget</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-                                        <i class="flaticon-381-notepad"></i>
-                                        <span class="nav-text">Forms</span>
-                                    </a>
-                                    <ul aria-expanded="false">
-                                        <li>
-                                            <a href="./form-element.html">Form Elements</a>
-                                        </li>
-                                        <li>
-                                            <a href="./form-wizard.html">Wizard</a>
-                                        </li>
-                                        <li>
-                                            <a href="./form-editor-summernote.html">Summernote</a>
-                                        </li>
-                                        <li>
-                                            <a href="form-pickers.html">Pickers</a>
-                                        </li>
-                                        <li>
-                                            <a href="form-validation-jquery.html">Jquery Validate</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-                                        <i class="flaticon-381-network"></i>
-                                        <span class="nav-text">Table</span>
-                                    </a>
-                                    <ul aria-expanded="false">
-                                        <li>
-                                            <a href="table-bootstrap-basic.html">Bootstrap</a>
-                                        </li>
-                                        <li>
-                                            <a href="table-datatable-basic.html">Datatable</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-                                        <i class="flaticon-381-layer-1"></i>
-                                        <span class="nav-text">Pages</span>
-                                    </a>
-                                    <ul aria-expanded="false">
-                                        <li>
-                                            <a href="./page-register.html">Register</a>
-                                        </li>
-                                        <li>
-                                            <a href="./page-login.html">Login</a>
-                                        </li>
-                                        <li>
-                                            <a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
-                                            <ul aria-expanded="false">
-                                                <li>
-                                                    <a href="./page-error-400.html">Error 400</a>
-                                                </li>
-                                                <li>
-                                                    <a href="./page-error-403.html">Error 403</a>
-                                                </li>
-                                                <li>
-                                                    <a href="./page-error-404.html">Error 404</a>
-                                                </li>
-                                                <li>
-                                                    <a href="./page-error-500.html">Error 500</a>
-                                                </li>
-                                                <li>
-                                                    <a href="./page-error-503.html">Error 503</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="./page-lock-screen.html">Lock Screen</a>
+                                            <a href="../../utilisateurs/scripts/script.php">Tous les utilisateurs</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
-
-                            <!-- <div class="add-menu-sidebar">
-                                <img src="../../../../style/images/icon1.png" alt="" />
-                                <p>Organize your menus through button bellow</p>
-                                <a href="javascript:void(0);" class="btn btn-primary btn-block light">+ Add Menus</a>
-                            </div> -->
-                            <div class="copyright">
-                                <p>
-                                    <strong>CINEWEB - ADMIN Dashboard</strong>
-                                    © 2022 All Rights Reserved
-                                </p>
-                                <p>
-                                    Made with
-                                    <i class="fa fa-heart"></i>
-                                    by Fahd &amp; Aymen
-                                </p>
-                            </div>
                         </div>
                     </div>
                     <!--**********************************
@@ -493,9 +206,9 @@
                                                                 <div class="dropdown-menu dropdown-menu-right  ">
                                                                     <a class="dropdown-item userinfo " href="#" name="edit" data-id="{@id}">
                                                                         <i class="las la-pen-square scale5 text-success mr-2  "></i>
-                                                                        modifier la salle
+                                                                        Modifier la salle
                                                                     </a>
-                                                                    <a class="dropdown-item" href="src/views/admin/lists/salles/scripts/delete-script.php?salle={@id}">
+                                                                    <a class="dropdown-item" href="../../../lists/salles/scripts/delete-script.php?salle={@id}">
                                                                         <i class="las la-trash scale5 text-danger mr-2"></i>
                                                                         Supprimer la salle
                                                                     </a>
@@ -523,7 +236,7 @@
                     <div class="footer">
                         <div class="copyright">
                             <p>
-                                Copyright © Designed &amp; Developed by
+                                Designed &amp; Developed by
                                 <a href="#">Fahd Bouachrine &amp; Aymen Rhalloussi</a>
                                 2022
                             </p>
@@ -555,14 +268,9 @@
                 <script src="../../../../style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
                 <script src="../../../../style/js/custom.min.js"></script>
                 <script src="../../../../style/js/deznav-init.js"></script>
-                <script src="src/views/style/vendor/global/global.min.js"></script>
-                <script src="src/views/style/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-                <script src="src/views/style/js/custom.min.js"></script>
-                <script src="src/views/style/js/deznav-init.js"></script>
 
                 <!-- Datatable -->
                 <script src="../../../../style/vendor/datatables/js/jquery.dataTables.min.js"></script>
-                <script src="src/views/style/vendor/datatables/js/jquery.dataTables.min.js"></script>
 
                 <script>
                 (function($) {
@@ -601,9 +309,9 @@
 
                     </script>
 
-                    <div class="modal fade" id="empModal" role="dialog">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
+                <div class="modal fade" id="empModal" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
 
                             <div class="modal-header">
                                 <h5 class="modal-title">modifier la salle</h5>
@@ -612,11 +320,9 @@
                                 </button>
                             </div>
 
-                     <form  action="../../../../../parsers/SalleParser.php" method="post" >
-                        <div class="modal-body">
-                        
-                        </div>
-                        <div class="modal-footer">
+                            <form action="../../../../../parsers/SalleParser.php" method="post">
+                                <div class="modal-body"></div>
+                                <div class="modal-footer">
                                     <button type="button" class="btn btn-danger light" data-dismiss="modal">Close</button>
                                     <button type="submit" class="btn btn-primary" name="change">Save changes</button>
                                 </div>
