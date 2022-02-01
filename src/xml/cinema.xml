@@ -8,14 +8,19 @@
             <password>test</password>
             <tel>+212-684-989-567</tel>
         </utilisateur>
-
         <utilisateur id="U2">
             <nom>Aymen</nom>
             <email>aymen@gmail.com</email>
             <password>test</password>
             <tel>+212-236-458-896</tel>
         </utilisateur>
-    <utilisateur id="U3"><nom>fahd</nom><email>fahd@gmail.com</email><password>Password</password><tel>2349000</tel></utilisateur></utilisateurs>
+        <utilisateur id="U3">
+            <nom>fahd</nom>
+            <email>fahd@gmail.com</email>
+            <password>Password</password>
+            <tel>2349000</tel>
+        </utilisateur>
+    </utilisateurs>
 
 
     <films>
@@ -25,29 +30,29 @@
             <genre>Drame</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="../../posters/F1.jpg"/>
+            <poster source="F1.jpg" />
         </film>
-        <film id="F2" anne="2014">
+        <film id="F2" annee="2014">
             <titre>Whiplash</titre>
             <genre>science</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="../../posters/F1.jpg"/>
+            <poster source="F2.jpg" />
             <description>Il n'y a que la musique dans la vie d'Andrew. Le jeune homme de 19 ans n'hésite pas à sacrifier ses relations amoureuses, amicales et familiales pour devenir un des meilleurs batteurs de jazz de sa génération.</description>
         </film>
-         <film>
+        <film id="F3" annee="2014">
             <titre>Whiplash 2</titre>
             <genre>action</genre>
             <realisateur>Damien Chazelle</realisateur>
             <duree>1h46m</duree>
-            <poster source="../../posters/F1.jpg"/>
+            <poster source="F3.jpg" />
         </film>
         <film id="F4" annee="1334">
             <titre>test</titre>
             <genre>action</genre>
             <realisateur>test</realisateur>
             <duree>30</duree>
-            <poster source="../../posters/F2.jpg"/>
+            <poster source="F4.jpg" />
             <description>retsts</description>
         </film>
         <film id="F5" annee="1334">
@@ -55,7 +60,7 @@
             <genre>drame</genre>
             <realisateur>test</realisateur>
             <duree>30</duree>
-            <poster source="../../posters/F1.jpg"/>
+            <poster source="F1.jpg" />
             <description>retsts</description>
         </film>
         <film id="F6" annee="30">
@@ -63,27 +68,27 @@
             <genre>drame</genre>
             <realisateur>y</realisateur>
             <duree>30</duree>
-            <poster source="../../posters/F2.jpg"/>
+            <poster source="F2.jpg" />
             <description>hhs</description>
         </film>
-   </films>
+    </films>
 
 
     <salles>
-        <salle id="S08" capacite="70"/>
-        <salle id="S15" capacite="80"/>
-        <salle id="S20" capacite="60"/>
-        <salle id="S10" capacite="100"/>
+        <salle id="S08" capacite="70" />
+        <salle id="S15" capacite="80" />
+        <salle id="S20" capacite="60" />
+        <salle id="S10" capacite="100" />
     </salles>
 
     <sieges>
-        <siege id="SI889" libre="true">
-            <salle>S1</salle>
+        <siege id="SI889" libre="false">
+            <salle>S08</salle>
             <rang>7</rang>
             <numero>44</numero>
         </siege>
-        <siege id="S89" libre="true">
-            <salle>S2</salle>
+        <siege id="SI88" libre="true">
+            <salle>S20</salle>
             <rang>7</rang>
             <numero>44</numero>
         </siege>
@@ -97,15 +102,50 @@
             <rang>4</rang>
             <numero>46</numero>
         </siege>
+        <siege id="SI100" libre="true">
+            <salle>S08</salle>
+            <rang>5</rang>
+            <numero>50</numero>
+        </siege>
+        <siege id="SI101" libre="true">
+            <salle>S08</salle>
+            <rang>5</rang>
+            <numero>51</numero>
+        </siege>
+        <siege id="SI102" libre="true">
+            <salle>S08</salle>
+            <rang>5</rang>
+            <numero>52</numero>
+        </siege>
+        <siege id="SI103" libre="true">
+            <salle>S08</salle>
+            <rang>5</rang>
+            <numero>53</numero>
+        </siege>
+        <siege id="SI104" libre="true">
+            <salle>S08</salle>
+            <rang>5</rang>
+            <numero>54</numero>
+        </siege>
+        <siege id="SI105" libre="true">
+            <salle>S08</salle>
+            <rang>5</rang>
+            <numero>55</numero>
+        </siege>
+        <siege id="SI91" libre="true">
+            <salle>S20</salle>
+            <rang>4</rang>
+            <numero>46</numero>
+        </siege>
     </sieges>
 
     <seances>
 
-        <seance id="S659">
+        <seance id="SE659">
             <date>06/11/2021</date>
             <heure>18h45m</heure>
             <film>F1</film>
-            <salle>S2</salle>
+            <salle>S20</salle>
             <prix>60</prix>
         </seance>
         <seance id="SE658">
@@ -152,21 +192,23 @@
             <heure>23h02m</heure>
             <utilisateur>U1</utilisateur>
             <siege>SI889</siege>
-            <seance>S659</seance>
+            <seance>SE659</seance>
 
         </reservation>
         <reservation code="R2">
-            <date>29/01/2022</date>
-            <heure>04h45m</heure>
+            <date>01/02/2022</date>
+            <heure>03h12m</heure>
             <utilisateur>U1</utilisateur>
-            <siege>SI889</siege>
-            <seance>S658</seance>
+            <siege>SI89</siege>
+            <seance>SE659</seance>
         </reservation>
-        <reservation code="47"><date>01/11/2021</date><heure>23h02m</heure><utilisateur>U1</utilisateur><siege>SI889</siege><seance>SE658</seance></reservation>
-        
-        
-
-
+        <reservation code="R3">
+            <date>01/02/2022</date>
+            <heure>03h30m</heure>
+            <utilisateur>U1</utilisateur>
+            <siege>SI90</siege>
+            <seance>SE600</seance>
+        </reservation>
     </reservations>
 
 </cinema>
