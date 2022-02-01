@@ -95,7 +95,7 @@
             <poster source="F2.jpg"/>
             <description>hhs</description>
         </film>
-    <film id="F7" annee="1975"><titre>test</titre><genre>drame</genre><realisateur>e</realisateur><duree>30</duree><poster source="F7.jfif"/><description>jdsjsdk</description></film></films>
+    </films>
 
 
     <salles>
