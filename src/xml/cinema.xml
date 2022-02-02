@@ -32,7 +32,7 @@
             <password>aymen</password>
             <tel>2349000</tel>
         </utilisateur>
-        
+
         <utilisateur id="U7">
             <nom>HAMADA LGHOUL</nom>
             <email>hamada@gmail.com</email>
@@ -52,21 +52,19 @@
             <poster source="F1.jpg"/>
             <description>Jim Phelps dirige le département des "Missions impossibles." Un agent de la CIA, Kittridge, lui demande de mener à bien une délicate affaire, à Prague. Phelps doit y démasquer un agent russe, Alexander Golitsyn, dès que ce dernier aura volé la liste des agents américains opérant en Europe centrale.</description>
         </film>
-        
-        
-        
-        
-        
-        
-    </films>
+
+
+    <film id="F2" annee="1994"><titre>Forrest Gump</titre><genre>Drame, Romance</genre><realisateur>Robert Zemeckis</realisateur><duree>2h22m</duree><poster source="F2.jpg"/><description>Sur un banc, à Savannah, en Géorgie, Forrest Gump attend le bus. Comme celui-ci tarde à venir, le jeune homme raconte sa vie à ses compagnons d'ennui. A priori, ses capacités intellectuelles plutôt limitées ne le destinaient pas à de grandes choses. Qu'importe.</description></film><film id="F3" annee="2012"><titre>Django Unchained</titre><genre>Western, Action</genre><realisateur>Quentin Tarantino</realisateur><duree>2h45m</duree><poster source="F3.jpg"/><description>Deux ans avant la Guerre civile, un ancien esclave du nom de Django s'associe avec un chasseur de primes d'origine allemande qui l'a libéré: il accepte de traquer avec lui des criminels recherchés. En échange, il l'aidera à retrouver sa femme perdue depuis longtemps et esclave elle aussi.</description></film><film id="F4" annee="2019"><titre>JoJo Rabbit</titre><genre>Guerre, Comédie</genre><realisateur>Taika Waititi</realisateur><duree>1h48m</duree><poster source="F4.jpg"/><description>Le patriotisme d'un jeune garçon allemand nommé Jojo Betzler, ayant un ami imaginaire qui s'avère en fait être Hitler, est mis à l'épreuve lorsqu'il découvre une jeune fille dans son grenier qui bouleversera sa vision du monde et lui fera découvrir de nouvelles choses.</description></film><film id="F5" annee="2013"><titre>Begin Again</titre><genre>Romance, Music</genre><realisateur>John Carney</realisateur><duree>1h44m</duree><poster source="F5.jpg"/><description>Gretta et son petit ami viennent de débarquer à NYC. La ville est d'autant plus magique pour les deux Anglais qu'on leur propose de venir y vivre pleinement leur passion: la musique.</description></film><film id="F6" annee="2021"><titre>Dune</titre><genre>SF, Aventure</genre><realisateur>Denis Villeneuve</realisateur><duree>2h35m</duree><poster source="F6.jpg"/><description>Paul Atreides, un jeune homme brillant et doué au destin plus grand que lui-même, doit se rendre sur la planète la plus dangereuse de l'univers afin d'assurer l'avenir de sa famille et de son peuple.</description></film><film id="F7" annee="2017"><titre>Blade Runner 2049</titre><genre>SF, Thriller</genre><realisateur>Denis Villeneuve</realisateur><duree>2h43m</duree><poster source="F7.jpg"/><description>En 2049, la société est fragilisée par les nombreuses tensions entre les humains et leurs esclaves créés par bio-ingénierie. L'officier K est un blade runner: il fait partie d'une force d'intervention d'élite chargée de trouver et d'éliminer ceux qui n'obéissent pas aux ordres des humains.</description></film><film id="F8" annee="2020"><titre>Soul</titre><genre>Enfants, Comédie</genre><realisateur>Pete Docter, Kemp Powers</realisateur><duree>1h40m</duree><poster source="F8.jpg"/><description>Passionné de jazz et professeur de musique dans un collège, Joe Gardner a enfin l'opportunité de réaliser son rêve : jouer dans le meilleur club de jazz de New York. Mais un malencontreux faux pas le précipite dans le 'Grand Avant', un endroit fantastique où les nouvelles âmes acquièrent leur personnalité, leur caractère et leur spécificité avant d'être envoyées sur Terre. Bien décidé à retrouver sa vie, Joe fait équipe avec 22, une âme espiègle et pleine d'esprit.</description></film></films>
 
 
     <salles>
-        <salle id="S08" capacite="70"/>
-        <salle id="S15" capacite="80"/>
-        <salle id="S20" capacite="60"/>
-        <salle id="S10" capacite="100"/>
-        
+
+
+        <salle id="S01" capacite="50"/>
+        <salle id="S02" capacite="50"/>
+        <salle id="S03" capacite="50"/>
+        <salle id="S04" capacite="100"/>
+        <salle id="S05" capacite="100"/>
     </salles>
 
     <sieges>
@@ -129,31 +127,16 @@
 
     <seances>
 
-        
-        <seance id="SE658"><salle>S1</salle><date>06/11/2021</date><film>F2</film><heure>18h45m</heure><prix>70</prix></seance>
 
-        <seance id="S658">
-            <salle>S15</salle>
+        <seance id="S1">
+            <salle>S01</salle>
             <date>04/02/2022</date>
             <film>F1</film>
             <heure>10h30m</heure>
             <prix>50</prix>
         </seance>
-        <seance id="SE600">
-            <salle>S08</salle>
-            <date>01/02/2022</date>
-            <film>F4</film>
-            <heure>08h20m</heure>
-            <prix>95</prix>
-        </seance>
-        <seance id="SE601">
-            <salle>S08</salle>
-            <date>04/02/2022</date>
-            <film>F4</film>
-            <heure>01h35m</heure>
-            <prix>120</prix>
-        </seance>
-        <seance id="SE602"><salle>S1</salle><date>04/02/2022</date><film>F4</film><heure>22h00m</heure><prix>80</prix></seance>
+
+
     </seances>
 
     <reservations>

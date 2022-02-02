@@ -90,7 +90,7 @@
                                                 <img src="../../../style/images/profile/unknown.jpg" width="20" alt="" />
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="../../../../user/logout.php" class="dropdown-item ai-icon">
+                                                <a href="../../../user/logout.php" class="dropdown-item ai-icon">
                                                     <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                         <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
                                                         <polyline points="16 17 21 12 16 7"></polyline>
@@ -113,25 +113,34 @@
             Sidebar start
         ***********************************-->
         <div class="deznav">
-            <div class="deznav-scroll">
-				<ul class="metismenu" id="menu">
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-networking"></i>
-							<span class="nav-text">Dashboard</span>
-						</a>
-                        <ul aria-expanded="false">
-							<li><a href="index.html">Dashboard</a></li>
-							<li><a href="page-analytics.html">Analytics</a></li>
-							<li><a href="page-review.html">Review</a></li>
-							<li><a href="page-order.html">Order</a></li>
-							<li><a href="page-order-list.html">Order List</a></li>
-							<li><a href="page-general-customers.html">General Customers</a></li>
-						</ul>
-                    </li>
-                    
-                </ul>
-			</div>
-        </div>
+                        <div class="deznav-scroll">
+                            <ul class="metismenu" id="menu">
+                                <li>
+                                    <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                                        <i class="flaticon-381-networking"></i>
+                                        <span class="nav-text">Toutes les listes</span>
+                                    </a>
+                                    <ul aria-expanded="false">
+                                        <li>
+                                            <a href="../films/scripts/script.php">Tous les films</a>
+                                        </li>
+                                        <li>
+                                            <a href="../reservations/scripts/script.php">Toutes les reservations</a>
+                                        </li>
+                                        <li>
+                                            <a href="scripts/script.php">Toutes les salles</a>
+                                        </li>
+                                        <li>
+                                            <a href="../seances/scripts/script.php">Toutes les séances</a>
+                                        </li>
+                                        <li>
+                                            <a href="../utilisateurs/scripts/script.php">Tous les utilisateurs</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
         <!--**********************************
             Sidebar end
         ***********************************-->
@@ -159,13 +168,13 @@
                                 <div class="basic-form">
                                     <form  action="../../../../parsers/SalleParser.php" method="post" >
                                         <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">numero:</label>
+										<label class="col-sm-3 col-form-label">N° :</label>
                                             <div class="col-sm-9">
                                                 <input type="text" name="id" class="form-control" placeholder="numero de salle">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                        <label>capacite:</label>
+                                        <label>Capacité :</label>
                                            <input type="number"  name ="capacite" value="40" class="form-control" min="0" max="1000" step="1"/>
                                         </div>
                                         <br/>
