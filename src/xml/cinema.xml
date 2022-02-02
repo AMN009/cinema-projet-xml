@@ -52,6 +52,30 @@
             <poster source="F1.jpg"/>
             <description>Jim Phelps dirige le département des "Missions impossibles." Un agent de la CIA, Kittridge, lui demande de mener à bien une délicate affaire, à Prague. Phelps doit y démasquer un agent russe, Alexander Golitsyn, dès que ce dernier aura volé la liste des agents américains opérant en Europe centrale.</description>
         </film>
+        <film id="F2" annee="1996">
+            <titre>wiplash</titre>
+            <genre>Action, Drame, Thriller</genre>
+            <realisateur>Brian De Palma</realisateur>
+            <duree>1h50m</duree>
+            <poster source="F1.jpg"/>
+            <description>Jim Phelps dirige le département des "Missions impossibles." Un agent de la CIA, Kittridge, lui demande de mener à bien une délicate affaire, à Prague. Phelps doit y démasquer un agent russe, Alexander Golitsyn, dès que ce dernier aura volé la liste des agents américains opérant en Europe centrale.</description>
+        </film>
+        <film id="F3" annee="1996">
+            <titre>Mission Impossible</titre>
+            <genre>Action, Drame, Thriller</genre>
+            <realisateur>Brian De Palma</realisateur>
+            <duree>1h50m</duree>
+            <poster source="F1.jpg"/>
+            <description>Jim Phelps dirige le département des "Missions impossibles." Un agent de la CIA, Kittridge, lui demande de mener à bien une délicate affaire, à Prague. Phelps doit y démasquer un agent russe, Alexander Golitsyn, dès que ce dernier aura volé la liste des agents américains opérant en Europe centrale.</description>
+        </film>
+        <film id="F4" annee="1996">
+            <titre>Mission Impossible</titre>
+            <genre>Action, Drame, Thriller</genre>
+            <realisateur>Brian De Palma</realisateur>
+            <duree>1h50m</duree>
+            <poster source="F1.jpg"/>
+            <description>Jim Phelps dirige le département des "Missions impossibles." Un agent de la CIA, Kittridge, lui demande de mener à bien une délicate affaire, à Prague. Phelps doit y démasquer un agent russe, Alexander Golitsyn, dès que ce dernier aura volé la liste des agents américains opérant en Europe centrale.</description>
+        </film>
         
         
         
@@ -67,7 +91,7 @@
         <salle id="S20" capacite="60"/>
         <salle id="S10" capacite="100"/>
         
-    </salles>
+    <salle id="S530" capacite="20"/></salles>
 
     <sieges>
         <siege id="SI889" libre="false">
@@ -125,7 +149,7 @@
             <rang>4</rang>
             <numero>46</numero>
         </siege>
-    </sieges>
+    <siege id="SI1" libre="true"><salle>S530</salle><rang>1</rang><numero>1</numero></siege><siege id="SI2" libre="true"><salle>S530</salle><rang>1</rang><numero>2</numero></siege><siege id="SI3" libre="true"><salle>S530</salle><rang>1</rang><numero>3</numero></siege><siege id="SI4" libre="true"><salle>S530</salle><rang>1</rang><numero>4</numero></siege><siege id="SI5" libre="true"><salle>S530</salle><rang>1</rang><numero>5</numero></siege><siege id="SI6" libre="true"><salle>S530</salle><rang>1</rang><numero>6</numero></siege><siege id="SI7" libre="true"><salle>S530</salle><rang>1</rang><numero>7</numero></siege><siege id="SI8" libre="true"><salle>S530</salle><rang>1</rang><numero>8</numero></siege><siege id="SI9" libre="true"><salle>S530</salle><rang>1</rang><numero>9</numero></siege><siege id="SI10" libre="true"><salle>S530</salle><rang>1</rang><numero>10</numero></siege><siege id="SI11" libre="true"><salle>S530</salle><rang>2</rang><numero>11</numero></siege><siege id="SI12" libre="true"><salle>S530</salle><rang>2</rang><numero>12</numero></siege><siege id="SI13" libre="true"><salle>S530</salle><rang>2</rang><numero>13</numero></siege><siege id="SI14" libre="true"><salle>S530</salle><rang>2</rang><numero>14</numero></siege><siege id="SI15" libre="true"><salle>S530</salle><rang>2</rang><numero>15</numero></siege><siege id="SI16" libre="true"><salle>S530</salle><rang>2</rang><numero>16</numero></siege><siege id="SI17" libre="true"><salle>S530</salle><rang>2</rang><numero>17</numero></siege><siege id="SI18" libre="true"><salle>S530</salle><rang>2</rang><numero>18</numero></siege><siege id="SI19" libre="true"><salle>S530</salle><rang>2</rang><numero>19</numero></siege></sieges>
 
     <seances>
 
