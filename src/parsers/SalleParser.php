@@ -86,9 +86,15 @@
             
             global $doc ;
             $siegeParent = $doc->getElementsByTagName('sieges')->item(0);
+
+            $dernierSiege = $siegeParent->lastChild;
+            if ($dernierSiege->nodeType != 1) {
+                $dernierSiege = $dernierSiege->previousSibling;
+            }
+
             $j=1;
             $ran=1;
-            for ($i=1; $i < $salle->getCapacite() ; $i++) { 
+            for ($i=1; $i <= $salle->getCapacite() ; $i++) { 
 
                 if($j<=10){
                     $ran=1;
@@ -137,7 +143,7 @@
                 }
                 $siegeNode = $doc->createElement('siege');
                
-                $siegeNode->setAttributeNode(new DOMAttr('id', 'SI'.$i));
+                $siegeNode->setAttributeNode(new DOMAttr('id', 'SI'.(intval(substr($dernierSiege->getAttribute('id'), 2)) + $i)));
                 $siegeNode->setAttributeNode(new DOMAttr('libre', 'true'));
 
                 $salled = $doc->createElement("salle"); 

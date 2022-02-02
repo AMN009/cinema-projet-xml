@@ -110,221 +110,591 @@
             <poster source="F8.jpg" />
             <description>Passionné de jazz et professeur de musique dans un collège, Joe Gardner a enfin l'opportunité de réaliser son rêve : jouer dans le meilleur club de jazz de New York. Mais un malencontreux faux pas le précipite dans le 'Grand Avant', un endroit fantastique où les nouvelles âmes acquièrent leur personnalité, leur caractère et leur spécificité avant d'être envoyées sur Terre. Bien décidé à retrouver sa vie, Joe fait équipe avec 22, une âme espiègle et pleine d'esprit.</description>
         </film>
+        <film id="F9" annee="2016">
+            <titre>Doctor Strange</titre>
+            <genre>Action, Aventure</genre>
+            <realisateur>Scott Derrickson</realisateur>
+            <duree>1h55m</duree>
+            <poster source="F9.jpg" />
+            <description>Doctor Strange suit l'histoire du Docteur Stephen Strange, talentueux neurochirurgien qui, après un tragique accident de voiture, doit mettre son égo de côté et apprendre les secrets d'un monde caché de mysticisme et de dimensions alternatives. Basé à New York, Doctor Strange doit jouer les intermédiaires entre le monde réel et ce qui se trouve au-delà, en utlisant un vaste éventail d'aptitudes métaphysiques et d'artefacts pour protéger le Marvel Cinematic Universe.</description>
+        </film>
+        <film id="F10" annee="2016">
+            <titre>Manchester By The Sea</titre>
+            <genre>Drame</genre>
+            <realisateur>Kenneth Lonergan</realisateur>
+            <duree>2h17m</duree>
+            <poster source="F10.jpg" />
+            <description>L'histoire des Chandler, une famille de classe ouvrière, du Massachusetts. Après le décès soudain de son frère Joe, Lee est désigné comme le tuteur de son neveu Patrick. Il se retrouve confronté à un passé tragique qui l'a séparé de sa femme Randi et de la communauté où il est né et a grandi.</description>
+        </film>
     </films>
 
 
     <salles>
-
-
         <salle id="S01" capacite="50" />
-        <salle id="S02" capacite="50" />
-        <salle id="S03" capacite="50" />
-        <salle id="S04" capacite="100" />
-        <salle id="S05" capacite="100" />
+
+
+        <salle id="S02" capacite="10" />
+        <salle id="S03" capacite="30" />
     </salles>
 
     <sieges>
-        <siege id="SI889" libre="false">
-            <salle>S08</salle>
-            <rang>7</rang>
-            <numero>44</numero>
-        </siege>
-        <siege id="SI88" libre="true">
-            <salle>S20</salle>
-            <rang>7</rang>
-            <numero>44</numero>
-        </siege>
-        <siege id="SI89" libre="false">
-            <salle>S08</salle>
-            <rang>4</rang>
-            <numero>45</numero>
-        </siege>
-        <siege id="SI90" libre="false">
-            <salle>S08</salle>
-            <rang>4</rang>
-            <numero>46</numero>
-        </siege>
-        <siege id="SI100" libre="false">
-            <salle>S08</salle>
-            <rang>5</rang>
-            <numero>50</numero>
-        </siege>
-        <siege id="SI101" libre="false">
-            <salle>S08</salle>
-            <rang>5</rang>
-            <numero>51</numero>
-        </siege>
-        <siege id="SI102" libre="true">
-            <salle>S08</salle>
-            <rang>5</rang>
-            <numero>52</numero>
-        </siege>
-        <siege id="SI103" libre="true">
-            <salle>S08</salle>
-            <rang>5</rang>
-            <numero>53</numero>
-        </siege>
-        <siege id="SI104" libre="true">
-            <salle>S08</salle>
-            <rang>5</rang>
-            <numero>54</numero>
-        </siege>
-        <siege id="SI105" libre="true">
-            <salle>S08</salle>
-            <rang>5</rang>
-            <numero>55</numero>
-        </siege>
-        <siege id="SI91" libre="true">
-            <salle>S20</salle>
-            <rang>4</rang>
-            <numero>46</numero>
-        </siege>
-        <siege id="SI1" libre="true">
-            <salle>S530</salle>
+        <siege id="SI1" libre="false">
+            <salle>S01</salle>
             <rang>1</rang>
             <numero>1</numero>
         </siege>
         <siege id="SI2" libre="true">
-            <salle>S530</salle>
+            <salle>S01</salle>
             <rang>1</rang>
             <numero>2</numero>
         </siege>
         <siege id="SI3" libre="true">
-            <salle>S530</salle>
+            <salle>S01</salle>
             <rang>1</rang>
             <numero>3</numero>
         </siege>
         <siege id="SI4" libre="true">
-            <salle>S530</salle>
+            <salle>S01</salle>
             <rang>1</rang>
             <numero>4</numero>
         </siege>
         <siege id="SI5" libre="true">
-            <salle>S530</salle>
+            <salle>S01</salle>
             <rang>1</rang>
             <numero>5</numero>
         </siege>
         <siege id="SI6" libre="true">
-            <salle>S530</salle>
+            <salle>S01</salle>
             <rang>1</rang>
             <numero>6</numero>
         </siege>
         <siege id="SI7" libre="true">
-            <salle>S530</salle>
+            <salle>S01</salle>
             <rang>1</rang>
             <numero>7</numero>
         </siege>
         <siege id="SI8" libre="true">
-            <salle>S530</salle>
+            <salle>S01</salle>
             <rang>1</rang>
             <numero>8</numero>
         </siege>
         <siege id="SI9" libre="true">
-            <salle>S530</salle>
+            <salle>S01</salle>
             <rang>1</rang>
             <numero>9</numero>
         </siege>
         <siege id="SI10" libre="true">
-            <salle>S530</salle>
+            <salle>S01</salle>
             <rang>1</rang>
             <numero>10</numero>
         </siege>
         <siege id="SI11" libre="true">
-            <salle>S530</salle>
+            <salle>S01</salle>
             <rang>2</rang>
             <numero>11</numero>
         </siege>
         <siege id="SI12" libre="true">
-            <salle>S530</salle>
+            <salle>S01</salle>
             <rang>2</rang>
             <numero>12</numero>
         </siege>
         <siege id="SI13" libre="true">
-            <salle>S530</salle>
+            <salle>S01</salle>
             <rang>2</rang>
             <numero>13</numero>
         </siege>
         <siege id="SI14" libre="true">
-            <salle>S530</salle>
+            <salle>S01</salle>
             <rang>2</rang>
             <numero>14</numero>
         </siege>
         <siege id="SI15" libre="true">
-            <salle>S530</salle>
+            <salle>S01</salle>
             <rang>2</rang>
             <numero>15</numero>
         </siege>
         <siege id="SI16" libre="true">
-            <salle>S530</salle>
+            <salle>S01</salle>
             <rang>2</rang>
             <numero>16</numero>
         </siege>
         <siege id="SI17" libre="true">
-            <salle>S530</salle>
+            <salle>S01</salle>
             <rang>2</rang>
             <numero>17</numero>
         </siege>
         <siege id="SI18" libre="true">
-            <salle>S530</salle>
+            <salle>S01</salle>
             <rang>2</rang>
             <numero>18</numero>
         </siege>
         <siege id="SI19" libre="true">
-            <salle>S530</salle>
+            <salle>S01</salle>
             <rang>2</rang>
             <numero>19</numero>
+        </siege>
+        <siege id="SI20" libre="true">
+            <salle>S01</salle>
+            <rang>2</rang>
+            <numero>20</numero>
+        </siege>
+        <siege id="SI21" libre="true">
+            <salle>S01</salle>
+            <rang>3</rang>
+            <numero>21</numero>
+        </siege>
+        <siege id="SI22" libre="true">
+            <salle>S01</salle>
+            <rang>3</rang>
+            <numero>22</numero>
+        </siege>
+        <siege id="SI23" libre="true">
+            <salle>S01</salle>
+            <rang>3</rang>
+            <numero>23</numero>
+        </siege>
+        <siege id="SI24" libre="true">
+            <salle>S01</salle>
+            <rang>3</rang>
+            <numero>24</numero>
+        </siege>
+        <siege id="SI25" libre="true">
+            <salle>S01</salle>
+            <rang>3</rang>
+            <numero>25</numero>
+        </siege>
+        <siege id="SI26" libre="true">
+            <salle>S01</salle>
+            <rang>3</rang>
+            <numero>26</numero>
+        </siege>
+        <siege id="SI27" libre="true">
+            <salle>S01</salle>
+            <rang>3</rang>
+            <numero>27</numero>
+        </siege>
+        <siege id="SI28" libre="true">
+            <salle>S01</salle>
+            <rang>3</rang>
+            <numero>28</numero>
+        </siege>
+        <siege id="SI29" libre="true">
+            <salle>S01</salle>
+            <rang>3</rang>
+            <numero>29</numero>
+        </siege>
+        <siege id="SI30" libre="true">
+            <salle>S01</salle>
+            <rang>3</rang>
+            <numero>30</numero>
+        </siege>
+        <siege id="SI31" libre="true">
+            <salle>S01</salle>
+            <rang>4</rang>
+            <numero>31</numero>
+        </siege>
+        <siege id="SI32" libre="true">
+            <salle>S01</salle>
+            <rang>4</rang>
+            <numero>32</numero>
+        </siege>
+        <siege id="SI33" libre="true">
+            <salle>S01</salle>
+            <rang>4</rang>
+            <numero>33</numero>
+        </siege>
+        <siege id="SI34" libre="true">
+            <salle>S01</salle>
+            <rang>4</rang>
+            <numero>34</numero>
+        </siege>
+        <siege id="SI35" libre="true">
+            <salle>S01</salle>
+            <rang>4</rang>
+            <numero>35</numero>
+        </siege>
+        <siege id="SI36" libre="true">
+            <salle>S01</salle>
+            <rang>4</rang>
+            <numero>36</numero>
+        </siege>
+        <siege id="SI37" libre="true">
+            <salle>S01</salle>
+            <rang>4</rang>
+            <numero>37</numero>
+        </siege>
+        <siege id="SI38" libre="true">
+            <salle>S01</salle>
+            <rang>4</rang>
+            <numero>38</numero>
+        </siege>
+        <siege id="SI39" libre="true">
+            <salle>S01</salle>
+            <rang>4</rang>
+            <numero>39</numero>
+        </siege>
+        <siege id="SI40" libre="true">
+            <salle>S01</salle>
+            <rang>4</rang>
+            <numero>40</numero>
+        </siege>
+        <siege id="SI41" libre="true">
+            <salle>S01</salle>
+            <rang>5</rang>
+            <numero>41</numero>
+        </siege>
+        <siege id="SI42" libre="true">
+            <salle>S01</salle>
+            <rang>5</rang>
+            <numero>42</numero>
+        </siege>
+        <siege id="SI43" libre="true">
+            <salle>S01</salle>
+            <rang>5</rang>
+            <numero>43</numero>
+        </siege>
+        <siege id="SI44" libre="true">
+            <salle>S01</salle>
+            <rang>5</rang>
+            <numero>44</numero>
+        </siege>
+        <siege id="SI45" libre="true">
+            <salle>S01</salle>
+            <rang>5</rang>
+            <numero>45</numero>
+        </siege>
+        <siege id="SI46" libre="true">
+            <salle>S01</salle>
+            <rang>5</rang>
+            <numero>46</numero>
+        </siege>
+        <siege id="SI47" libre="true">
+            <salle>S01</salle>
+            <rang>5</rang>
+            <numero>47</numero>
+        </siege>
+        <siege id="SI48" libre="true">
+            <salle>S01</salle>
+            <rang>5</rang>
+            <numero>48</numero>
+        </siege>
+        <siege id="SI49" libre="true">
+            <salle>S01</salle>
+            <rang>5</rang>
+            <numero>49</numero>
+        </siege>
+        <siege id="SI50" libre="true">
+            <salle>S01</salle>
+            <rang>5</rang>
+            <numero>50</numero>
+        </siege>
+        <siege id="SI51" libre="true">
+            <salle>S02</salle>
+            <rang>1</rang>
+            <numero>1</numero>
+        </siege>
+        <siege id="SI52" libre="true">
+            <salle>S02</salle>
+            <rang>1</rang>
+            <numero>2</numero>
+        </siege>
+        <siege id="SI53" libre="true">
+            <salle>S02</salle>
+            <rang>1</rang>
+            <numero>3</numero>
+        </siege>
+        <siege id="SI54" libre="true">
+            <salle>S02</salle>
+            <rang>1</rang>
+            <numero>4</numero>
+        </siege>
+        <siege id="SI55" libre="true">
+            <salle>S02</salle>
+            <rang>1</rang>
+            <numero>5</numero>
+        </siege>
+        <siege id="SI56" libre="true">
+            <salle>S02</salle>
+            <rang>1</rang>
+            <numero>6</numero>
+        </siege>
+        <siege id="SI57" libre="true">
+            <salle>S02</salle>
+            <rang>1</rang>
+            <numero>7</numero>
+        </siege>
+        <siege id="SI58" libre="true">
+            <salle>S02</salle>
+            <rang>1</rang>
+            <numero>8</numero>
+        </siege>
+        <siege id="SI59" libre="true">
+            <salle>S02</salle>
+            <rang>1</rang>
+            <numero>9</numero>
+        </siege>
+        <siege id="SI60" libre="true">
+            <salle>S02</salle>
+            <rang>1</rang>
+            <numero>10</numero>
+        </siege>
+        <siege id="SI61" libre="false">
+            <salle>S03</salle>
+            <rang>1</rang>
+            <numero>1</numero>
+        </siege>
+        <siege id="SI62" libre="true">
+            <salle>S03</salle>
+            <rang>1</rang>
+            <numero>2</numero>
+        </siege>
+        <siege id="SI63" libre="true">
+            <salle>S03</salle>
+            <rang>1</rang>
+            <numero>3</numero>
+        </siege>
+        <siege id="SI64" libre="true">
+            <salle>S03</salle>
+            <rang>1</rang>
+            <numero>4</numero>
+        </siege>
+        <siege id="SI65" libre="true">
+            <salle>S03</salle>
+            <rang>1</rang>
+            <numero>5</numero>
+        </siege>
+        <siege id="SI66" libre="true">
+            <salle>S03</salle>
+            <rang>1</rang>
+            <numero>6</numero>
+        </siege>
+        <siege id="SI67" libre="true">
+            <salle>S03</salle>
+            <rang>1</rang>
+            <numero>7</numero>
+        </siege>
+        <siege id="SI68" libre="true">
+            <salle>S03</salle>
+            <rang>1</rang>
+            <numero>8</numero>
+        </siege>
+        <siege id="SI69" libre="true">
+            <salle>S03</salle>
+            <rang>1</rang>
+            <numero>9</numero>
+        </siege>
+        <siege id="SI70" libre="true">
+            <salle>S03</salle>
+            <rang>1</rang>
+            <numero>10</numero>
+        </siege>
+        <siege id="SI71" libre="true">
+            <salle>S03</salle>
+            <rang>2</rang>
+            <numero>11</numero>
+        </siege>
+        <siege id="SI72" libre="true">
+            <salle>S03</salle>
+            <rang>2</rang>
+            <numero>12</numero>
+        </siege>
+        <siege id="SI73" libre="true">
+            <salle>S03</salle>
+            <rang>2</rang>
+            <numero>13</numero>
+        </siege>
+        <siege id="SI74" libre="true">
+            <salle>S03</salle>
+            <rang>2</rang>
+            <numero>14</numero>
+        </siege>
+        <siege id="SI75" libre="true">
+            <salle>S03</salle>
+            <rang>2</rang>
+            <numero>15</numero>
+        </siege>
+        <siege id="SI76" libre="true">
+            <salle>S03</salle>
+            <rang>2</rang>
+            <numero>16</numero>
+        </siege>
+        <siege id="SI77" libre="true">
+            <salle>S03</salle>
+            <rang>2</rang>
+            <numero>17</numero>
+        </siege>
+        <siege id="SI78" libre="true">
+            <salle>S03</salle>
+            <rang>2</rang>
+            <numero>18</numero>
+        </siege>
+        <siege id="SI79" libre="true">
+            <salle>S03</salle>
+            <rang>2</rang>
+            <numero>19</numero>
+        </siege>
+        <siege id="SI80" libre="true">
+            <salle>S03</salle>
+            <rang>2</rang>
+            <numero>20</numero>
+        </siege>
+        <siege id="SI81" libre="true">
+            <salle>S03</salle>
+            <rang>3</rang>
+            <numero>21</numero>
+        </siege>
+        <siege id="SI82" libre="true">
+            <salle>S03</salle>
+            <rang>3</rang>
+            <numero>22</numero>
+        </siege>
+        <siege id="SI83" libre="true">
+            <salle>S03</salle>
+            <rang>3</rang>
+            <numero>23</numero>
+        </siege>
+        <siege id="SI84" libre="true">
+            <salle>S03</salle>
+            <rang>3</rang>
+            <numero>24</numero>
+        </siege>
+        <siege id="SI85" libre="true">
+            <salle>S03</salle>
+            <rang>3</rang>
+            <numero>25</numero>
+        </siege>
+        <siege id="SI86" libre="true">
+            <salle>S03</salle>
+            <rang>3</rang>
+            <numero>26</numero>
+        </siege>
+        <siege id="SI87" libre="true">
+            <salle>S03</salle>
+            <rang>3</rang>
+            <numero>27</numero>
+        </siege>
+        <siege id="SI88" libre="true">
+            <salle>S03</salle>
+            <rang>3</rang>
+            <numero>28</numero>
+        </siege>
+        <siege id="SI89" libre="true">
+            <salle>S03</salle>
+            <rang>3</rang>
+            <numero>29</numero>
+        </siege>
+        <siege id="SI90" libre="true">
+            <salle>S03</salle>
+            <rang>3</rang>
+            <numero>30</numero>
         </siege>
     </sieges>
 
     <seances>
 
 
-        <seance id="S1">
+        <seance id="SE1">
             <salle>S01</salle>
-            <date>04/02/2022</date>
+            <date>02/03/2022</date>
             <film>F1</film>
             <heure>10h30m</heure>
             <prix>50</prix>
         </seance>
 
 
+        <seance id="SE2">
+            <salle>S01</salle>
+            <date>02/03/2022</date>
+            <film>F1</film>
+            <heure>12h20m</heure>
+            <prix>50</prix>
+        </seance>
+        <seance id="SE3">
+            <salle>S01</salle>
+            <date>03/03/2022</date>
+            <film>F1</film>
+            <heure>22h00m</heure>
+            <prix>70</prix>
+        </seance>
+        <seance id="SE4">
+            <salle>S03</salle>
+            <date>02/02/2022</date>
+            <film>F2</film>
+            <heure>10h30m</heure>
+            <prix>75</prix>
+        </seance>
+        <seance id="SE5">
+            <salle>S01</salle>
+            <date>03/02/2022</date>
+            <film>F3</film>
+            <heure>11h45m</heure>
+            <prix>80</prix>
+        </seance>
+        <seance id="SE6">
+            <salle>S01</salle>
+            <date>03/02/2022</date>
+            <film>F8</film>
+            <heure>15h05m</heure>
+            <prix>100</prix>
+        </seance>
+        <seance id="SE7">
+            <salle>S02</salle>
+            <date>05/02/2022</date>
+            <film>F4</film>
+            <heure>18h40m</heure>
+            <prix>60</prix>
+        </seance>
+        <seance id="SE8">
+            <salle>S01</salle>
+            <date>02/02/2022</date>
+            <film>F5</film>
+            <heure>20h00m</heure>
+            <prix>65</prix>
+        </seance>
+        <seance id="SE9">
+            <salle>S03</salle>
+            <date>07/02/2022</date>
+            <film>F6</film>
+            <heure>19h45m</heure>
+            <prix>120</prix>
+        </seance>
+        <seance id="SE10">
+            <salle>S01</salle>
+            <date>05/02/2022</date>
+            <film>F7</film>
+            <heure>22h30m</heure>
+            <prix>90</prix>
+        </seance>
+        <seance id="SE11">
+            <salle>S02</salle>
+            <date>12/02/2022</date>
+            <film>F9</film>
+            <heure>14h50m</heure>
+            <prix>55</prix>
+        </seance>
+        <seance id="SE12">
+            <salle>S03</salle>
+            <date>05/02/2022</date>
+            <film>F10</film>
+            <heure>16h30m</heure>
+            <prix>40</prix>
+        </seance>
     </seances>
 
     <reservations>
         <reservation code="R1">
-            <date>01/03/2022</date>
-            <heure>04h12m</heure>
+            <date>02/02/2022</date>
+            <heure>01h53m</heure>
             <utilisateur>U2</utilisateur>
-            <siege>SI89</siege>
-            <seance>SE659</seance>
+            <siege>SI1</siege>
+            <seance>SE1</seance>
         </reservation>
         <reservation code="R2">
-            <date>01/02/2022</date>
-            <heure>03h12m</heure>
+            <date>02/02/2022</date>
+            <heure>02h16m</heure>
             <utilisateur>U2</utilisateur>
-            <siege>SI89</siege>
-            <seance>SE659</seance>
-        </reservation>
-        <reservation code="R3">
-            <date>01/02/2022</date>
-            <heure>03h30m</heure>
-            <utilisateur>U2</utilisateur>
-            <siege>SI90</siege>
-            <seance>SE600</seance>
-        </reservation>
-        <reservation code="R4">
-            <date>01/02/2022</date>
-            <heure>05h12m</heure>
-            <utilisateur>U1</utilisateur>
-            <siege>SI100</siege>
-            <seance>SE600</seance>
-        </reservation>
-        <reservation code="R5">
-            <date>01/02/2022</date>
-            <heure>09h54m</heure>
-            <utilisateur>U7</utilisateur>
-            <siege>SI101</siege>
-            <seance>SE601</seance>
+            <siege>SI61</siege>
+            <seance>SE12</seance>
         </reservation>
     </reservations>
 
