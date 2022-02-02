@@ -26,19 +26,6 @@
             <password>Password</password>
             <tel>2349000</tel>
         </utilisateur>
-        <utilisateur id="U5">
-            <nom>AYmen rhalloussi</nom>
-            <email>aymennorhalloussi@gmail.com</email>
-            <password>aymen</password>
-            <tel>2349000</tel>
-        </utilisateur>
-
-        <utilisateur id="U7">
-            <nom>HAMADA LGHOUL</nom>
-            <email>hamada@gmail.com</email>
-            <password>hamada123</password>
-            <tel>2349000</tel>
-        </utilisateur>
     </utilisateurs>
 
 
@@ -49,7 +36,7 @@
             <genre>Action, Drame, Thriller</genre>
             <realisateur>Brian De Palma</realisateur>
             <duree>1h50m</duree>
-            <poster source="F1.jpg" />
+            <poster source="F1.jpg"/>
             <description>Jim Phelps dirige le département des "Missions impossibles." Un agent de la CIA, Kittridge, lui demande de mener à bien une délicate affaire, à Prague. Phelps doit y démasquer un agent russe, Alexander Golitsyn, dès que ce dernier aura volé la liste des agents américains opérant en Europe centrale.</description>
         </film>
 
@@ -59,7 +46,7 @@
             <genre>Drame, Romance</genre>
             <realisateur>Robert Zemeckis</realisateur>
             <duree>2h22m</duree>
-            <poster source="F2.jpg" />
+            <poster source="F2.jpg"/>
             <description>Sur un banc, à Savannah, en Géorgie, Forrest Gump attend le bus. Comme celui-ci tarde à venir, le jeune homme raconte sa vie à ses compagnons d'ennui. A priori, ses capacités intellectuelles plutôt limitées ne le destinaient pas à de grandes choses. Qu'importe.</description>
         </film>
         <film id="F3" annee="2012">
@@ -67,7 +54,7 @@
             <genre>Western, Action</genre>
             <realisateur>Quentin Tarantino</realisateur>
             <duree>2h45m</duree>
-            <poster source="F3.jpg" />
+            <poster source="F3.jpg"/>
             <description>Deux ans avant la Guerre civile, un ancien esclave du nom de Django s'associe avec un chasseur de primes d'origine allemande qui l'a libéré: il accepte de traquer avec lui des criminels recherchés. En échange, il l'aidera à retrouver sa femme perdue depuis longtemps et esclave elle aussi.</description>
         </film>
         <film id="F4" annee="2019">
@@ -75,7 +62,7 @@
             <genre>Guerre, Comédie</genre>
             <realisateur>Taika Waititi</realisateur>
             <duree>1h48m</duree>
-            <poster source="F4.jpg" />
+            <poster source="F4.jpg"/>
             <description>Le patriotisme d'un jeune garçon allemand nommé Jojo Betzler, ayant un ami imaginaire qui s'avère en fait être Hitler, est mis à l'épreuve lorsqu'il découvre une jeune fille dans son grenier qui bouleversera sa vision du monde et lui fera découvrir de nouvelles choses.</description>
         </film>
         <film id="F5" annee="2013">
@@ -83,7 +70,7 @@
             <genre>Romance, Music</genre>
             <realisateur>John Carney</realisateur>
             <duree>1h44m</duree>
-            <poster source="F5.jpg" />
+            <poster source="F5.jpg"/>
             <description>Gretta et son petit ami viennent de débarquer à NYC. La ville est d'autant plus magique pour les deux Anglais qu'on leur propose de venir y vivre pleinement leur passion: la musique.</description>
         </film>
         <film id="F6" annee="2021">
@@ -91,7 +78,7 @@
             <genre>SF, Aventure</genre>
             <realisateur>Denis Villeneuve</realisateur>
             <duree>2h35m</duree>
-            <poster source="F6.jpg" />
+            <poster source="F6.jpg"/>
             <description>Paul Atreides, un jeune homme brillant et doué au destin plus grand que lui-même, doit se rendre sur la planète la plus dangereuse de l'univers afin d'assurer l'avenir de sa famille et de son peuple.</description>
         </film>
         <film id="F7" annee="2017">
@@ -99,7 +86,7 @@
             <genre>SF, Thriller</genre>
             <realisateur>Denis Villeneuve</realisateur>
             <duree>2h43m</duree>
-            <poster source="F7.jpg" />
+            <poster source="F7.jpg"/>
             <description>En 2049, la société est fragilisée par les nombreuses tensions entre les humains et leurs esclaves créés par bio-ingénierie. L'officier K est un blade runner: il fait partie d'une force d'intervention d'élite chargée de trouver et d'éliminer ceux qui n'obéissent pas aux ordres des humains.</description>
         </film>
         <film id="F8" annee="2020">
@@ -107,7 +94,7 @@
             <genre>Enfants, Comédie</genre>
             <realisateur>Pete Docter, Kemp Powers</realisateur>
             <duree>1h40m</duree>
-            <poster source="F8.jpg" />
+            <poster source="F8.jpg"/>
             <description>Passionné de jazz et professeur de musique dans un collège, Joe Gardner a enfin l'opportunité de réaliser son rêve : jouer dans le meilleur club de jazz de New York. Mais un malencontreux faux pas le précipite dans le 'Grand Avant', un endroit fantastique où les nouvelles âmes acquièrent leur personnalité, leur caractère et leur spécificité avant d'être envoyées sur Terre. Bien décidé à retrouver sa vie, Joe fait équipe avec 22, une âme espiègle et pleine d'esprit.</description>
         </film>
         <film id="F9" annee="2016">
@@ -115,7 +102,7 @@
             <genre>Action, Aventure</genre>
             <realisateur>Scott Derrickson</realisateur>
             <duree>1h55m</duree>
-            <poster source="F9.jpg" />
+            <poster source="F9.jpg"/>
             <description>Doctor Strange suit l'histoire du Docteur Stephen Strange, talentueux neurochirurgien qui, après un tragique accident de voiture, doit mettre son égo de côté et apprendre les secrets d'un monde caché de mysticisme et de dimensions alternatives. Basé à New York, Doctor Strange doit jouer les intermédiaires entre le monde réel et ce qui se trouve au-delà, en utlisant un vaste éventail d'aptitudes métaphysiques et d'artefacts pour protéger le Marvel Cinematic Universe.</description>
         </film>
         <film id="F10" annee="2016">
@@ -123,18 +110,18 @@
             <genre>Drame</genre>
             <realisateur>Kenneth Lonergan</realisateur>
             <duree>2h17m</duree>
-            <poster source="F10.jpg" />
+            <poster source="F10.jpg"/>
             <description>L'histoire des Chandler, une famille de classe ouvrière, du Massachusetts. Après le décès soudain de son frère Joe, Lee est désigné comme le tuteur de son neveu Patrick. Il se retrouve confronté à un passé tragique qui l'a séparé de sa femme Randi et de la communauté où il est né et a grandi.</description>
         </film>
     </films>
 
 
     <salles>
-        <salle id="S01" capacite="50" />
+        <salle id="S01" capacite="50"/>
 
 
-        <salle id="S02" capacite="10" />
-        <salle id="S03" capacite="30" />
+        <salle id="S02" capacite="10"/>
+        <salle id="S03" capacite="30"/>
     </salles>
 
     <sieges>
@@ -143,7 +130,7 @@
             <rang>1</rang>
             <numero>1</numero>
         </siege>
-        <siege id="SI2" libre="true">
+        <siege id="SI2" libre="false">
             <salle>S01</salle>
             <rang>1</rang>
             <numero>2</numero>
@@ -443,11 +430,7 @@
             <rang>1</rang>
             <numero>1</numero>
         </siege>
-        <siege id="SI62" libre="true">
-            <salle>S03</salle>
-            <rang>1</rang>
-            <numero>2</numero>
-        </siege>
+        <siege id="SI62" libre="false"><salle>S03</salle><rang>1</rang><numero>2</numero></siege>
         <siege id="SI63" libre="true">
             <salle>S03</salle>
             <rang>1</rang>
@@ -696,6 +679,13 @@
             <siege>SI61</siege>
             <seance>SE12</seance>
         </reservation>
-    </reservations>
+        <reservation code="R3">
+            <date>02/02/2022</date>
+            <heure>02h22m</heure>
+            <utilisateur>U7</utilisateur>
+            <siege>SI2</siege>
+            <seance>SE1</seance>
+        </reservation>
+    <reservation code="R4"><date>02/02/2022</date><heure>02h34m</heure><utilisateur>U2</utilisateur><siege>SI62</siege><seance>SE4</seance></reservation></reservations>
 
 </cinema>

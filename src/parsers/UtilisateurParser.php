@@ -87,7 +87,7 @@
 
         if(isset($_GET['id'])){
           supprimerUtilisateur($_GET['id']);
-          header('Location:../views/admin/lists/utilisateurs/scripts/script.php');
+          header('Location: ../views/admin/lists/utilisateurs/scripts/script.php');
         }
 
 
@@ -99,7 +99,6 @@
                         $i++;
                 }
             
-            $i++;
             $USER = new utilisateur('U'.$i,$_POST['Username'],$_POST['email'],$_POST['password'],'2349000');
             ajouterUtilisateur($USER);
             session_start();
