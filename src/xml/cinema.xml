@@ -49,22 +49,78 @@
             <genre>Action, Drame, Thriller</genre>
             <realisateur>Brian De Palma</realisateur>
             <duree>1h50m</duree>
-            <poster source="F1.jpg"/>
+            <poster source="F1.jpg" />
             <description>Jim Phelps dirige le département des "Missions impossibles." Un agent de la CIA, Kittridge, lui demande de mener à bien une délicate affaire, à Prague. Phelps doit y démasquer un agent russe, Alexander Golitsyn, dès que ce dernier aura volé la liste des agents américains opérant en Europe centrale.</description>
         </film>
 
 
-    <film id="F2" annee="1994"><titre>Forrest Gump</titre><genre>Drame, Romance</genre><realisateur>Robert Zemeckis</realisateur><duree>2h22m</duree><poster source="F2.jpg"/><description>Sur un banc, à Savannah, en Géorgie, Forrest Gump attend le bus. Comme celui-ci tarde à venir, le jeune homme raconte sa vie à ses compagnons d'ennui. A priori, ses capacités intellectuelles plutôt limitées ne le destinaient pas à de grandes choses. Qu'importe.</description></film><film id="F3" annee="2012"><titre>Django Unchained</titre><genre>Western, Action</genre><realisateur>Quentin Tarantino</realisateur><duree>2h45m</duree><poster source="F3.jpg"/><description>Deux ans avant la Guerre civile, un ancien esclave du nom de Django s'associe avec un chasseur de primes d'origine allemande qui l'a libéré: il accepte de traquer avec lui des criminels recherchés. En échange, il l'aidera à retrouver sa femme perdue depuis longtemps et esclave elle aussi.</description></film><film id="F4" annee="2019"><titre>JoJo Rabbit</titre><genre>Guerre, Comédie</genre><realisateur>Taika Waititi</realisateur><duree>1h48m</duree><poster source="F4.jpg"/><description>Le patriotisme d'un jeune garçon allemand nommé Jojo Betzler, ayant un ami imaginaire qui s'avère en fait être Hitler, est mis à l'épreuve lorsqu'il découvre une jeune fille dans son grenier qui bouleversera sa vision du monde et lui fera découvrir de nouvelles choses.</description></film><film id="F5" annee="2013"><titre>Begin Again</titre><genre>Romance, Music</genre><realisateur>John Carney</realisateur><duree>1h44m</duree><poster source="F5.jpg"/><description>Gretta et son petit ami viennent de débarquer à NYC. La ville est d'autant plus magique pour les deux Anglais qu'on leur propose de venir y vivre pleinement leur passion: la musique.</description></film><film id="F6" annee="2021"><titre>Dune</titre><genre>SF, Aventure</genre><realisateur>Denis Villeneuve</realisateur><duree>2h35m</duree><poster source="F6.jpg"/><description>Paul Atreides, un jeune homme brillant et doué au destin plus grand que lui-même, doit se rendre sur la planète la plus dangereuse de l'univers afin d'assurer l'avenir de sa famille et de son peuple.</description></film><film id="F7" annee="2017"><titre>Blade Runner 2049</titre><genre>SF, Thriller</genre><realisateur>Denis Villeneuve</realisateur><duree>2h43m</duree><poster source="F7.jpg"/><description>En 2049, la société est fragilisée par les nombreuses tensions entre les humains et leurs esclaves créés par bio-ingénierie. L'officier K est un blade runner: il fait partie d'une force d'intervention d'élite chargée de trouver et d'éliminer ceux qui n'obéissent pas aux ordres des humains.</description></film><film id="F8" annee="2020"><titre>Soul</titre><genre>Enfants, Comédie</genre><realisateur>Pete Docter, Kemp Powers</realisateur><duree>1h40m</duree><poster source="F8.jpg"/><description>Passionné de jazz et professeur de musique dans un collège, Joe Gardner a enfin l'opportunité de réaliser son rêve : jouer dans le meilleur club de jazz de New York. Mais un malencontreux faux pas le précipite dans le 'Grand Avant', un endroit fantastique où les nouvelles âmes acquièrent leur personnalité, leur caractère et leur spécificité avant d'être envoyées sur Terre. Bien décidé à retrouver sa vie, Joe fait équipe avec 22, une âme espiègle et pleine d'esprit.</description></film></films>
+        <film id="F2" annee="1994">
+            <titre>Forrest Gump</titre>
+            <genre>Drame, Romance</genre>
+            <realisateur>Robert Zemeckis</realisateur>
+            <duree>2h22m</duree>
+            <poster source="F2.jpg" />
+            <description>Sur un banc, à Savannah, en Géorgie, Forrest Gump attend le bus. Comme celui-ci tarde à venir, le jeune homme raconte sa vie à ses compagnons d'ennui. A priori, ses capacités intellectuelles plutôt limitées ne le destinaient pas à de grandes choses. Qu'importe.</description>
+        </film>
+        <film id="F3" annee="2012">
+            <titre>Django Unchained</titre>
+            <genre>Western, Action</genre>
+            <realisateur>Quentin Tarantino</realisateur>
+            <duree>2h45m</duree>
+            <poster source="F3.jpg" />
+            <description>Deux ans avant la Guerre civile, un ancien esclave du nom de Django s'associe avec un chasseur de primes d'origine allemande qui l'a libéré: il accepte de traquer avec lui des criminels recherchés. En échange, il l'aidera à retrouver sa femme perdue depuis longtemps et esclave elle aussi.</description>
+        </film>
+        <film id="F4" annee="2019">
+            <titre>JoJo Rabbit</titre>
+            <genre>Guerre, Comédie</genre>
+            <realisateur>Taika Waititi</realisateur>
+            <duree>1h48m</duree>
+            <poster source="F4.jpg" />
+            <description>Le patriotisme d'un jeune garçon allemand nommé Jojo Betzler, ayant un ami imaginaire qui s'avère en fait être Hitler, est mis à l'épreuve lorsqu'il découvre une jeune fille dans son grenier qui bouleversera sa vision du monde et lui fera découvrir de nouvelles choses.</description>
+        </film>
+        <film id="F5" annee="2013">
+            <titre>Begin Again</titre>
+            <genre>Romance, Music</genre>
+            <realisateur>John Carney</realisateur>
+            <duree>1h44m</duree>
+            <poster source="F5.jpg" />
+            <description>Gretta et son petit ami viennent de débarquer à NYC. La ville est d'autant plus magique pour les deux Anglais qu'on leur propose de venir y vivre pleinement leur passion: la musique.</description>
+        </film>
+        <film id="F6" annee="2021">
+            <titre>Dune</titre>
+            <genre>SF, Aventure</genre>
+            <realisateur>Denis Villeneuve</realisateur>
+            <duree>2h35m</duree>
+            <poster source="F6.jpg" />
+            <description>Paul Atreides, un jeune homme brillant et doué au destin plus grand que lui-même, doit se rendre sur la planète la plus dangereuse de l'univers afin d'assurer l'avenir de sa famille et de son peuple.</description>
+        </film>
+        <film id="F7" annee="2017">
+            <titre>Blade Runner 2049</titre>
+            <genre>SF, Thriller</genre>
+            <realisateur>Denis Villeneuve</realisateur>
+            <duree>2h43m</duree>
+            <poster source="F7.jpg" />
+            <description>En 2049, la société est fragilisée par les nombreuses tensions entre les humains et leurs esclaves créés par bio-ingénierie. L'officier K est un blade runner: il fait partie d'une force d'intervention d'élite chargée de trouver et d'éliminer ceux qui n'obéissent pas aux ordres des humains.</description>
+        </film>
+        <film id="F8" annee="2020">
+            <titre>Soul</titre>
+            <genre>Enfants, Comédie</genre>
+            <realisateur>Pete Docter, Kemp Powers</realisateur>
+            <duree>1h40m</duree>
+            <poster source="F8.jpg" />
+            <description>Passionné de jazz et professeur de musique dans un collège, Joe Gardner a enfin l'opportunité de réaliser son rêve : jouer dans le meilleur club de jazz de New York. Mais un malencontreux faux pas le précipite dans le 'Grand Avant', un endroit fantastique où les nouvelles âmes acquièrent leur personnalité, leur caractère et leur spécificité avant d'être envoyées sur Terre. Bien décidé à retrouver sa vie, Joe fait équipe avec 22, une âme espiègle et pleine d'esprit.</description>
+        </film>
+    </films>
 
 
     <salles>
 
 
-        <salle id="S01" capacite="50"/>
-        <salle id="S02" capacite="50"/>
-        <salle id="S03" capacite="50"/>
-        <salle id="S04" capacite="100"/>
-        <salle id="S05" capacite="100"/>
+        <salle id="S01" capacite="50" />
+        <salle id="S02" capacite="50" />
+        <salle id="S03" capacite="50" />
+        <salle id="S04" capacite="100" />
+        <salle id="S05" capacite="100" />
     </salles>
 
     <sieges>
@@ -122,6 +178,101 @@
             <salle>S20</salle>
             <rang>4</rang>
             <numero>46</numero>
+        </siege>
+        <siege id="SI1" libre="true">
+            <salle>S530</salle>
+            <rang>1</rang>
+            <numero>1</numero>
+        </siege>
+        <siege id="SI2" libre="true">
+            <salle>S530</salle>
+            <rang>1</rang>
+            <numero>2</numero>
+        </siege>
+        <siege id="SI3" libre="true">
+            <salle>S530</salle>
+            <rang>1</rang>
+            <numero>3</numero>
+        </siege>
+        <siege id="SI4" libre="true">
+            <salle>S530</salle>
+            <rang>1</rang>
+            <numero>4</numero>
+        </siege>
+        <siege id="SI5" libre="true">
+            <salle>S530</salle>
+            <rang>1</rang>
+            <numero>5</numero>
+        </siege>
+        <siege id="SI6" libre="true">
+            <salle>S530</salle>
+            <rang>1</rang>
+            <numero>6</numero>
+        </siege>
+        <siege id="SI7" libre="true">
+            <salle>S530</salle>
+            <rang>1</rang>
+            <numero>7</numero>
+        </siege>
+        <siege id="SI8" libre="true">
+            <salle>S530</salle>
+            <rang>1</rang>
+            <numero>8</numero>
+        </siege>
+        <siege id="SI9" libre="true">
+            <salle>S530</salle>
+            <rang>1</rang>
+            <numero>9</numero>
+        </siege>
+        <siege id="SI10" libre="true">
+            <salle>S530</salle>
+            <rang>1</rang>
+            <numero>10</numero>
+        </siege>
+        <siege id="SI11" libre="true">
+            <salle>S530</salle>
+            <rang>2</rang>
+            <numero>11</numero>
+        </siege>
+        <siege id="SI12" libre="true">
+            <salle>S530</salle>
+            <rang>2</rang>
+            <numero>12</numero>
+        </siege>
+        <siege id="SI13" libre="true">
+            <salle>S530</salle>
+            <rang>2</rang>
+            <numero>13</numero>
+        </siege>
+        <siege id="SI14" libre="true">
+            <salle>S530</salle>
+            <rang>2</rang>
+            <numero>14</numero>
+        </siege>
+        <siege id="SI15" libre="true">
+            <salle>S530</salle>
+            <rang>2</rang>
+            <numero>15</numero>
+        </siege>
+        <siege id="SI16" libre="true">
+            <salle>S530</salle>
+            <rang>2</rang>
+            <numero>16</numero>
+        </siege>
+        <siege id="SI17" libre="true">
+            <salle>S530</salle>
+            <rang>2</rang>
+            <numero>17</numero>
+        </siege>
+        <siege id="SI18" libre="true">
+            <salle>S530</salle>
+            <rang>2</rang>
+            <numero>18</numero>
+        </siege>
+        <siege id="SI19" libre="true">
+            <salle>S530</salle>
+            <rang>2</rang>
+            <numero>19</numero>
         </siege>
     </sieges>
 
