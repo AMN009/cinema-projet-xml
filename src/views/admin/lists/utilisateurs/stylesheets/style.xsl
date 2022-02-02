@@ -237,15 +237,15 @@
 					<!--**********************************
             Footer start
         ***********************************-->
-					<div class="footer">
-						<div class="copyright">
-							<p>
-								Copyright © Designed &amp; Developed by
-								<a href="http://dexignzone.com/" target="_blank">DexignZone</a>
-								2020
-							</p>
-						</div>
-					</div>
+		<div class="footer">
+			<div class="copyright">
+				<p>
+					Designed &amp; Developed by
+					<a href="#">Fahd Bouachrine &amp; Aymen Rhalloussi</a>
+					2022
+				</p>
+			</div>
+		</div>
 					<!--**********************************
             Footer end
         ***********************************-->
